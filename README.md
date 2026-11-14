@@ -5,7 +5,7 @@ XR-toteutuksille sekä sovelluksille luotu AI-avusteinen botti, joka suosittelee
 
 ```mermaid
 flowchart TB
-  subgraph build["Botin päivityksen yhteydessä"]
+  subgraph build["Botin päivityksen yhteydessä"]
     direction LR
     KB["sources/*.yaml<br>prompts/system-prompt.md"] -->|build-kb.mjs| J["worker/kb.generated.json"]
   end
