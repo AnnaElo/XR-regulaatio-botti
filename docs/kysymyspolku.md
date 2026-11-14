@@ -56,6 +56,8 @@ Botti kysyy enintään kolme asiaa kerrallaan eikä kysy uudelleen sitä, minkä
 | Koulutussuoritusten seuranta | `gdpr`, `aiact` | `xapi` |
 | Virtuaalimaailmojen yhteentoimivuus | | `gltf`, `omi`, `msf` |
 | Tieteellinen tai lääketieteellinen visualisointi | | `anari`, `dicom` |
+| Upotus toisen sivustolle iFramella | `sahkoinen-viestinta` (evästeet) | `web-embedding` |
+| Evästeet, analytiikka tai paikallinen tallennus | `sahkoinen-viestinta`, `gdpr` | |
 | Julkisen sektorin tai EAA:n piiriin kuuluva palvelu | `eaa`, `digipalvelulaki` | `en301549`, `wcag`, `xaur` |
 
 Maksulliset standardit (`availability: paid`, esim. `mpeg-i`, `iso-9241`, `iso-iec-mar`) mainitaan aina avointen jälkeen omana kohtanaan.

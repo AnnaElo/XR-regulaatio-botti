@@ -128,3 +128,15 @@
     - "Explains that intended purpose decides whether it is a medical device"
     - "Names Fimea"
     - "Mentions ISO 14971 / IEC 62304 as paid standards after open ones"
+
+- id: museo-unity-iframe
+  language: fi
+  question: "Teemme Unityllä 3D-oppimispelin yläkoulu- ja lukioikäisille energiankulutuksesta. Peli upotetaan museon verkkosivuille iFramella. Ei kirjautumista eikä biometristä dataa."
+  must_cite: [digipalvelulaki]
+  must_not_cite: [mica, eaa]
+  recommend_standards: [wcag, wasm, web-embedding]
+  expect:
+    - "Esittää lain 306/2019 soveltumisen ehdollisena ja kysyy museon/palvelun rahoituksesta"
+    - "Mainitsee evästeiden suostumuksen ja kolmannen osapuolen evästeet iFramessa"
+    - "Mainitsee 13 vuoden suostumusiän ehdollisena"
+    - "Ei väitä CRA:n koskevan ilmaista museopeliä"

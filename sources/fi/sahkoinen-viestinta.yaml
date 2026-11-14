@@ -1,0 +1,46 @@
+id: sahkoinen-viestinta
+type: national-legislation
+name:
+  fi: Laki sähköisen viestinnän palveluista (evästeet)
+  en: Act on Electronic Communications Services (cookies)
+reference:
+  fi: Laki 917/2014, 205 §
+  en: Act 917/2014, section 205
+status:
+  fi: Voimassa
+  en: In force
+summary:
+  fi: Tietojen tallentaminen käyttäjän päätelaitteelle tai niiden lukeminen sieltä (esim. evästeet, paikallinen tallennus, analytiikkatunnisteet) edellyttää käyttäjän suostumusta, ellei se ole välttämätöntä käyttäjän pyytämän palvelun toimittamiseksi.
+  en: Storing information on, or reading it from, the user's device (e.g. cookies, local storage, analytics identifiers) requires the user's consent unless it is strictly necessary to provide the service the user requested.
+jurisdiction: FI
+use_cases: []
+content_sources: []
+primary_sources:
+- title: Finlex, laki sähköisen viestinnän palveluista 917/2014
+  url: https://www.finlex.fi/fi/lainsaadanto/2014/917
+finland:
+  authority:
+    fi: Traficom
+    en: Traficom
+  national_guidance: []
+related_standards: []
+applies_when:
+- condition:
+    fi: Verkossa toimiva XR- tai 3D-sovellus (myös iFrame-upotus tai pelimoottorin web-vienti) käyttää evästeitä, selaimen paikallista tallennusta tai analytiikka- tai mainospalvelun tunnisteita.
+    en: A web-based XR or 3D app (incl. an iframe embed or a game engine web export) uses cookies, browser local storage, or analytics or advertising identifiers.
+  obligation:
+    fi: 'Pyydä suostumus ennen muita kuin välttämättömiä evästeitä ja tunnisteita. Huomaa, että iFramessa toimivan sovelluksen evästeet ovat upottavalle sivustolle kolmannen osapuolen evästeitä: sovi sivuston omistajan kanssa, kumpi pyytää suostumuksen. Tarkista myös pelimoottorin oma analytiikka (esim. Unityn web-viennin oletusasetukset).'
+    en: 'Ask for consent before non-essential cookies and identifiers. Note that cookies of an app running in an iframe are third-party cookies for the embedding site: agree with the site owner who asks for consent. Also check the game engine''s own analytics (e.g. default settings of the Unity web export).'
+  article: 205 §
+keywords:
+- evästeet
+- cookies
+- suostumus
+- consent
+- analytiikka
+- analytics
+- iFrame
+- upotus
+- embed
+last_verified: ''
+todo: 205 §:n teksti ja Traficomin evästeohje eivät avautuneet tarkistuksessa (Finlex palautti vain otsikon, Traficomin evästesivu virheen). Pykälänumero ja valvova viranomainen ovat muistinvaraisia; varmista ennen yhdistämistä.

@@ -1,0 +1,52 @@
+id: web-embedding
+type: standard
+category: xr-runtime
+name:
+  fi: Upotus ja tietoturva verkossa (Permissions Policy ja Content Security Policy)
+  en: Embedding and web security (Permissions Policy and Content Security Policy)
+publisher: W3C
+availability: open
+version: Permissions Policy WD 2026-10-26; CSP Level 3 WD 2026-10-27
+status:
+  fi: Molemmat W3C Working Draft -tilassa (Permissions Policy 26.10.2026, CSP Level 3 27.10.2026), mutta selaimet tukevat niitä laajasti.
+  en: Both are W3C Working Drafts (Permissions Policy 26 Oct 2026, CSP Level 3 27 Oct 2026), but browsers support them widely.
+summary:
+  fi: Permissions Policy määrää, mitä laiteominaisuuksia (esim. XR-seuranta, koko näyttö, kamera) upotettu iFrame saa käyttää. CSP:n frame-ancestors-direktiivi määrää, mitkä sivustot saavat upottaa sovelluksen.
+  en: Permissions Policy controls which device features (e.g. XR tracking, fullscreen, camera) an embedded iframe may use. CSP's frame-ancestors directive controls which sites may embed the app.
+jurisdiction: global
+use_cases: []
+content_sources: []
+primary_sources:
+- title: W3C, Permissions Policy
+  url: https://www.w3.org/TR/permissions-policy/
+- title: W3C, Content Security Policy Level 3
+  url: https://www.w3.org/TR/CSP3/
+related_regulation:
+- id: gdpr
+  relation:
+    fi: Rajaamalla iFramen oikeudet (esim. kamera, mikrofoni) vain tarpeellisiin tuetaan sisäänrakennettua tietosuojaa.
+    en: Limiting iframe permissions (e.g. camera, microphone) to what is needed supports data protection by design.
+- id: sahkoinen-viestinta
+  relation:
+    fi: Upotetun sovelluksen evästeet ovat upottavalle sivustolle kolmannen osapuolen evästeitä.
+    en: Cookies of an embedded app are third-party cookies for the embedding site.
+applies_when:
+- condition:
+    fi: XR-, 3D- tai pelimoottorisovellus upotetaan toisen organisaation verkkosivulle iFramen avulla (esim. museon, oppilaitoksen tai kaupungin sivulle).
+    en: An XR, 3D or game engine app is embedded in another organisation's website with an iframe (e.g. a museum, school or city site).
+  obligation:
+    fi: 'Anna iFramelle vain tarvittavat oikeudet allow-attribuutilla (esim. allow="fullscreen", ja WebXR-tilaa varten "xr-spatial-tracking"). Rajaa sovelluksen palvelimella CSP:n frame-ancestors-direktiivillä, mitkä sivustot saavat upottaa sen. Antaa: VR-tila ja koko näyttö toimivat, eikä sovellusta voi upottaa luvatta muille sivuille.'
+    en: 'Give the iframe only the permissions needed with the allow attribute (e.g. allow="fullscreen", and "xr-spatial-tracking" for WebXR mode). On the app''s server, restrict with CSP frame-ancestors which sites may embed it. Gives: VR mode and fullscreen work, and the app cannot be embedded on other sites without permission.'
+  article: Permissions Policy 6.2; CSP3 frame-ancestors
+keywords:
+- iFrame
+- upotus
+- embed
+- tietoturva
+- security
+- CSP
+- Permissions Policy
+- koko näyttö
+- fullscreen
+last_verified: '2026-11-14'
+todo: Varmista WebXR-spesifikaation luvusta 14.1, että iFrame-upotus vaatii xr-spatial-tracking-oikeuden (esimerkki löytyi Permissions Policy -spesifikaatiosta, kohta 7.1.2).

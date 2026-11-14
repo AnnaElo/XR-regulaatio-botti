@@ -25,7 +25,25 @@ finland:
   national_guidance:
   - title: Traficom, Saavutettavuusvaatimukset
     url: https://www.saavutettavuusvaatimukset.fi/fi
+  - title: Traficom, Soveltamisala – kuulummeko lain piiriin?
+    url: https://www.saavutettavuusvaatimukset.fi/fi/soveltamisala-kuulummeko-lain-piiriin
+  - title: Traficom, Mitä palveluja ja sisältöjä laki koskee
+    url: https://www.saavutettavuusvaatimukset.fi/fi/mita-palveluja-ja-sisaltoja-laki-koskee
 applies_when:
+- condition:
+    fi: 'On epäselvää, kuuluuko toimija (esim. säätiöpohjainen museo, yhdistys tai yritys) lain piiriin.'
+    en: 'It is unclear whether the organisation (e.g. a foundation-run museum, an association or a company) is in scope.'
+  obligation:
+    fi: 'Traficomin mukaan laki koskee viranomaisten lisäksi julkisoikeudellisia laitoksia: itsenäinen oikeushenkilö, joka ei ole luonteeltaan teollinen tai kaupallinen ja jota viranomainen pääosin rahoittaa tai valvoo tai jonka hallituksesta yli puolet on viranomaisen nimeämiä (esimerkkinä Kansallisgalleria). Lisäksi laki koskee palvelua, jonka kehittämis- tai ylläpitokuluista viranomainen rahoittaa vähintään puolet. Selvitä siis toimijan ja palvelun rahoitus.'
+    en: 'According to Traficom, besides authorities the Act covers public-law bodies: an independent legal person not of an industrial or commercial nature that is mainly financed or supervised by an authority, or whose board is more than half appointed by authorities (example: Finnish National Gallery). It also covers a service whose development or maintenance costs are at least half funded by an authority. So check the funding of the organisation and the service.'
+  article: ''
+- condition:
+    fi: Sisältö on suora lähetys, kartta tai karttapalvelu, ennen 23.9.2019 arkistoitu verkkosivusto, kolmannen osapuolen sisältöä, jota toimija ei rahoita, kehitä tai valvo, tai opetuksessa rajatulle ryhmälle tilapäisesti käytettävä sisältö.
+    en: The content is a live broadcast, a map or map service, a website archived before 23 Sep 2019, third-party content the provider does not finance, develop or monitor, or content used temporarily in teaching for a limited group.
+  obligation:
+    fi: Traficomin mukaan nämä on rajattu saavutettavuusvaatimusten ulkopuolelle (tallenteet on saavutettava 14 päivän kuluessa, navigointiin tarkoitetut kartat ovat poikkeus). Pelejä tai museokokoelmia ei ole erikseen rajattu pois.
+    en: According to Traficom these are excluded from the accessibility requirements (recordings must be made accessible within 14 days; navigational maps are an exception). Games and museum collections are not specifically excluded.
+  article: ''
 - condition:
     fi: XR-kokemus julkaistaan julkisen sektorin toimijan (esim. kunta, oppilaitos, korkeakoulu, julkinen museo, hyvinvointialue) verkkosivulla tai mobiilisovelluksessa.
     en: The XR experience is published on a website or mobile app of a public sector body (e.g. municipality, school, university, public museum, wellbeing services county).
@@ -42,4 +60,4 @@ keywords:
 - oppilaitos
 - museo
 last_verified: '2026-11-14'
-todo: Lisää pykäläviittaukset (soveltamisala ja poikkeukset, esim. kulttuuriperintökokoelmat) Finlexin ajantasaisesta tekstistä; ei avautunut tarkistuksessa.
+todo: Soveltamisala ja poikkeukset Traficomin sivuilta (tarkistettu 14.11.2026); pykälänumerot puuttuvat, koska Finlexin teksti ei avautunut.
