@@ -1,0 +1,56 @@
+id: xapi
+type: standard
+category: domain-data
+name:
+  fi: xAPI (Experience API) – oppimiskokemusten seuranta
+  en: xAPI (Experience API) – learning experience tracking
+reference:
+  fi: IEEE 9274.1.1-2023 (xAPI 2.0); myös ISO/IEC/IEEE 39274-1-1:2025
+  en: IEEE 9274.1.1-2023 (xAPI 2.0); also ISO/IEC/IEEE 39274-1-1:2025
+publisher: ADL · IEEE Standards Association
+availability: open
+version: 2.0 (IEEE 9274.1.1-2023); 1.0.3
+status:
+  fi: IEEE 9274.1.1-2023 voimassa (Active), julkaistu 6.10.2023; IEEE-standardi on maksullinen. Versio 1.0.3 on vapaasti luettavissa ADL:n GitHubissa (Apache-2.0), ja ADL:n mukaan 2.0:n dokumentaatio on IEEE:n avoimessa lähdekoodipalvelussa.
+  en: IEEE 9274.1.1-2023 Active, published 6 Oct 2023; the IEEE standard is paid. Version 1.0.3 is freely readable on ADL's GitHub (Apache-2.0), and per ADL the 2.0 documentation is on IEEE's open source platform.
+summary:
+  fi: Oppimistapahtumien ("toimija–verbi–kohde") kirjaus ja siirto oppimisympäristöön (LRS). Yleinen tapa raportoida VR-koulutuksen suoritukset.
+  en: Recording learning events ("actor–verb–object") and sending them to a learning record store (LRS). A common way to report VR training results.
+jurisdiction: global
+use_cases: [education, industry, healthcare]
+content_sources: []
+primary_sources:
+- title: IEEE SA, IEEE 9274.1.1-2023
+  url: https://standards.ieee.org/ieee/9274.1.1/7321/
+- title: ADL, xAPI-Spec (GitHub, versio 1.0.3)
+  url: https://github.com/adlnet/xAPI-Spec
+- title: IEEE Open Source, xAPI base standard documentation (2.0)
+  url: https://opensource.ieee.org/xapi/xapi-base-standard-documentation
+related_regulation:
+- id: gdpr
+  relation:
+    fi: Oppimistapahtumat ovat henkilötietoa; kirjaa vain tarvittava eikä esim. katseenseurannan raakadataa.
+    en: Learning events are personal data; record only what is needed, not e.g. raw eye-tracking data.
+- id: aiact
+  relation:
+    fi: Jos xAPI-dataa käytetään tekoälyn tekemään arviointiin, ks. tekoälyasetuksen liite III (koulutus).
+    en: If xAPI data feeds AI-based assessment, see AI Act Annex III (education).
+applies_when:
+- condition:
+    fi: VR- tai AR-koulutuksen suoritukset halutaan oppimisalustaan (esim. Moodle) tai työnantajan osaamisrekisteriin.
+    en: VR or AR training results should go to a learning platform (e.g. Moodle) or an employer's competence register.
+  obligation:
+    fi: 'Lähetä suoritukset xAPI-lausekkeina oppimistietovarastoon (LRS). Antaa: laitteesta ja sovelluksesta riippumaton seuranta.'
+    en: 'Send results as xAPI statements to a learning record store (LRS). Gives: tracking independent of device and app.'
+  article: ''
+keywords:
+- xAPI
+- Experience API
+- LRS
+- oppimisanalytiikka
+- learning analytics
+- koulutus
+- training
+- Moodle
+last_verified: '2026-11-14'
+todo: Varmista opensource.ieee.org-sivun saatavuus ja lisenssi (ei avattu tarkistuksessa).

@@ -27,8 +27,8 @@ applies_when:
     fi: Käyttäjä kysyy, mitkä standardit sopivat yhteen virtuaalimaailmojen välillä, tai rakentaa alustaa, jonka pitää toimia muiden virtuaalimaailmojen kanssa.
     en: The user asks which standards work together across virtual worlds, or builds a platform that must interoperate with other virtual worlds.
   obligation:
-    fi: Taustalähde, ei standardi. Ohjaa foorumin julkaisuihin ja suosittele varsinaisia standardeja (gltf, openusd, openxr, webxr).
-    en: Background source, not a standard. Point to the forum's publications and recommend the actual standards (gltf, openusd, openxr, webxr).
+    fi: Taustalähde, ei standardi. Ohjaa foorumin julkaisuihin ja suosittele varsinaisia standardeja (gltf, openusd, openxr, webxr). Toinen foorumi, OMI (omi), kehittää glTF-laajennuksia.
+    en: Background source, not a standard. Point to the forum's publications and recommend the actual standards (gltf, openusd, openxr, webxr). OMI (omi) is another forum that develops glTF extensions.
   article: ''
 keywords:
 - metaverse

@@ -45,6 +45,17 @@ Botti kysyy enintään kolme asiaa kerrallaan eikä kysy uudelleen sitä, minkä
 | Kulttuuri ja museot | `use-cases/culture-xr`, `digipalvelulaki` | `gltf`, `3dtiles`, `xaur`, `c2pa` |
 | Teollisuus | `use-cases/industry-xr`, `aiact`, `cra`, `dataact` | `openusd`, `ifc`; maksullinen `ieee-1589` |
 | Terveydenhuolto | `use-cases/healthcare-xr`, `mdr`, `ehds`, `gdpr` | `dicom`, `fhir`; maksulliset `medical-device-standards`, `ieee-3079` |
+| Raskas selain-3D tai pelimoottorin web-vienti | | `wasm`, `webgpu`, `ktx2` |
+| Avatarit, liikekaappaus | | `hanim`, `x3d` |
+| Pitkäaikaisarkistointi ISO-standardilla (esim. museo, anatomia) | | `x3d` |
+| Gaussian splat -mallit (kännykkä, drooni) | | `gltf` (KHR_gaussian_splatting), `webgpu` |
+| Sisätilojen AR-opastus | | `indoorgml` |
+| Anturidata digitaaliseen kaksoseen | `dataact` | `sensorthings`; maksullinen `ieee-2874` |
+| ArcGIS-ympäristö | | `i3s` |
+| Laaja koulutussimulaatio | | `cdb`, `xapi` |
+| Koulutussuoritusten seuranta | `gdpr`, `aiact` | `xapi` |
+| Virtuaalimaailmojen yhteentoimivuus | | `gltf`, `omi`, `msf` |
+| Tieteellinen tai lääketieteellinen visualisointi | | `anari`, `dicom` |
 | Julkisen sektorin tai EAA:n piiriin kuuluva palvelu | `eaa`, `digipalvelulaki` | `en301549`, `wcag`, `xaur` |
 
 Maksulliset standardit (`availability: paid`, esim. `mpeg-i`, `iso-9241`, `iso-iec-mar`) mainitaan aina avointen jälkeen omana kohtanaan.

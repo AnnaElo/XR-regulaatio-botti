@@ -1,0 +1,40 @@
+id: ktx2
+type: standard
+category: 3d-content
+name:
+  fi: KTX 2.0 (tekstuurit)
+  en: KTX 2.0 (textures)
+publisher: Khronos Group
+availability: open
+version: 2.0 (Document Revision 4)
+status:
+  fi: Ratifioitu 14.8.2020, dokumenttirevisio 4 hyväksytty 19.2.2025
+  en: Ratified 14 Aug 2020, document revision 4 approved 19 Feb 2025
+summary:
+  fi: GPU-tekstuurien säiliömuoto, jossa Basis Universal -pakkaus toimii kaikilla laitteilla. Käytetään glTF:n kanssa (KHR_texture_basisu).
+  en: A container format for GPU textures with Basis Universal compression that works on all devices. Used with glTF (KHR_texture_basisu).
+jurisdiction: global
+use_cases: []
+content_sources: [phone-camera, drone, laser-scanning, ai-generated, 3d-artist]
+primary_sources:
+- title: Khronos Group, KTX File Format Specification 2.0
+  url: https://registry.khronos.org/KTX/specs/2.0/ktxspec.v2.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: 3D-mallien tekstuurit ovat suuria (esim. fotogrammetria- tai skannausmallit, tekoälyllä generoidut tekstuurit) ja sisältöä ajetaan mobiili-XR-laseilla tai selaimessa.
+    en: 3D model textures are large (e.g. photogrammetry or scanned models, AI-generated textures) and content runs on standalone XR headsets or in a browser.
+  obligation:
+    fi: 'Pakkaa tekstuurit KTX 2.0 / Basis Universal -muotoon glTF-mallin sisään. Antaa: pienempi muistinkulutus ja nopeampi lataus.'
+    en: 'Compress textures as KTX 2.0 / Basis Universal inside the glTF model. Gives: lower memory use and faster loading.'
+  article: ''
+keywords:
+- tekstuuri
+- texture
+- KTX
+- Basis
+- pakkaus
+- compression
+- mobiili-XR
+last_verified: '2026-11-14'
+todo: ''

@@ -1,0 +1,42 @@
+id: webgpu
+type: standard
+category: xr-runtime
+name:
+  fi: WebGPU ja WebGL
+  en: WebGPU and WebGL
+publisher: W3C (WebGPU), Khronos Group (WebGL)
+availability: open
+version: WebGPU CRD 2026-09-15; WebGL 2.0
+status:
+  fi: WebGPU on W3C Candidate Recommendation Draft (15.9.2026). WebGL 2.0 (Khronos) perustuu OpenGL ES 3.0:aan ja on laajasti tuettu.
+  en: WebGPU is a W3C Candidate Recommendation Draft (15 Sep 2026). WebGL 2.0 (Khronos) is based on OpenGL ES 3.0 and widely supported.
+summary:
+  fi: Selaimen grafiikkarajapinnat, joiden päällä WebXR-sisältö piirretään. WebGPU on uudempi ja tehokkaampi, WebGL toimii laajimmin.
+  en: Browser graphics APIs on which WebXR content is drawn. WebGPU is newer and more powerful, WebGL has the widest support.
+jurisdiction: global
+use_cases: []
+content_sources: []
+primary_sources:
+- title: W3C, WebGPU
+  url: https://www.w3.org/TR/webgpu/
+- title: Khronos Group, WebGL
+  url: https://www.khronos.org/webgl/
+related_regulation: []
+applies_when:
+- condition:
+    fi: Selaimessa näytetään raskasta 3D-sisältöä (suuret pistepilvet, Gaussian splat -mallit, kaupunkimallit) tai tehdään laskentaa näytönohjaimella.
+    en: Heavy 3D content (large point clouds, Gaussian splat models, city models) is shown in the browser or computed on the GPU.
+  obligation:
+    fi: 'Käytä WebGPU:ta, kun kohdeselaimet tukevat sitä, ja WebGL 2.0:aa varavaihtoehtona. Useimmat kirjastot (three.js, Babylon.js) tukevat molempia. Antaa: parempi suorituskyky ja laskentavarjostimet.'
+    en: 'Use WebGPU where target browsers support it and WebGL 2.0 as a fallback. Most libraries (three.js, Babylon.js) support both. Gives: better performance and compute shaders.'
+  article: ''
+keywords:
+- WebGPU
+- WebGL
+- grafiikka
+- graphics
+- selain
+- browser
+- GPU
+last_verified: '2026-11-14'
+todo: Lisää linkki itse WebGL 2.0 -spesifikaatioon (registry.khronos.org-osoite ei avautunut tarkistuksessa). Tarkista WebXR–WebGPU-sidoksen (WebXR/WebGPU Binding) tila W3C:ltä.

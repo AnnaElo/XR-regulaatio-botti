@@ -21,6 +21,8 @@ primary_sources:
   url: https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html
 - title: Khronos Group, glTF-laajennusten rekisteri
   url: https://github.com/KhronosGroup/glTF/tree/main/extensions
+- title: Khronos Group, KHR_gaussian_splatting
+  url: https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_gaussian_splatting/README.md
 related_regulation:
 - id: aiact
   relation:
@@ -41,7 +43,15 @@ applies_when:
     fi: Käytä glTF:ää jakeluformaattina, mutta säilytä myös alkuperäinen lähdeaineisto (esim. pistepilvi tai mallinnustiedosto) ja lisensointitiedot metatietoina (asset.copyright, extras).
     en: Use glTF as the distribution format, but also keep the original source data (e.g. point cloud or modelling file) and licence information as metadata (asset.copyright, extras).
   article: asset
+- condition:
+    fi: Kohde on tallennettu Gaussian splat -mallina (esim. kännykällä tai droonilla kuvattu tila, kulttuuriperintökohde).
+    en: The subject is captured as a Gaussian splat model (e.g. a space or heritage site captured with a phone or drone).
+  obligation:
+    fi: Käytä Khronosin KHR_gaussian_splatting-laajennusta, jotta splat-malli toimii glTF-yhteensopivissa työkaluissa. Tarkista kohdekirjaston tuki.
+    en: Use Khronos's KHR_gaussian_splatting extension so the splat model works in glTF-compatible tools. Check support in the target library.
+  article: KHR_gaussian_splatting
 keywords:
+- Gaussian splatting
 - 3D-malli
 - 3D model
 - .glb
@@ -51,4 +61,4 @@ keywords:
 - 3D-skannaus
 - tekoälyllä generoitu 3D
 last_verified: '2026-11-14'
-todo: Tarkista ISO/IEC 12113:2022:n sivu iso.org:sta (ei avautunut tarkistuksessa). KHR_gaussian_splatting oli julkaisuehdokas 3.2.2026 (ratifiointia odotettiin Q2/2026); tarkista tila ja lisää applies_when-ehto puhelin-/drooniskannatuille Gaussian splat -malleille.
+todo: Tarkista ISO/IEC 12113:2022:n sivu iso.org:sta (ei avautunut tarkistuksessa). KHR_gaussian_splatting on README:n mukaan ratifioitu (julkaisuehdokas 3.2.2026); ratifiointipäivä puuttuu.

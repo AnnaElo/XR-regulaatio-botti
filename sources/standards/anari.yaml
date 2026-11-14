@@ -1,0 +1,39 @@
+id: anari
+type: standard
+category: 3d-content
+name:
+  fi: ANARI (tieteellinen visualisointi)
+  en: ANARI (scientific visualisation)
+publisher: Khronos Group
+availability: open
+version: '1.1'
+status:
+  fi: ANARI 1.1 ratifioitu 10/2025
+  en: ANARI 1.1 ratified Oct 2025
+summary:
+  fi: Laitteistoriippumaton renderöintirajapinta tieteelliseen visualisointiin (esim. lääketieteellinen tilavuusdata, simulaatiotulokset).
+  en: A hardware-independent rendering API for scientific visualisation (e.g. medical volume data, simulation results).
+jurisdiction: global
+use_cases: [healthcare, industry]
+content_sources: []
+primary_sources:
+- title: Khronos Group, ANARI
+  url: https://www.khronos.org/anari/
+related_regulation: []
+applies_when:
+- condition:
+    fi: XR-sovellus visualisoi suuria tieteellisiä tai lääketieteellisiä datajoukkoja (tilavuusdata, virtauslaskenta, simulaatiot) ja renderöijä halutaan vaihtaa sovellusta muuttamatta.
+    en: An XR app visualises large scientific or medical datasets (volume data, CFD, simulations) and the renderer should be swappable without changing the app.
+  obligation:
+    fi: 'Harkitse ANARI-rajapintaa visualisointiputkessa. Antaa: sama sovellus voi käyttää eri valmistajien renderöijiä (esim. säteenseuranta).'
+    en: 'Consider the ANARI API in the visualisation pipeline. Gives: the same app can use renderers from different vendors (e.g. ray tracing).'
+  article: ''
+keywords:
+- ANARI
+- visualisointi
+- visualisation
+- tilavuusdata
+- volume rendering
+- simulaatio
+last_verified: '2026-11-14'
+todo: Lisää linkki ANARI 1.1 -spesifikaatioon (registryssä tarkistettiin 1.0).
