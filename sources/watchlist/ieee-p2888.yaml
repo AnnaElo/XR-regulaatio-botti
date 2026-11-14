@@ -1,0 +1,14 @@
+id: ieee-p2888
+type: standard-in-development
+name:
+  fi: 'IEEE P2888 -sarja: kyber- ja fyysisen maailman rajapinnat (digitaaliset kaksoset, VR-pelastuskoulutus)'
+  en: 'IEEE P2888 series: interfacing cyber and physical world (digital twins, VR disaster response training)'
+status:
+  fi: 'Työryhmän projekteja: P2888.1 anturirajapinta, P2888.3 digitaalisen synkronoinnin orkestrointi, P2888.4 6DoF VR -pelastuskoulutusjärjestelmän arkkitehtuuri. Tila ja vuodet tarkistamatta.'
+  en: 'Working group projects: P2888.1 sensor interface, P2888.3 orchestration of digital synchronisation, P2888.4 architecture for 6DoF VR disaster response training. Status and years not verified.'
+jurisdiction: global
+primary_sources:
+- title: IEEE SA, 2888-työryhmä
+  url: https://sagroups.ieee.org/2888/
+- title: IEEE SA, P2888.4 (VR-pelastuskoulutus)
+  url: https://standards.ieee.org/ieee/2888.4/10471/

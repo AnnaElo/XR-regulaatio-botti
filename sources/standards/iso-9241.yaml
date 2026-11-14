@@ -1,0 +1,45 @@
+id: iso-9241
+type: standard
+category: safety-ergonomics
+name:
+  fi: ISO 9241 – Ihmisen ja järjestelmän vuorovaikutuksen ergonomia
+  en: ISO 9241 – Ergonomics of human-system interaction
+reference:
+  fi: ISO 9241 -sarja, mm. osat 210, 171, 391
+  en: ISO 9241 series, incl. parts 210, 171, 391
+publisher: ISO
+availability: paid
+open_alternative: [xaur, wcag]
+version: ''
+status:
+  fi: 'Sarja. Osa 391:2016 (valoherkkyyskohtausten ehkäisy) julkaistu 2/2016, tila: revisio tulossa.'
+  en: 'Series. Part 391:2016 (reduction of photosensitive seizures) published Feb 2016, stage: to be revised.'
+summary:
+  fi: 'Käytettävyyden ja ergonomian standardisarja. XR:lle olennaisia: 210 ihmiskeskeinen suunnittelu, 171 ohjelmistojen saavutettavuus, 391 välkkyvän kuvan aiheuttamien kohtausten ehkäisy, 39x-osat stereoskooppisten näyttöjen ergonomia.'
+  en: 'A standard series on usability and ergonomics. Relevant for XR: 210 human-centred design, 171 software accessibility, 391 reduction of photosensitive seizures, 39x parts on stereoscopic display ergonomics.'
+jurisdiction: global
+use_cases: []
+content_sources: []
+primary_sources:
+- title: ISO, ISO 9241-391:2016
+  url: https://www.iso.org/standard/56350.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: Hanke tarvitsee dokumentoidun käyttäjäkeskeisen suunnitteluprosessin (esim. julkinen hankinta, terveydenhuollon laite) tai sisältö välkkyy tai käyttää stereokuvaa pitkään.
+    en: The project needs a documented human-centred design process (e.g. public procurement, a healthcare device) or the content flashes or uses stereo imagery for long periods.
+  obligation:
+    fi: 'Toissijainen, maksullinen. Viittaa ISO 9241-210:een suunnitteluprosessissa ja ISO 9241-391:een välkkymisen testaamisessa. Avoimina vaihtoehtoina WCAG (välkkymiskriteerit) ja XAUR.'
+    en: 'Secondary, paid. Refer to ISO 9241-210 for the design process and ISO 9241-391 for flash testing. Open alternatives: WCAG (flash criteria) and XAUR.'
+  article: ''
+keywords:
+- ergonomia
+- ergonomics
+- käytettävyys
+- usability
+- ihmiskeskeinen suunnittelu
+- human-centred design
+- välkkyminen
+- stereoskooppinen
+last_verified: '2026-11-14'
+todo: Lisää iso.org-linkit osille 210:2019, 171 ja 392/394 (eivät avautuneet tarkistuksessa) ja varmista osien numerot ja vuodet.

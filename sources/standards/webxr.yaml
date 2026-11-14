@@ -5,17 +5,53 @@ name:
   fi: WebXR Device API
   en: WebXR Device API
 publisher: W3C
+availability: open
+version: Candidate Recommendation Draft 2026-11-09
 status:
-  fi: Candidate Recommendation Draft, 9.6.2026
-  en: Candidate Recommendation Draft, 9 Jun 2026
+  fi: Candidate Recommendation Draft, 9.11.2026. AR-moduuli (Level 1) Candidate Recommendation Draft 25.4.2025.
+  en: Candidate Recommendation Draft, 9 Nov 2026. AR Module (Level 1) Candidate Recommendation Draft 25 Apr 2025.
 summary:
   fi: VR- ja AR-kokemukset selaimessa ilman sovellusasennusta. Toimii vain suojatulla HTTPS-yhteydellä.
   en: VR and AR experiences in the browser without installing an app. Works only over a secure HTTPS connection.
 jurisdiction: global
+use_cases: []
+content_sources: []
 primary_sources:
 - title: W3C, WebXR Device API
   url: https://www.w3.org/TR/webxr/
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: W3C, WebXR Augmented Reality Module – Level 1
+  url: https://www.w3.org/TR/webxr-ar-module-1/
+related_regulation:
+- id: eaa
+  relation:
+    fi: Selaimessa toimiva kuluttajapalvelu (esim. verkkokaupan AR-sovitus) voi kuulua esteettömyysdirektiivin piiriin. Ympäröivä verkkosivu arvioidaan EN 301 549:n ja WCAG:n mukaan.
+    en: A browser-based consumer service (e.g. AR try-on in an online shop) may fall under the Accessibility Act. The surrounding web page is assessed against EN 301 549 and WCAG.
+- id: gdpr
+  relation:
+    fi: WebXR kysyy käyttäjältä luvan ennen XR-istunnon aloittamista, mutta lupa laitteen käyttöön ei ole GDPR:n mukainen suostumus henkilötietojen käsittelyyn.
+    en: WebXR asks the user for permission before an XR session starts, but device permission is not GDPR consent to process personal data.
+applies_when:
+- condition:
+    fi: Kokemuksen pitää toimia selaimessa ilman asennusta, esim. museon, oppilaitoksen tai verkkokaupan linkistä avattava 3D/AR-näkymä.
+    en: The experience must run in the browser without installation, e.g. a 3D/AR view opened from a museum, school or online shop link.
+  obligation:
+    fi: 'Käytä WebXR:ää (esim. three.js, Babylon.js, A-Frame) ja tarjoa 2D-näkymä laitteille, jotka eivät tue XR:ää. Antaa: matala käyttöönoton kynnys, ei sovelluskauppaa.'
+    en: 'Use WebXR (e.g. three.js, Babylon.js, A-Frame) and provide a 2D fallback for devices without XR support. Gives: a low barrier to entry, no app store.'
+  article: ''
+- condition:
+    fi: Selain-AR sijoittaa virtuaalisen kohteen kameranäkymään (puhelin tai AR-lasit).
+    en: Browser AR places a virtual object in the camera view (phone or AR glasses).
+  obligation:
+    fi: Käytä AR-moduulia ja hit-test-ominaisuutta. Huomaa, että kameranäkymässä voi näkyä sivullisia (ks. use-cases/ar-capture).
+    en: Use the AR Module and hit-test feature. Note that bystanders may appear in the camera view (see use-cases/ar-capture).
+  article: AR Module
+keywords:
+- selain
+- browser
+- verkkosivu
+- ilman asennusta
+- no install
+- three.js
+- AR-sovitus
+last_verified: '2026-11-14'
+todo: ''

@@ -1,0 +1,43 @@
+id: omi
+type: standard
+category: organisation
+name:
+  fi: Open Metaverse Interoperability Group (OMI) ja sen glTF-laajennukset
+  en: Open Metaverse Interoperability Group (OMI) and its glTF extensions
+publisher: Open Metaverse Interoperability Group (W3C Metaverse Interoperability Community Group -prosessi)
+availability: open
+version: ''
+status:
+  fi: Foorumi, ei virallinen standardointijärjestö. Laajennukset ovat kehitysvaiheissa 0–5; esim. OMI_physics_* ja OMI_spawn_point vaiheessa 1, OMI_seat vaiheessa 2. KHR_audio_emitter on siirtynyt Khronosille.
+  en: A forum, not a formal standards body. Extensions move through stages 0–5; e.g. OMI_physics_* and OMI_spawn_point are at stage 1, OMI_seat at stage 2. KHR_audio_emitter has graduated to Khronos.
+summary:
+  fi: Kehittää glTF-laajennuksia virtuaalimaailmojen yhteentoimivuuteen, kuten fysiikka, ääni, istuimet ja syntypisteet.
+  en: Develops glTF extensions for virtual world interoperability, such as physics, audio, seats and spawn points.
+jurisdiction: global
+use_cases: [education, culture]
+content_sources: [3d-artist]
+primary_sources:
+- title: OMI, glTF extensions (GitHub)
+  url: https://github.com/omigroup/gltf-extensions
+- title: Open Metaverse Interoperability Group
+  url: https://omigroup.org/
+related_regulation: []
+applies_when:
+- condition:
+    fi: 3D-maailmoja tai interaktiivisia kohteita (fysiikka, äänilähteet, istuimet) halutaan siirtää virtuaalimaailmasta toiseen glTF-muodossa.
+    en: 3D worlds or interactive objects (physics, audio sources, seats) should move between virtual worlds as glTF.
+  obligation:
+    fi: Kokeellinen. Käytä ensisijaisesti Khronosin ratifioituja KHR-laajennuksia (esim. KHR_audio_emitter) ja OMI-laajennuksia vain, kun kohdealusta tukee niitä; kerro käyttäjälle laajennuksen kehitysvaihe.
+    en: Experimental. Prefer ratified Khronos KHR extensions (e.g. KHR_audio_emitter) and use OMI extensions only where the target platform supports them; tell the user the extension's stage.
+  article: ''
+keywords:
+- OMI
+- metaverse
+- yhteentoimivuus
+- interoperability
+- glTF-laajennus
+- glTF extension
+- fysiikka
+- physics
+last_verified: '2026-11-14'
+todo: Tarkista OMI-repon lisenssi.

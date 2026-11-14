@@ -1,0 +1,46 @@
+id: x3d
+type: standard
+category: 3d-content
+name:
+  fi: X3D 4.0 (Extensible 3D)
+  en: X3D 4.0 (Extensible 3D)
+reference:
+  fi: ISO/IEC 19775-1:2023
+  en: ISO/IEC 19775-1:2023
+publisher: Web3D Consortium · ISO/IEC
+availability: open
+version: '4.0'
+status:
+  fi: Kansainvälinen standardi ISO/IEC 19775-1:2023 (painos 4), julkaistu 12/2023. Web3D julkaisee sen maksutta verkossa.
+  en: International Standard ISO/IEC 19775-1:2023 (edition 4), published Dec 2023. Web3D publishes it free of charge online.
+summary:
+  fi: Pitkäikäinen ISO-standardi interaktiivisille 3D-näkymille. Tukee glTF-mallien tuontia, HTML5-käyttöä ja H-Anim-hahmoja. Käytössä erityisesti kulttuuriperinnössä, lääketieteellisessä visualisoinnissa ja CAD-aineistoissa.
+  en: A long-lived ISO standard for interactive 3D scenes. Supports glTF import, HTML5 use and H-Anim characters. Used especially in cultural heritage, medical visualisation and CAD data.
+jurisdiction: global
+use_cases: [culture, healthcare, education]
+content_sources: [3d-artist, laser-scanning]
+primary_sources:
+- title: Web3D Consortium, X3D 4.0 Standard Overview
+  url: https://www.web3d.org/x3d4
+- title: Web3D Consortium, X3D ISO/IEC 19775-1:2023 Architecture
+  url: https://www.web3d.org/specifications/X3Dv4/ISO-IEC19775-1v4-IS/Part01/Architecture.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: 3D-sisällön pitää säilyä luettavana vuosikymmeniä ja olla kansainvälisen ISO-standardin mukaista, esim. museoarkisto, lääketieteelliset anatomiset mallit tai julkinen hankinta, joka edellyttää ISO-standardia.
+    en: 3D content must remain readable for decades and follow an international ISO standard, e.g. a museum archive, medical anatomical models or public procurement requiring an ISO standard.
+  obligation:
+    fi: 'Harkitse X3D 4.0:aa arkistointi- tai näkymämuodoksi (sis. vuorovaikutus, metatiedot) ja glTF:ää jakelumuodoksi. Antaa: maksutta luettava ISO-standardi.'
+    en: 'Consider X3D 4.0 as the archival or scene format (incl. interaction, metadata) and glTF as the delivery format. Gives: an ISO standard that can be read free of charge.'
+  article: ''
+keywords:
+- X3D
+- VRML
+- Web3D
+- ISO/IEC 19775
+- arkistointi
+- archiving
+- kulttuuriperintö
+- anatomia
+last_verified: '2026-11-14'
+todo: ''

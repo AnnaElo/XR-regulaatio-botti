@@ -23,6 +23,7 @@ finland:
   national_guidance:
   - title: Tietosuojavaltuutetun toimisto
     url: https://tietosuoja.fi/
+related_standards: [oidc, design]
 applies_when:
 - condition:
     fi: Sovellus kerää katseenseuranta-, liike-, ääni- tai kasvodataa, josta käyttäjä voidaan tunnistaa.

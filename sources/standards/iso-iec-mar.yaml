@@ -1,0 +1,42 @@
+id: iso-iec-mar
+type: standard
+category: xr-runtime
+name:
+  fi: ISO/IEC 18039 ja 18040 – Mixed and augmented reality (MAR)
+  en: ISO/IEC 18039 and 18040 – Mixed and augmented reality (MAR)
+reference:
+  fi: ISO/IEC 18039 (MAR-viitemalli), ISO/IEC 18040 (live actor and entity -esitys)
+  en: ISO/IEC 18039 (MAR reference model), ISO/IEC 18040 (live actor and entity representation)
+publisher: ISO/IEC JTC 1/SC 24
+availability: paid
+open_alternative: [openxr, webxr, geopose]
+version: ''
+status:
+  fi: Julkaistuja ISO/IEC-standardeja (vuodet tarkistamatta)
+  en: Published ISO/IEC standards (years not verified)
+summary:
+  fi: Sekatodellisuuden ja lisätyn todellisuuden käsitteellinen viitemalli sekä todellisten ihmisten ja kohteiden esittäminen MAR-näkymässä.
+  en: A conceptual reference model for mixed and augmented reality and the representation of real people and objects in a MAR scene.
+jurisdiction: global
+use_cases: []
+content_sources: []
+primary_sources:
+- title: ISO/IEC JTC 1/SC 24 (alikomitea), ks. sc24
+  url: https://jtc1info.org/replay-of-the-jtc-1-sc-24-workshop-on-metaverse/
+related_regulation: []
+applies_when:
+- condition:
+    fi: Hankkeessa tarvitaan yhteinen käsitteistö tai arkkitehtuurikuvaus AR/MR-järjestelmälle, esim. tutkimus- tai hankintadokumentaatio.
+    en: The project needs common terminology or an architecture description for an AR/MR system, e.g. research or procurement documentation.
+  obligation:
+    fi: Toissijainen, maksullinen. Voi viitata arkkitehtuurikuvauksessa; toteutukseen suositellaan avoimia standardeja (openxr, webxr, geopose).
+    en: Secondary, paid. Can be cited in architecture descriptions; for implementation, open standards are recommended (openxr, webxr, geopose).
+  article: ''
+keywords:
+- MAR
+- lisätty todellisuus
+- augmented reality
+- viitemalli
+- reference model
+last_verified: ''
+todo: Lisää iso.org-linkit ja julkaisuvuodet ISO/IEC 18039:lle ja 18040:lle (eivät löytyneet tarkistuksessa).

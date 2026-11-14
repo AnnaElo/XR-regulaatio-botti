@@ -1,0 +1,60 @@
+id: industry-xr
+type: use-case-guidance
+name:
+  fi: XR teollisuudessa (koulutus, etätuki, digitaaliset kaksoset)
+  en: XR in industry (training, remote assistance, digital twins)
+summary:
+  fi: Teollisuudessa korostuvat työntekijöiden yksityisyys, tekoälyn käyttö työssä, verkkoon liitettyjen laitteiden tietoturva ja data sekä koneturvallisuus.
+  en: In industry the focus is on employee privacy, AI at work, cybersecurity and data of connected devices, and machinery safety.
+jurisdiction: FI
+use_cases: [industry]
+content_sources: [laser-scanning, 3d-artist, drone]
+primary_sources:
+- title: Finlex, laki yksityisyyden suojasta työelämässä 759/2004
+  url: https://www.finlex.fi/fi/lainsaadanto/2004/759
+- title: EUR-Lex, tekoälyasetus (EU) 2024/1689
+  url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- title: EUR-Lex, koneasetus (EU) 2023/1230
+  url: https://eur-lex.europa.eu/eli/reg/2023/1230/oj
+finland:
+  authority:
+    fi: Tietosuojavaltuutetun toimisto, Traficom (tekoälyasetus, kyberturvallisuus), työsuojeluviranomainen (aluehallintovirastot)
+    en: Office of the Data Protection Ombudsman, Traficom (AI Act, cybersecurity), occupational safety authority (Regional State Administrative Agencies)
+  national_guidance: []
+related_documents: [gdpr, aiact, cra, dataact, nis2, ar-capture, openusd, ifc, ieee-1589, iso-iec-5927]
+applies_when:
+- condition:
+    fi: XR-koulutuksessa tai -työohjeessa kerätään tietoa työntekijöiden suorituksesta tai käyttäytymisestä.
+    en: XR training or work instructions collect data on employees' performance or behaviour.
+  obligation:
+    fi: Työnantaja saa käsitellä vain työsuhteen kannalta välttämättömiä tietoja; käytöstä on neuvoteltava yhteistoimintamenettelyssä. Jos tekoäly arvioi työntekijöitä, ks. tekoälyasetuksen liite III (työllistäminen).
+    en: The employer may process only data necessary for the employment relationship; use must be negotiated in cooperation procedures. If AI assesses employees, see AI Act Annex III (employment).
+  article: laki 759/2004; AI Act liite III kohta 4
+- condition:
+    fi: Työntekijöiden stressiä, väsymystä tai tunteita päätellään XR-laitteen biometrisestä datasta.
+    en: Employees' stress, fatigue or emotions are inferred from XR device biometric data.
+  obligation:
+    fi: Tunteiden tunnistus työpaikalla on kielletty, paitsi lääketieteellisistä tai turvallisuussyistä.
+    en: Emotion recognition at work is prohibited, except for medical or safety reasons.
+  article: AI Act art. 5(1)(f)
+- condition:
+    fi: XR-sovelluksella ohjataan tai valvotaan konetta, tai se on osa koneen turvatoimintoa.
+    en: The XR app controls or monitors a machine, or is part of a machine's safety function.
+  obligation:
+    fi: Arvioi, kuuluuko ratkaisu koneasetuksen soveltamisalaan (koneasetus korvaa konedirektiivin ja sitä sovelletaan tammikuusta 2027).
+    en: Assess whether the solution falls within the Machinery Regulation (which replaces the Machinery Directive and applies from January 2027).
+  article: ''
+keywords:
+- teollisuus
+- industry
+- työpaikka
+- workplace
+- etätuki
+- remote assistance
+- huolto
+- maintenance
+- kone
+- machinery
+- digitaalinen kaksonen
+last_verified: '2026-11-14'
+todo: Varmista koneasetuksen soveltamispäivä (art. 54) EUR-Lexistä ja lisää se deadlines.yaml-tiedostoon. Lisää työsuojeluhallinnon ensisijainen linkki.

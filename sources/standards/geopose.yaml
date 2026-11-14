@@ -5,17 +5,41 @@ name:
   fi: GeoPose
   en: GeoPose
 publisher: Open Geospatial Consortium
+availability: open
+version: 1.0.0
 status:
-  fi: Versio 1.0
-  en: Version 1.0
+  fi: GeoPose 1.0 Data Exchange Standard, julkaistu 8.9.2023
+  en: GeoPose 1.0 Data Exchange Standard, published 8 Sep 2023
 summary:
   fi: Kohteen sijainti ja asento maahan ankkuroidussa viitekehyksessä, myös virtuaalisille kohteille.
   en: The position and orientation of an object in an Earth-anchored reference frame, including virtual objects.
 jurisdiction: global
+use_cases: [culture, industry, education]
+content_sources: [drone, phone-camera]
 primary_sources:
-- title: OGC, GeoPose
-  url: https://www.ogc.org/standard/geopose/
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: OGC, GeoPose 1.0 Data Exchange Standard
+  url: https://docs.ogc.org/is/21-056r11/21-056r11.html
+related_regulation:
+- id: gdpr
+  relation:
+    fi: Käyttäjän laitteen GeoPose on sijaintitietoa, joka on henkilötietoa, kun se voidaan yhdistää käyttäjään.
+    en: The GeoPose of a user's device is location data, which is personal data when it can be linked to the user.
+applies_when:
+- condition:
+    fi: Ulkona toimiva AR ankkuroi virtuaalisen sisällön todelliseen paikkaan, esim. kulttuuriperintökohteen rekonstruktio, kaupunkikävely tai rakennustyömaan suunnitelma maastossa.
+    en: Outdoor AR anchors virtual content to a real place, e.g. a heritage site reconstruction, a city walk or a construction plan on site.
+  obligation:
+    fi: 'Tallenna sisällön ja kameran sijainti ja asento GeoPose-muodossa. Antaa: sama sijoittelu toimii eri laitteilla ja sovelluksissa sekä droonin kuvien kanssa.'
+    en: 'Store the position and orientation of content and camera in GeoPose. Gives: the same placement works across devices and apps and with drone imagery.'
+  article: ''
+keywords:
+- sijainti
+- location
+- asento
+- pose
+- ankkurointi
+- anchoring
+- ulko-AR
+- outdoor AR
+last_verified: '2026-11-14'
+todo: ''

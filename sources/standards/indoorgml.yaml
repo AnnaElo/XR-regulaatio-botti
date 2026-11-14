@@ -1,0 +1,47 @@
+id: indoorgml
+type: standard
+category: geospatial
+name:
+  fi: IndoorGML (sisätilojen paikkatieto ja navigointi)
+  en: IndoorGML (indoor spatial data and navigation)
+publisher: Open Geospatial Consortium
+availability: open
+version: 2.0 Part 1; 1.1
+status:
+  fi: IndoorGML 2.0 Part 1 Conceptual Model julkaistu 26.6.2025; versio 1.1 julkaistu 5.11.2020.
+  en: IndoorGML 2.0 Part 1 Conceptual Model published 26 Jun 2025; version 1.1 published 5 Nov 2020.
+summary:
+  fi: Sisätilojen tilat, yhteydet ja reitit navigointia varten (esim. sairaala, museo, kampus, tehdas).
+  en: Indoor spaces, connections and routes for navigation (e.g. hospital, museum, campus, factory).
+jurisdiction: global
+use_cases: [culture, healthcare, education, industry]
+content_sources: [laser-scanning, phone-camera]
+primary_sources:
+- title: OGC, IndoorGML 2.0 Part 1 – Conceptual Model
+  url: https://docs.ogc.org/is/22-045r5/22-045r5.html
+- title: OGC, IndoorGML 1.1
+  url: https://docs.ogc.org/is/19-011r4/19-011r4.html
+related_regulation:
+- id: en301549
+  relation:
+    fi: Esteettömät reitit (esim. hissit, rampit) voidaan kuvata tietomallissa ja tarjota saavutettavana opastuksena.
+    en: Accessible routes (e.g. lifts, ramps) can be described in the data model and offered as accessible guidance.
+applies_when:
+- condition:
+    fi: AR-opastus tai -navigointi toimii sisätiloissa, esim. museon kierros, sairaalan reittiopastus, kampuksen tai tehtaan opastus.
+    en: AR guidance or navigation works indoors, e.g. a museum tour, hospital wayfinding, campus or factory guidance.
+  obligation:
+    fi: 'Kuvaa tilat ja reitit IndoorGML:llä ja ankkuroi AR-sisältö tiloihin. Antaa: sama tilamalli kelpaa usealle sovellukselle ja esteettömälle reititykselle.'
+    en: 'Describe spaces and routes in IndoorGML and anchor AR content to spaces. Gives: one spatial model serves several apps and accessible routing.'
+  article: ''
+keywords:
+- sisätila
+- indoor
+- navigointi
+- navigation
+- reittiopastus
+- wayfinding
+- museo
+- sairaala
+last_verified: '2026-11-14'
+todo: ''

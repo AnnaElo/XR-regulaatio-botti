@@ -1,0 +1,55 @@
+id: mdr
+type: eu-legislation
+name:
+  fi: Lääkinnällisiä laitteita koskeva asetus (MDR)
+  en: Medical Device Regulation (MDR)
+reference:
+  fi: Asetus (EU) 2017/745
+  en: Regulation (EU) 2017/745
+status:
+  fi: Sovellettu 26.5.2021 alkaen
+  en: Applied since 26 May 2021
+summary:
+  fi: Ohjelmisto, myös XR-sovellus, voi olla lääkinnällinen laite, jos valmistaja on tarkoittanut sen esim. sairauden diagnosointiin, hoitoon, seurantaan tai lievitykseen.
+  en: Software, including an XR app, can be a medical device if the manufacturer intends it e.g. for diagnosing, treating, monitoring or alleviating disease.
+jurisdiction: EU
+use_cases: [healthcare]
+content_sources: []
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2017/745
+  url: https://eur-lex.europa.eu/eli/reg/2017/745/oj
+- title: Euroopan komissio, MDR:n yhdenmukaistetut standardit
+  url: https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/harmonised-standards/medical-devices_en
+finland:
+  authority:
+    fi: Lääkealan turvallisuus- ja kehittämiskeskus Fimea
+    en: Finnish Medicines Agency Fimea
+  national_guidance:
+  - title: Finlex, laki lääkinnällisistä laitteista 719/2021
+    url: https://www.finlex.fi/fi/lainsaadanto/2021/719
+applies_when:
+- condition:
+    fi: Terveydenhuollon XR-sovellusta käytetään potilaan diagnosointiin, hoitoon, kuntoutukseen, seurantaan tai hoitopäätösten tukena (esim. VR-kipuhoito, kuntoutusharjoitteet, leikkauksen suunnittelu potilaan kuvista).
+    en: A healthcare XR app is used for a patient's diagnosis, treatment, rehabilitation, monitoring or to support care decisions (e.g. VR pain therapy, rehabilitation exercises, surgical planning from patient images).
+  obligation:
+    fi: Selvitä käyttötarkoituksen perusteella, onko sovellus lääkinnällinen laite, ja sen riskiluokka ohjelmistoja koskevan luokitussäännön mukaan. Jos on, tarvitaan vaatimustenmukaisuuden arviointi, laatujärjestelmä, kliininen arviointi ja CE-merkintä.
+    en: Determine from the intended purpose whether the app is a medical device and its risk class under the classification rule for software. If so, conformity assessment, a quality system, clinical evaluation and CE marking are needed.
+  article: art. 2(1), liite VIII sääntö 11
+- condition:
+    fi: XR-sovellus on tarkoitettu vain yleiseen hyvinvointiin, koulutukseen tai terveydenhuollon henkilöstön harjoitteluun ilman potilaskohtaista käyttöä.
+    en: The XR app is intended only for general wellbeing, education or training of healthcare staff without patient-specific use.
+  obligation:
+    fi: Ei yleensä lääkinnällinen laite, mutta markkinointiväitteet ratkaisevat. Vältä hoitoon tai diagnoosiin viittaavia väitteitä, ellei sovellusta ole arvioitu laitteena.
+    en: Usually not a medical device, but marketing claims decide. Avoid claims about treatment or diagnosis unless the app has been assessed as a device.
+  article: art. 2(1), art. 2(12)
+keywords:
+- lääkinnällinen laite
+- medical device
+- terveydenhuolto
+- healthcare
+- kuntoutus
+- rehabilitation
+- CE-merkintä
+- Fimea
+last_verified: '2026-11-14'
+todo: Artiklaviittaukset (art. 2(1), 2(12), liite VIII sääntö 11) tarkistettu vain otsikkotasolla EUR-Lexistä; varmista artiklatekstistä. Lisää Fimean ohjesivu ohjelmistoista (fimea.fi ei avautunut tarkistuksessa) ja MDCG 2019-11 -ohje ensisijaisesta lähteestä.

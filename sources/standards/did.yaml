@@ -5,19 +5,48 @@ name:
   fi: Decentralized Identifiers (DID)
   en: Decentralized Identifiers (DID)
 publisher: W3C
+availability: open
+version: v1.0 (Recommendation), v1.1 (Candidate Recommendation)
 status:
-  fi: v1.0 suositus 19.7.2022, v1.1 ehdokassuositus 5.3.2026
-  en: v1.0 Recommendation 19 Jul 2022, v1.1 Candidate Recommendation 5 Mar 2026
+  fi: v1.0 suositus 19.7.2022, v1.1 ehdokassuositus (Snapshot) 5.3.2026
+  en: v1.0 Recommendation 19 Jul 2022, v1.1 Candidate Recommendation Snapshot 5 Mar 2026
 summary:
   fi: Käyttäjän oma hajautettu tunniste ilman keskitettyä rekisteriä. Ei edellytä lohkoketjua.
   en: A user-controlled decentralised identifier without a central registry. Does not require a blockchain.
 jurisdiction: global
+use_cases: []
+content_sources: []
 primary_sources:
 - title: W3C, DID v1.0
   url: https://www.w3.org/TR/did-1.0/
-- title: W3C, DID v1.1 -ehdokassuositus
-  url: https://www.w3.org/TR/2026/CR-did-1.1-20260305/
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: W3C, DID v1.1
+  url: https://www.w3.org/TR/did-1.1/
+related_regulation:
+- id: eidas
+  relation:
+    fi: EU:n digitaalisen identiteetin lompakon arkkitehtuuri (ARF) ei vaadi DID-tunnisteita. DID sopii lompakon ulkopuolisiin, avoimiin identiteettiratkaisuihin.
+    en: The EU Digital Identity Wallet architecture (ARF) does not require DIDs. DIDs suit open identity solutions outside the wallet.
+applies_when:
+- condition:
+    fi: Virtuaalimaailmassa tai -alustalla käyttäjät, avatarit, laitteet tai digitaaliset kohteet tarvitsevat pysyvän tunnisteen, joka ei ole yhden palveluntarjoajan hallussa.
+    en: In a virtual world or platform, users, avatars, devices or digital objects need a persistent identifier that no single provider controls.
+  obligation:
+    fi: 'Käytä DID-tunnisteita yhdessä Verifiable Credentials -todisteiden kanssa. Antaa: siirrettävä identiteetti alustojen välillä.'
+    en: 'Use DIDs together with Verifiable Credentials. Gives: an identity that can move between platforms.'
+  article: ''
+- condition:
+    fi: Kirjautumisen pitää toimia EU:n digitaalisen identiteetin lompakolla.
+    en: Sign-in must work with the EU Digital Identity Wallet.
+  obligation:
+    fi: DID ei ole tähän ensisijainen valinta; katso oidc (OpenID4VP) ja eidas.
+    en: DID is not the primary choice for this; see oidc (OpenID4VP) and eidas.
+  article: ''
+keywords:
+- DID
+- hajautettu identiteetti
+- decentralised identity
+- avatar
+- tunniste
+- identifier
+last_verified: '2026-11-14'
+todo: ''

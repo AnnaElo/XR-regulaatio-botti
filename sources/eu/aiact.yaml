@@ -23,6 +23,7 @@ finland:
     fi: Traficom (keskitetty yhteyspiste)
     en: Traficom (single point of contact)
   national_guidance: []
+related_standards: [c2pa, ieee-1589]
 applies_when:
 - condition:
     fi: XR-sovelluksessa on tekoälyhahmo, chatbot tai virtuaaliavustaja, jonka kanssa käyttäjä on vuorovaikutuksessa.

@@ -1,0 +1,42 @@
+id: ieee-2874
+type: standard
+category: xr-runtime
+name:
+  fi: IEEE 2874-2025 – Spatial Web -protokolla, arkkitehtuuri ja hallinta
+  en: IEEE 2874-2025 – Spatial Web Protocol, Architecture and Governance
+reference:
+  fi: IEEE 2874-2025
+  en: IEEE 2874-2025
+publisher: IEEE Standards Association
+availability: paid
+open_alternative: [geopose, did, vc]
+version: '2025'
+status:
+  fi: Voimassa (Active), hyväksytty 28.5.2025
+  en: Active, approved 28 May 2025
+summary:
+  fi: Protokolla ja arkkitehtuuri paikkaan sidotun digitaalisen sisällön ja palvelujen verkolle ("spatiaalinen web").
+  en: A protocol and architecture for a web of place-bound digital content and services ("spatial web").
+jurisdiction: global
+use_cases: [industry]
+content_sources: []
+primary_sources:
+- title: IEEE SA, IEEE 2874-2025
+  url: https://standards.ieee.org/ieee/2874/10375/
+related_regulation: []
+applies_when:
+- condition:
+    fi: Rakennetaan alustaa, jossa monen toimijan laitteet, digitaaliset kaksoset ja XR-sisältö jakavat paikkaan sidottua tietoa (esim. älykäs tehdas, satama tai kaupunki).
+    en: You build a platform where devices, digital twins and XR content of many parties share place-bound information (e.g. smart factory, port or city).
+  obligation:
+    fi: Toissijainen, maksullinen ja uusi. Voi seurata arkkitehtuurin taustana; toteutuksessa avoimet standardit (GeoPose, DID, VC, OGC API) ovat ensisijaisia.
+    en: Secondary, paid and new. Can be followed as architectural background; for implementation the open standards (GeoPose, DID, VC, OGC API) come first.
+  article: ''
+keywords:
+- spatial web
+- spatiaalinen web
+- digitaalinen kaksonen
+- HSTP
+- HSML
+last_verified: '2026-11-14'
+todo: ''

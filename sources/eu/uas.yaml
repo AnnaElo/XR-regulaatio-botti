@@ -1,0 +1,59 @@
+id: uas
+type: eu-legislation
+name:
+  fi: EU:n drooniasetukset (UAS)
+  en: EU drone regulations (UAS)
+reference:
+  fi: Täytäntöönpanoasetus (EU) 2019/947 ja delegoitu asetus (EU) 2019/945
+  en: Implementing Regulation (EU) 2019/947 and Delegated Regulation (EU) 2019/945
+status:
+  fi: Voimassa
+  en: In force
+summary:
+  fi: Miehittämättömien ilma-alusten käytön säännöt (avoin, erityinen ja sertifioitu kategoria) ja laitevaatimukset.
+  en: Rules for operating unmanned aircraft (open, specific and certified categories) and equipment requirements.
+jurisdiction: EU
+use_cases: []
+content_sources: [drone]
+primary_sources:
+- title: EUR-Lex, täytäntöönpanoasetus (EU) 2019/947
+  url: https://eur-lex.europa.eu/eli/reg/2019/947/oj
+- title: EUR-Lex, delegoitu asetus (EU) 2019/945
+  url: https://eur-lex.europa.eu/eli/reg_del/2019/945/oj
+finland:
+  authority:
+    fi: Liikenne- ja viestintävirasto Traficom
+    en: Finnish Transport and Communications Agency Traficom
+  national_guidance:
+  - title: Traficom, miehittämätön ilmailu
+    url: https://www.traficom.fi/fi/miehittamaton-ilmailu
+  - title: Traficom, UAS-ilmatilavyöhykkeet koneluettavassa muodossa
+    url: https://www.traficom.fi/fi/miehittamaton-ilmailu/uas-ilmatilavyohykkeet-koneluettavassa-muodossa
+  - title: Finlex, ilmailulaki 864/2014
+    url: https://www.finlex.fi/fi/lainsaadanto/2014/864
+applies_when:
+- condition:
+    fi: XR-sisällön lähtöaineisto kuvataan droonilla, jossa on kamera tai muu tietoja keräävä anturi, tai drooni painaa vähintään 250 g.
+    en: Source material for XR content is captured with a drone that has a camera or other data-collecting sensor, or weighs 250 g or more.
+  obligation:
+    fi: Droonin käyttäjän (operaattorin) on rekisteröidyttävä Traficomin sähköisessä palvelussa ja merkittävä tunnus drooniin. Kauko-ohjaajalla on oltava kategoriaan vaadittava pätevyys.
+    en: The drone operator must register in Traficom's e-service and mark the registration number on the drone. The remote pilot must hold the competency required for the category.
+  article: art. 14(5)
+- condition:
+    fi: Kuvauslento tehdään taajamassa, ihmisten lähellä, lentoaseman lähellä tai muulla rajoitetulla alueella.
+    en: The survey flight is over a built-up area, near people, near an airport or in another restricted area.
+  obligation:
+    fi: Tarkista UAS-ilmatilavyöhykkeet ja lentokategoria ennen lentoa; erityiskategoriassa tarvitaan Traficomin toimilupa tai vakioskenaarion ilmoitus.
+    en: Check UAS geographical zones and the operating category before the flight; the specific category needs an authorisation from Traficom or a declaration under a standard scenario.
+  article: ''
+keywords:
+- drooni
+- drone
+- UAS
+- kuvauslento
+- survey flight
+- Traficom
+- operaattori
+- rekisteröinti
+last_verified: '2026-11-14'
+todo: Lisää EASA:n ja Traficomin linkit kategoriakohtaisiin ohjeisiin. Art. 14(5) tarkistettu EUR-Lexistä; muut artiklat tarkistettava.

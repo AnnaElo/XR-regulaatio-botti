@@ -1,0 +1,48 @@
+id: hanim
+type: standard
+category: 3d-content
+name:
+  fi: HAnim – Humanoid Animation (avatarit ja liikedata)
+  en: HAnim – Humanoid Animation (avatars and motion data)
+reference:
+  fi: ISO/IEC 19774-1:2019 ja 19774-2:2019
+  en: ISO/IEC 19774-1:2019 and 19774-2:2019
+publisher: Web3D Consortium · ISO/IEC
+availability: open
+version: '2.0'
+status:
+  fi: Versio 2.0, kansainvälinen standardi 11/2019. Web3D julkaisee maksutta.
+  en: Version 2.0, International Standard Nov 2019. Published free of charge by Web3D.
+summary:
+  fi: Ihmishahmon luurangon, nivelten ja liikedatan yhtenäinen kuvaus (osa 1 arkkitehtuuri, osa 2 liikedata).
+  en: A common description of a humanoid skeleton, joints and motion data (part 1 architecture, part 2 motion data).
+jurisdiction: global
+use_cases: [healthcare, education, culture]
+content_sources: [3d-artist, ai-generated]
+primary_sources:
+- title: Web3D Consortium, Standards (HAnim ISO/IEC 19774)
+  url: https://www.web3d.org/standards
+related_regulation:
+- id: gdpr
+  relation:
+    fi: Todellisen ihmisen liikekaappausdata voi olla henkilötietoa ja tunnistamiseen käytettynä biometristä tietoa.
+    en: Motion capture data of a real person may be personal data, and biometric data when used for identification.
+applies_when:
+- condition:
+    fi: Hankkeessa käytetään ihmishahmoja, joiden liikkeitä siirretään työkalujen välillä tai jotka perustuvat liikekaappaukseen (esim. kuntoutus, ergonomia-analyysi, tanssin tai perinteen tallentaminen).
+    en: The project uses humanoid characters whose motion moves between tools or is based on motion capture (e.g. rehabilitation, ergonomics analysis, recording dance or tradition).
+  obligation:
+    fi: 'Käytä HAnim-luurankoa ja -liikedataa (myös X3D:n kautta). Antaa: liikedata on vertailukelpoista ja siirrettävää eri hahmojen ja ohjelmien välillä.'
+    en: 'Use the HAnim skeleton and motion data (also via X3D). Gives: comparable motion data that transfers between characters and software.'
+  article: ''
+keywords:
+- avatar
+- hahmo
+- humanoid
+- liikekaappaus
+- motion capture
+- luuranko
+- skeleton
+- kuntoutus
+last_verified: '2026-11-14'
+todo: ''

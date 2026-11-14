@@ -1,0 +1,54 @@
+id: wasm
+type: standard
+category: xr-runtime
+name:
+  fi: WebAssembly (Wasm)
+  en: WebAssembly (Wasm)
+publisher: W3C
+availability: open
+version: '3.0'
+status:
+  fi: Core Specification, release 3.0. W3C Candidate Recommendation Draft 6.11.2026 (aiempi 1.0 on W3C-suositus).
+  en: Core Specification, release 3.0. W3C Candidate Recommendation Draft 6 Nov 2026 (the earlier 1.0 is a W3C Recommendation).
+summary:
+  fi: Selaimissa ja muissa ympäristöissä ajettava tehokas binäärimuoto. Mahdollistaa esim. C++-, Rust- tai pelimoottorikoodin ajamisen selaimessa lähes natiivinopeudella.
+  en: An efficient binary format that runs in browsers and other environments. Lets e.g. C++, Rust or game engine code run in the browser at near-native speed.
+jurisdiction: global
+use_cases: []
+content_sources: []
+primary_sources:
+- title: W3C, WebAssembly Core Specification
+  url: https://www.w3.org/TR/wasm-core-2/
+- title: WebAssembly Community Group, WebAssembly Specification (uusin julkaisu)
+  url: https://webassembly.github.io/spec/core/
+related_regulation:
+- id: cra
+  relation:
+    fi: Wasm-moduulit ja niiden kirjastot ovat osa ohjelmiston toimitusketjua; CRA:n haavoittuvuuksien hallinta koskee myös niitä.
+    en: Wasm modules and their libraries are part of the software supply chain; CRA vulnerability handling also covers them.
+applies_when:
+- condition:
+    fi: Selaimessa toimivan XR-kokemuksen pitää ajaa raskasta laskentaa (fysiikka, pistepilvien käsittely, pakkauksen purku) tai pelimoottorin web-vienti (Unity, Godot, Unreal-pohjaiset).
+    en: A browser XR experience must run heavy computation (physics, point cloud processing, decompression) or a game engine web export (Unity, Godot, Unreal-based).
+  obligation:
+    fi: 'Käännä laskenta WebAssemblyksi ja käytä sitä WebXR:n ja WebGPU:n rinnalla. Antaa: natiivin kaltainen suorituskyky ilman asennusta.'
+    en: 'Compile computation to WebAssembly and use it alongside WebXR and WebGPU. Gives: near-native performance without installation.'
+  article: ''
+- condition:
+    fi: Virtuaalimaailmassa tai -alustalla käyttäjät tai kolmannet osapuolet tuovat omaa ohjelmakoodia (skriptejä, laajennuksia).
+    en: In a virtual world or platform, users or third parties bring their own code (scripts, plug-ins).
+  obligation:
+    fi: Aja ulkopuolinen koodi Wasm-hiekkalaatikossa, jolla on rajatut oikeudet.
+    en: Run external code in a Wasm sandbox with limited permissions.
+  article: ''
+keywords:
+- WebAssembly
+- Wasm
+- selain
+- browser
+- suorituskyky
+- performance
+- web-vienti
+- web export
+last_verified: '2026-11-14'
+todo: ''

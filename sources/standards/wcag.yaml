@@ -1,0 +1,43 @@
+id: wcag
+type: standard
+category: accessibility
+name:
+  fi: Web Content Accessibility Guidelines (WCAG) 2.2
+  en: Web Content Accessibility Guidelines (WCAG) 2.2
+publisher: W3C
+availability: open
+version: '2.2'
+status:
+  fi: W3C-suositus, viimeisin päivitys 12.12.2024
+  en: W3C Recommendation, latest update 12 Dec 2024
+summary:
+  fi: Verkkosisällön saavutettavuusohjeet (tasot A, AA, AAA). EN 301 549 viittaa WCAG-vaatimuksiin.
+  en: Web content accessibility guidelines (levels A, AA, AAA). EN 301 549 refers to the WCAG requirements.
+jurisdiction: global
+use_cases: []
+content_sources: []
+primary_sources:
+- title: W3C, WCAG 2.2
+  url: https://www.w3.org/TR/WCAG22/
+related_regulation:
+- id: eaa
+  relation:
+    fi: Esteettömyysdirektiivin ja Suomen lain 306/2019 vaatimukset osoitetaan EN 301 549:llä, joka sisältää WCAG:n AA-tason vaatimukset.
+    en: Requirements of the Accessibility Act and Finnish Act 306/2019 are shown with EN 301 549, which contains the WCAG level AA requirements.
+applies_when:
+- condition:
+    fi: XR-kokemus avataan verkkosivulta tai sillä on 2D-käyttöliittymä (valikot, ohjeet, tekstitykset), esim. WebXR-sovellus.
+    en: The XR experience is opened from a web page or has a 2D interface (menus, instructions, captions), e.g. a WebXR app.
+  obligation:
+    fi: 'Täytä WCAG 2.2 AA verkkosivulle ja 2D-käyttöliittymälle (kontrastit, näppäimistökäyttö, tekstitykset, ei välkkyvää sisältöä). Antaa: kansainvälisesti tunnettu tarkistuslista.'
+    en: 'Meet WCAG 2.2 AA for the web page and 2D interface (contrast, keyboard access, captions, no flashing content). Gives: an internationally recognised checklist.'
+  article: ''
+keywords:
+- WCAG
+- saavutettavuus
+- accessibility
+- tekstitys
+- captions
+- kontrasti
+last_verified: '2026-11-14'
+todo: ''

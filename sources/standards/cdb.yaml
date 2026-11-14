@@ -1,0 +1,39 @@
+id: cdb
+type: standard
+category: geospatial
+name:
+  fi: OGC CDB (simulaatioympäristöjen tietovarasto)
+  en: OGC CDB (synthetic environment data store)
+publisher: Open Geospatial Consortium
+availability: open
+version: '2.0'
+status:
+  fi: CDB Version 2 – Part 1 Core (23-034); julkaisupäivä tarkistamatta
+  en: CDB Version 2 – Part 1 Core (23-034); publication date not verified
+summary:
+  fi: Versioitava, yhtenäinen virtuaalinen maapallon malli ja tietovarasto reaaliaikaisiin hajautettuihin simulaatioihin (esim. lento- ja ajosimulaattorit).
+  en: A versionable single virtual representation of the earth and data store for real-time distributed simulation (e.g. flight and driving simulators).
+jurisdiction: global
+use_cases: [industry, education]
+content_sources: [drone, laser-scanning]
+primary_sources:
+- title: OGC, CDB Standard
+  url: https://www.ogc.org/standard/cdb/
+related_regulation: []
+applies_when:
+- condition:
+    fi: Rakennetaan laajaa koulutus- tai harjoitussimulaatiota (esim. ajoneuvo-, lento- tai pelastussimulaatio), jossa usea simulaattori jakaa saman maastomallin.
+    en: You build a large training simulation (e.g. vehicle, flight or rescue simulation) where several simulators share the same terrain model.
+  obligation:
+    fi: Harkitse CDB:tä maasto- ja kohdeaineiston varastona. Kevyempiin XR-sovelluksiin 3D Tiles tai I3S ovat yleensä riittäviä.
+    en: Consider CDB as the store for terrain and feature data. For lighter XR apps, 3D Tiles or I3S are usually enough.
+  article: ''
+keywords:
+- simulaatio
+- simulation
+- simulaattori
+- maastomalli
+- terrain
+- koulutus
+last_verified: '2026-11-14'
+todo: Lisää linkki CDB 2.0 Part 1 -dokumenttiin ja julkaisupäivä.

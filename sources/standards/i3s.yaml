@@ -1,0 +1,41 @@
+id: i3s
+type: standard
+category: geospatial
+name:
+  fi: I3S – Indexed 3D Scene Layers
+  en: I3S – Indexed 3D Scene Layers
+publisher: Esri · OGC:n yhteisöstandardi (Community Standard)
+availability: open
+version: '1.3'
+status:
+  fi: OGC Community Standard, versio 1.3, julkaistu 11.1.2023. Lisenssi CC BY-SA 4.0.
+  en: OGC Community Standard, version 1.3, published 11 Jan 2023. Licence CC BY-SA 4.0.
+summary:
+  fi: Suurten 3D-aineistojen (rakennukset, mesh-mallit, pistepilvet) suoratoistomuoto, erityisesti Esrin ArcGIS-ympäristössä. Vaihtoehto 3D Tilesille.
+  en: A streaming format for large 3D datasets (buildings, meshes, point clouds), especially in Esri's ArcGIS environment. An alternative to 3D Tiles.
+jurisdiction: global
+use_cases: [industry, culture]
+content_sources: [drone, laser-scanning]
+primary_sources:
+- title: OGC, I3S and Scene Layer Package Community Standard 1.3
+  url: https://docs.ogc.org/cs/17-014r9/17-014r9.html
+- title: Esri, I3S-spesifikaatio (GitHub)
+  url: https://github.com/Esri/i3s-spec
+related_regulation: []
+applies_when:
+- condition:
+    fi: Kaupungin, organisaation tai kumppanin paikkatietoympäristö on ArcGIS, ja drooni- tai keilausaineistot jaetaan sieltä XR-näkymään.
+    en: The city's, organisation's or partner's GIS environment is ArcGIS, and drone or scanning data is shared from there to an XR view.
+  obligation:
+    fi: 'Käytä I3S-muotoa (scene layer / .slpk) ArcGIS-ympäristössä; muissa ympäristöissä 3D Tiles on yleisempi. Antaa: suora yhteensopivuus olemassa olevien paikkatietoaineistojen kanssa.'
+    en: 'Use I3S (scene layer / .slpk) in ArcGIS environments; elsewhere 3D Tiles is more common. Gives: direct compatibility with existing GIS data.'
+  article: ''
+keywords:
+- I3S
+- scene layer
+- SLPK
+- ArcGIS
+- suoratoisto
+- streaming
+last_verified: '2026-11-14'
+todo: ''

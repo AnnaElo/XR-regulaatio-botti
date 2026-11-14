@@ -5,17 +5,37 @@ name:
   fi: Web Platform Design Principles
   en: Web Platform Design Principles
 publisher: W3C, Technical Architecture Group
+availability: open
+version: Group Note 2026-11-02
 status:
-  fi: Ohjeistus (W3C Group Note), ei standardi
-  en: Guidance (W3C Group Note), not a standard
+  fi: Ohjeistus (W3C Group Note 2.11.2026), ei standardi
+  en: Guidance (W3C Group Note, 2 Nov 2026), not a standard
 summary:
   fi: Web-ratkaisujen suunnitteluperiaatteet, mm. käyttäjälähtöisyys, laiteriippumattomuus ja tietojen minimointi.
   en: Design principles for web solutions, including user focus, device independence and data minimisation.
 jurisdiction: global
+use_cases: []
+content_sources: []
 primary_sources:
 - title: W3C, Web Platform Design Principles
   url: https://www.w3.org/TR/design-principles/
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+related_regulation:
+- id: gdpr
+  relation:
+    fi: Tietojen minimointi ja käyttäjän etusijalla pitäminen tukevat sisäänrakennettua tietosuojaa (art. 25).
+    en: Data minimisation and putting users first support data protection by design (Art. 25).
+applies_when:
+- condition:
+    fi: Rakennetaan omaa web-rajapintaa, kirjastoa tai alustaa XR-sisällölle (ei pelkkä yksittäinen sovellus).
+    en: You build your own web API, library or platform for XR content (not just a single app).
+  obligation:
+    fi: 'Käytä periaatteita suunnittelun tarkistuslistana. Antaa: perustellut ratkaisut mm. yksityisyyteen, laiteriippumattomuuteen ja yhteensopivuuteen.'
+    en: 'Use the principles as a design checklist. Gives: well-founded choices on privacy, device independence and compatibility, among others.'
+  article: ''
+keywords:
+- suunnitteluperiaatteet
+- design principles
+- web-alusta
+- tietojen minimointi
+last_verified: '2026-11-14'
+todo: ''

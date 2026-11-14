@@ -18,17 +18,27 @@ primary_sources:
   url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
 - title: Euroopan komissio, Cyber Resilience Act
   url: https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+- title: Euroopan komissio, Cyber Resilience Act – Open source
+  url: https://digital-strategy.ec.europa.eu/en/policies/cra-open-source
 finland:
   authority:
     fi: null
     en: null
   national_guidance: []
+related_standards: [openxr]
 applies_when:
 - condition:
-    fi: EU:ssa myydään digitaalisia tuotteita, esim. XR-laitteita tai -ohjelmistoja.
-    en: Digital products, e.g. XR devices or software, are sold in the EU.
+    fi: EU:ssa saatetaan markkinoille digitaalisia tuotteita kaupallisessa toiminnassa, esim. XR-laitteita tai myytäviä tai muuten rahallistettuja XR-ohjelmistoja.
+    en: Digital products are placed on the EU market in the course of a commercial activity, e.g. XR devices or XR software that is sold or otherwise monetised.
   obligation: null
   article: null
+- condition:
+    fi: Ohjelmisto on ilmaista tai avointa lähdekoodia eikä tekijä rahallista sitä (esim. museon tai hankkeen ilmainen verkkopeli, avoimen lähdekoodin kirjasto).
+    en: The software is free or open source and not monetised by its maker (e.g. a free web game of a museum or project, an open source library).
+  obligation:
+    fi: 'Komission mukaan CRA koskee vain avointa lähdekoodia, joka asetetaan saataville kaupallisen toiminnan yhteydessä; tekijänsä rahallistamaton avoin lähdekoodi ei ole kaupallista toimintaa. Arvioi rahoitusmalli tapauskohtaisesti ja kerro, ettei botti voi ratkaista asiaa.'
+    en: 'According to the Commission, the CRA only covers open source software made available in the course of a commercial activity; open source not monetised by its maker is not a commercial activity. Assess the funding model case by case and say that the bot cannot decide the matter.'
+  article: ''
 keywords: []
 last_verified: ''
 todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).

@@ -1,0 +1,47 @@
+id: pointcloud
+type: standard
+category: reality-capture
+name:
+  fi: LAS 1.4 ja COPC (pistepilvet)
+  en: LAS 1.4 and COPC (point clouds)
+publisher: ASPRS (LAS) · Hobu Inc. ja yhteisö (COPC)
+availability: open
+version: LAS 1.4; COPC 1.0
+status:
+  fi: LAS 1.4 hyväksytty 14.11.2011 (viimeisin ASPRS:n hyväksymä versio); COPC 1.0 (2021)
+  en: LAS 1.4 approved 14 Nov 2011 (latest version approved by ASPRS); COPC 1.0 (2021)
+summary:
+  fi: LAS on laserkeilaus- ja fotogrammetriapistepilvien vakiomuoto. COPC on LAS-yhteensopiva muoto, jota voi lukea osissa suoraan verkosta.
+  en: LAS is the standard format for laser-scanning and photogrammetric point clouds. COPC is a LAS-compatible format that can be read in parts directly over the web.
+jurisdiction: global
+use_cases: [industry, culture]
+content_sources: [laser-scanning, drone]
+primary_sources:
+- title: ASPRS, LAS file format exchange activities
+  url: https://www.asprs.org/divisions-committees/lidar-division/laser-las-file-format-exchange-activities
+- title: Cloud Optimized Point Cloud Specification 1.0
+  url: https://copc.io/
+related_regulation:
+- id: gdpr
+  relation:
+    fi: Pistepilveen voi tallentua ihmisiä, rekisterikilpiä tai yksityistiloja. Ks. use-cases/reality-capture.
+    en: People, licence plates or private spaces may be captured in a point cloud. See use-cases/reality-capture.
+applies_when:
+- condition:
+    fi: Kohde mitataan laserkeilaimella (maasta, droonista tai mobiilisti) tai fotogrammetrialla, ja tulos on pistepilvi.
+    en: A site is measured with a laser scanner (terrestrial, drone or mobile) or photogrammetry and the result is a point cloud.
+  obligation:
+    fi: 'Arkistoi ja siirrä pistepilvet LAS/LAZ-muodossa; verkkojakeluun käytä COPC:ta tai muunna 3D Tilesiksi XR-katselua varten. Antaa: laitevalmistajasta riippumaton aineisto.'
+    en: 'Archive and transfer point clouds as LAS/LAZ; for web delivery use COPC or convert to 3D Tiles for XR viewing. Gives: data independent of the scanner vendor.'
+  article: ''
+keywords:
+- pistepilvi
+- point cloud
+- laserkeilaus
+- laser scanning
+- lidar
+- LAS
+- LAZ
+- COPC
+last_verified: '2026-11-14'
+todo: E57-muoto (ASTM E2807) on maksullinen, ks. astm-e57.

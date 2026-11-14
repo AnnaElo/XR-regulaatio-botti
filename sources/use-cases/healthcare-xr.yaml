@@ -1,0 +1,59 @@
+id: healthcare-xr
+type: use-case-guidance
+name:
+  fi: Terveydenhuollon XR (potilaskäyttö, kuntoutus, koulutus)
+  en: Healthcare XR (patient use, rehabilitation, training)
+summary:
+  fi: Ratkaisevaa on käyttötarkoitus. Potilaan hoitoon tai diagnoosiin tarkoitettu XR voi olla lääkinnällinen laite, ja potilastiedot ovat erityisiä henkilötietoryhmiä.
+  en: The intended purpose is decisive. XR intended for patient care or diagnosis may be a medical device, and patient data is special category data.
+jurisdiction: EU
+use_cases: [healthcare]
+content_sources: []
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2017/745 (MDR)
+  url: https://eur-lex.europa.eu/eli/reg/2017/745/oj
+- title: EUR-Lex, asetus (EU) 2025/327 (EHDS)
+  url: https://eur-lex.europa.eu/eli/reg/2025/327/oj
+- title: Finlex, laki lääkinnällisistä laitteista 719/2021
+  url: https://www.finlex.fi/fi/lainsaadanto/2021/719
+finland:
+  authority:
+    fi: Fimea (lääkinnälliset laitteet), tietosuojavaltuutetun toimisto (potilastiedot)
+    en: Fimea (medical devices), Office of the Data Protection Ombudsman (patient data)
+  national_guidance: []
+related_documents: [mdr, ehds, gdpr, aiact, dicom, fhir, medical-device-standards, ieee-3079, iso-iec-5927, digipalvelulaki]
+applies_when:
+- condition:
+    fi: XR on tarkoitettu potilaan hoitoon, kuntoutukseen, diagnoosiin tai hoidon suunnitteluun.
+    en: XR is intended for patient treatment, rehabilitation, diagnosis or care planning.
+  obligation:
+    fi: Ks. mdr ja medical-device-standards. Jos laitteessa on tekoälyä, siihen voivat soveltua tekoälyasetuksen suuririskisten järjestelmien vaatimukset 2.8.2028 alkaen.
+    en: See mdr and medical-device-standards. If the device includes AI, AI Act high-risk requirements may apply from 2 Aug 2028.
+  article: MDR art. 2(1); AI Act art. 6(1), liite I
+- condition:
+    fi: Sovellus käsittelee potilaan terveystietoja tai kuvantamisaineistoa.
+    en: The app processes patient health data or imaging data.
+  obligation:
+    fi: Terveystiedot ovat erityisiä henkilötietoryhmiä; tarvitaan art. 9 -peruste ja vaikutustenarviointi. Käytä DICOM- ja FHIR-standardeja ja seuraa EHDS:n soveltamisaikataulua.
+    en: Health data is special category data; an Art. 9 basis and a DPIA are needed. Use DICOM and FHIR and follow the EHDS timetable.
+  article: GDPR art. 9, 35
+- condition:
+    fi: VR:ää käyttävät potilaat, iäkkäät tai lapset.
+    en: VR is used by patients, older people or children.
+  obligation:
+    fi: Arvioi pahoinvoinnin ja kaatumisen riskit sekä hygienia; tueksi ISO/IEC 5927 ja IEEE 3079 (maksullisia) sekä XAUR (avoin).
+    en: Assess risks of motion sickness, falls and hygiene; supported by ISO/IEC 5927 and IEEE 3079 (paid) and XAUR (open).
+  article: ''
+keywords:
+- terveydenhuolto
+- healthcare
+- potilas
+- patient
+- kuntoutus
+- rehabilitation
+- lääkinnällinen laite
+- medical device
+- sairaala
+- hospital
+last_verified: '2026-11-14'
+todo: Lisää Fimean ohjesivu ohjelmistoista lääkinnällisinä laitteina (fimea.fi ei avautunut tarkistuksessa).

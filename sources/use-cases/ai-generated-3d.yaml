@@ -1,0 +1,50 @@
+id: ai-generated-3d
+type: use-case-guidance
+name:
+  fi: Tekoälyllä tuotetut 3D-mallit, tekstuurit ja hahmot
+  en: AI-generated 3D models, textures and characters
+summary:
+  fi: Tekoälyn tuottama sisältö on merkittävä koneluettavasti, ja opetusaineiston ja tuotosten tekijänoikeudet on selvitettävä.
+  en: AI-generated content must be marked in a machine-readable way, and copyright of training data and outputs must be checked.
+jurisdiction: EU
+use_cases: [education, culture, industry, healthcare]
+content_sources: [ai-generated]
+primary_sources:
+- title: EUR-Lex, tekoälyasetus (EU) 2024/1689
+  url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- title: EUR-Lex, tekijänoikeusdirektiivi (EU) 2019/790
+  url: https://eur-lex.europa.eu/eli/dir/2019/790/oj
+finland:
+  authority:
+    fi: Traficom (tekoälyasetus); tekijänoikeusasioissa opetus- ja kulttuuriministeriö
+    en: Traficom (AI Act); copyright matters, Ministry of Education and Culture
+  national_guidance: []
+related_documents: [aiact, c2pa, gltf]
+applies_when:
+- condition:
+    fi: XR-sovellus tai sen sisällöntuotantoputki tuottaa tekoälyllä 3D-malleja, tekstuureja, ääntä tai hahmoja, joita käyttäjät näkevät.
+    en: The XR app or its content pipeline generates 3D models, textures, audio or characters with AI that users see.
+  obligation:
+    fi: Tekoälyjärjestelmän tarjoajan on merkittävä tuotos koneluettavasti keinotekoiseksi; todellisia ihmisiä, paikkoja tai tapahtumia jäljittelevä deepfake on ilmoitettava. Käytä esim. C2PA-alkuperätietoa ja näkyvää merkintää.
+    en: The provider of the AI system must mark the output as artificial in a machine-readable way; deepfakes imitating real people, places or events must be disclosed. Use e.g. C2PA provenance and a visible label.
+  article: AI Act art. 50(2), 50(4)
+- condition:
+    fi: Hanke opettaa tai hienosäätää omaa mallia esim. museon kokoelmilla, 3D-artistien malleilla tai verkosta kerätyllä aineistolla.
+    en: The project trains or fine-tunes its own model on e.g. museum collections, 3D artists' models or data collected from the web.
+  obligation:
+    fi: Tekstin- ja tiedonlouhinta on sallittua, ellei oikeudenhaltija ole koneluettavasti kieltänyt sitä. Tarkista aineiston lisenssit ja kiellot, ja dokumentoi aineiston alkuperä.
+    en: Text and data mining is allowed unless the rightholder has reserved it in a machine-readable way. Check licences and opt-outs and document data provenance.
+  article: direktiivi (EU) 2019/790 art. 4
+keywords:
+- tekoäly
+- AI
+- generatiivinen
+- generative
+- 3D-generointi
+- tekijänoikeus
+- copyright
+- merkintä
+- labelling
+- deepfake
+last_verified: '2026-11-14'
+todo: Art. 4 ja art. 50 -viittaukset tarkistettava artiklatekstistä. Lisää linkki tekijänoikeuslakiin (404/1961) ja komission tekoälysisällön merkintää koskevaan käytännesääntöön, kun se on julkaistu.

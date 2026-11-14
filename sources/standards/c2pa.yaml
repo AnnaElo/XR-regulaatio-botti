@@ -1,0 +1,52 @@
+id: c2pa
+type: standard
+category: provenance
+name:
+  fi: C2PA Content Credentials (sisällön alkuperätieto)
+  en: C2PA Content Credentials (content provenance)
+publisher: Coalition for Content Provenance and Authenticity (C2PA)
+availability: open
+version: '2.5'
+status:
+  fi: Tekninen spesifikaatio, viimeisin versio 2.5. Lisenssi CC BY 4.0.
+  en: Technical specification, latest version 2.5. Licence CC BY 4.0.
+summary:
+  fi: Kryptografisesti allekirjoitettu tieto siitä, miten mediasisältö on tehty ja muokattu, mukaan lukien tekoälyn käyttö.
+  en: Cryptographically signed information on how media content was made and edited, including use of AI.
+jurisdiction: global
+use_cases: []
+content_sources: [ai-generated, phone-camera, drone]
+primary_sources:
+- title: C2PA, Content Credentials – C2PA Technical Specification
+  url: https://spec.c2pa.org/specifications/specifications/2.5/index.html
+related_regulation:
+- id: aiact
+  relation:
+    fi: Tekoälyasetuksen art. 50(2) edellyttää, että tekoälyn tuottama sisältö merkitään koneluettavasti. Asetus ei nimeä C2PA:ta, mutta se on yksi tapa toteuttaa merkintä.
+    en: AI Act Art. 50(2) requires AI-generated content to be marked in a machine-readable way. The Act does not name C2PA, but it is one way to implement the marking.
+applies_when:
+- condition:
+    fi: Sovellus tai työnkulku tuottaa tekoälyllä kuvia, videoita, tekstuureja tai 3D-malleja, joita näytetään muille.
+    en: The app or workflow generates images, video, textures or 3D models with AI that are shown to others.
+  obligation:
+    fi: 'Liitä sisältöön C2PA-alkuperätieto (manifest), jossa tekoälyn käyttö on merkitty. Antaa: koneluettava merkintä, joka säilyy jakelussa.'
+    en: 'Attach a C2PA manifest to the content stating the use of AI. Gives: a machine-readable marking that travels with the content.'
+  article: ''
+- condition:
+    fi: Dokumentaarinen aineisto (esim. droonikuvat, kulttuuriperintökohteen kuvaus) pitää pystyä erottamaan muokatusta tai generoidusta sisällöstä.
+    en: Documentary material (e.g. drone images, heritage site capture) must be distinguishable from edited or generated content.
+  obligation:
+    fi: Allekirjoita alkuperäinen aineisto ja kirjaa muokkaukset C2PA-manifestiin.
+    en: Sign the original material and record edits in the C2PA manifest.
+  article: ''
+keywords:
+- alkuperä
+- provenance
+- tekoälyllä tuotettu
+- AI-generated
+- merkintä
+- watermark
+- vesileima
+- deepfake
+last_verified: '2026-11-14'
+todo: Tarkista, tukeeko C2PA glTF-/3D-tiedostoja suoraan (versiohistoria).

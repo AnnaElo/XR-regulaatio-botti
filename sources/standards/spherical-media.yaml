@@ -1,0 +1,57 @@
+id: spherical-media
+type: standard
+category: reality-capture
+name:
+  fi: 360-kuvat ja -videot (pallomainen media)
+  en: 360° images and video (spherical media)
+publisher: Google (Spherical Video V2, avoin dokumentti) · ISO (XMP) · ISO/IEC MPEG (OMAF)
+availability: open
+version: Spherical Video V2 RFC
+status:
+  fi: 'Avoin, mutta ei standardointijärjestön standardi: Googlen Spherical Video V2 -metatietokuvaus MP4- ja WebM-tiedostoille. Maksullisia vaihtoehtoja: XMP (ISO 16684-1:2019) ja MPEG-I OMAF (ISO/IEC 23090-2).'
+  en: 'Open, but not a standards-body standard: Google''s Spherical Video V2 metadata scheme for MP4 and WebM files. Paid alternatives: XMP (ISO 16684-1:2019) and MPEG-I OMAF (ISO/IEC 23090-2).'
+summary:
+  fi: 360-kuvat tallennetaan yleensä equirectangular-projektiona, ja metatieto kertoo soittimelle, että kuva on pallomainen. Ilman metatietoa kuva näkyy litteänä.
+  en: 360° images are usually stored as an equirectangular projection, and metadata tells the player that the image is spherical. Without metadata the image appears flat.
+jurisdiction: global
+use_cases: [culture, education, healthcare]
+content_sources: [phone-camera, drone]
+primary_sources:
+- title: Google, Spherical Video V2 RFC (spatial-media)
+  url: https://github.com/google/spatial-media/blob/master/docs/spherical-video-v2-rfc.md
+- title: ISO, ISO 16684-1:2019 XMP (maksullinen)
+  url: https://www.iso.org/standard/75163.html
+related_regulation:
+- id: gdpr
+  relation:
+    fi: 360-kuva tallentaa koko ympäristön, joten siihen päätyy helposti sivullisia ja rekisterikilpiä; ks. reality-capture.
+    en: A 360° image captures the whole surroundings, so bystanders and licence plates easily end up in it; see reality-capture.
+- id: copyright-fi
+  relation:
+    fi: Muiden ottamat 360-kuvat ovat tekijänoikeudella suojattuja valokuvia.
+    en: 360° images taken by others are copyright-protected photographs.
+applies_when:
+- condition:
+    fi: Maisemat tai kohteet kuvataan 360-kameralla ja näytetään VR-laseissa tai selaimessa.
+    en: Landscapes or sites are captured with a 360° camera and shown in VR headsets or a browser.
+  obligation:
+    fi: 'Tallenna equirectangular-muodossa ja säilytä kameran pallomainen metatieto (videoissa Spherical Video V2). Sumenna sivulliset ja rekisterikilvet. Antaa: kuva toimii eri soittimissa ja pelimoottoreissa ilman käsityötä.'
+    en: 'Store as equirectangular and keep the camera''s spherical metadata (Spherical Video V2 for video). Blur bystanders and licence plates. Gives: the image works in different players and game engines without manual work.'
+  article: ''
+- condition:
+    fi: Kuvasta halutaan liikkumisen mahdollistava 3D-malli eikä pelkkä paikallaan katsottava pallokuva.
+    en: A 3D model allowing movement is wanted instead of a fixed-viewpoint sphere image.
+  obligation:
+    fi: Harkitse fotogrammetriaa tai Gaussian splat -mallia (ks. gltf) usean kuvan perusteella; 360-kuva antaa vain yhden katselupisteen.
+    en: Consider photogrammetry or a Gaussian splat model (see gltf) from multiple images; a 360° image gives only one viewpoint.
+  article: ''
+keywords:
+- 360-kuva
+- 360 image
+- 360-video
+- pallokuva
+- equirectangular
+- panoraama
+- panorama
+last_verified: '2026-11-14'
+todo: ''

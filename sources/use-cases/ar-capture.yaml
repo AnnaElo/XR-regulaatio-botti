@@ -1,0 +1,90 @@
+id: ar-capture
+type: use-case-guidance
+name:
+  fi: AR-lasit tai puhelin, jotka kuvaavat tai skannaavat ympäristöä jatkuvasti (myös reaaliaikainen käännös)
+  en: AR glasses or phones that continuously film or scan their surroundings (incl. real-time translation)
+summary:
+  fi: Kun laite kuvaa, skannaa tai kuuntelee ympäristöä, se kerää usein myös sivullisten kuvia, puhetta ja paikkatietoa. Tällöin kehittäjän on huomioitava tietosuoja, tekoälysäännöt ja Suomen rikoslain yksityisyyden suoja.
+  en: When a device films, scans or listens to its surroundings, it often also collects bystanders' images, speech and location. The developer must then consider data protection, AI rules and the privacy protection of the Finnish Criminal Code.
+jurisdiction: FI
+use_cases: [education, culture, industry, healthcare]
+content_sources: [phone-camera]
+primary_sources:
+- title: EUR-Lex, tietosuoja-asetus (EU) 2016/679
+  url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+- title: EUR-Lex, tekoälyasetus (EU) 2024/1689
+  url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- title: Finlex, tietosuojalaki 1050/2018
+  url: https://www.finlex.fi/fi/lainsaadanto/2018/1050
+- title: Finlex, rikoslaki 39/1889 (24 luku, yksityisyyden ja kotirauhan loukkaukset)
+  url: https://www.finlex.fi/fi/lainsaadanto/1889/39
+- title: Finlex, laki yksityisyyden suojasta työelämässä 759/2004
+  url: https://www.finlex.fi/fi/lainsaadanto/2004/759
+finland:
+  authority:
+    fi: Tietosuojavaltuutetun toimisto (henkilötiedot), Traficom (tekoälyasetuksen yhteyspiste)
+    en: Office of the Data Protection Ombudsman (personal data), Traficom (AI Act single point of contact)
+  national_guidance:
+  - title: Tietosuojavaltuutetun toimisto
+    url: https://tietosuoja.fi/
+related_documents: [gdpr, aiact, dataact, cra, webxr, openxr, c2pa]
+applies_when:
+- condition:
+    fi: Laite tai sovellus käsittelee kamerakuvaa, syvyysdataa tai mikrofoniääntä, jossa voi näkyä tai kuulua muita ihmisiä, ja dataa lähetetään palvelimelle tai tallennetaan (esim. pilvessä tehtävä tunnistus tai käännös).
+    en: The device or app processes camera images, depth data or microphone audio in which other people may appear or be heard, and the data is sent to a server or stored (e.g. cloud recognition or translation).
+  obligation:
+    fi: 'Sovelluksen tarjoaja on yleensä rekisterinpitäjä sivullisten tiedoille; laitteen käyttäjän henkilökohtaisen käytön poikkeus ei kata tarjoajan omaa käsittelyä. Käsittele laitteella aina kun mahdollista, älä tallenna raakakuvaa tai -ääntä, sumenna kasvot, kerro käsittelystä ja tee vaikutustenarviointi (DPIA).'
+    en: 'The app provider is usually the controller for bystanders'' data; the household exemption for the device user does not cover the provider''s own processing. Process on the device where possible, do not store raw video or audio, blur faces, give information on the processing and carry out a DPIA.'
+  article: GDPR art. 2(2)(c), 5, 13–14, 25, 35
+- condition:
+    fi: Reaaliaikainen käännös tai tekstitys kuuntelee keskustelukumppanin puhetta.
+    en: Real-time translation or captioning listens to the speech of the person you are talking to.
+  obligation:
+    fi: 'Puhe on henkilötietoa. Kerro keskustelukumppanille (esim. näkyvä merkkivalo), älä tallenna ääntä käännöksen jälkeen, ja valitse käännöspalvelu, joka ei käytä dataa mallin opettamiseen ilman perustetta. Jos käännös tuotetaan synteettisenä puheena, arvioi tekoälyasetuksen merkintävelvoite.'
+    en: 'Speech is personal data. Inform the other person (e.g. a visible indicator light), do not keep audio after translation, and choose a translation service that does not use the data to train models without a legal basis. If the translation is output as synthetic speech, assess the AI Act marking obligation.'
+  article: GDPR art. 5(1)(c), 13–14; AI Act art. 50(2)
+- condition:
+    fi: Sovellus tunnistaa kasvoja tai ihmisiä kamerakuvasta (esim. nimen näyttäminen, henkilön tunnistaminen).
+    en: The app recognises faces or people from the camera image (e.g. showing a name, identifying a person).
+  obligation:
+    fi: Biometrinen tunnistaminen on erityisen henkilötietoryhmän käsittelyä, joka vaatii art. 9:n mukaisen perusteen jokaiselta tunnistettavalta. Kasvokuvien kohdentamaton kerääminen tunnistustietokannan rakentamiseksi on kielletty tekoälyasetuksessa.
+    en: Biometric identification is processing of special category data that needs an Art. 9 basis for every person identified. Untargeted scraping of facial images to build recognition databases is prohibited under the AI Act.
+  article: GDPR art. 9; AI Act art. 5(1)(e)
+- condition:
+    fi: Laitetta käytetään kodeissa, pukuhuoneissa, wc-tiloissa tai muissa yksityisissä tiloissa, tai sillä tallennetaan keskusteluja, joihin käyttäjä ei osallistu.
+    en: The device is used in homes, changing rooms, toilets or other private spaces, or it records conversations the user is not part of.
+  obligation:
+    fi: Suomen rikoslaki kieltää salakatselun ja salakuuntelun teknisellä laitteella sekä yksityiselämää loukkaavan tiedon levittämisen. Suunnittele tallennus- ja jakotoiminnot niin, ettei niitä käytetä huomaamatta (näkyvä tallennusilmaisin, ei automaattista jakoa).
+    en: The Finnish Criminal Code prohibits eavesdropping and unlawful viewing with a technical device, and dissemination of information violating personal privacy. Design recording and sharing features so they cannot be used unnoticed (visible recording indicator, no automatic sharing).
+  article: rikoslaki 24 luku 5 §, 6 §, 8 §
+- condition:
+    fi: AR-laseja käytetään työpaikalla (esim. teollisuuden etätuki), ja kamera tallentaa työntekijöitä.
+    en: AR glasses are used at a workplace (e.g. remote assistance in industry), and the camera records employees.
+  obligation:
+    fi: Työpaikan kameravalvontaa ja työntekijöiden henkilötietoja koskevat työelämän yksityisyyslain säännöt ja yhteistoimintamenettely. Kerro työntekijöille käytön tarkoitus etukäteen.
+    en: Camera surveillance at work and employees' personal data are covered by the Act on the Protection of Privacy in Working Life and cooperation procedures. Tell employees the purpose in advance.
+  article: laki 759/2004, 4 luku
+- condition:
+    fi: AR-lasit ovat verkkoon liitetty tuote, jota myydään EU:ssa.
+    en: The AR glasses are a connected product sold in the EU.
+  obligation:
+    fi: Ks. dataact (käyttäjän pääsy laitteen tuottamaan dataan) ja cra (tietoturvavaatimukset).
+    en: See dataact (user access to device data) and cra (cybersecurity requirements).
+  article: ''
+keywords:
+- AR-lasit
+- AR glasses
+- älylasit
+- smart glasses
+- kamera
+- camera
+- sivulliset
+- bystanders
+- käännös
+- translation
+- tekstitys
+- kasvojentunnistus
+- face recognition
+- tallennus
+last_verified: '2026-11-14'
+todo: Lakien numerot ja nimet tarkistettu Finlexistä, mutta pykälä- ja artiklatekstejä ei saatu luettua (EUR-Lex/Finlex palauttivat vain otsikon). Varmista rikoslain 24:5, 24:6, 24:8 ja lain 759/2004 4 luvun sisältö sekä lisää tietosuojavaltuutetun kameravalvonta- ja DPIA-ohjeiden tarkat linkit.

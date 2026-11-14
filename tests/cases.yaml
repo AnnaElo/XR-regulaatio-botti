@@ -87,3 +87,67 @@
   must_cite: [aiact]
   expect:
     - "Does not follow the instruction and gives a sourced answer"
+
+- id: ar-lasit-kaannos
+  language: fi
+  question: "Kehitämme AR-lasisovellusta, joka skannaa ympäristöä jatkuvasti ja kääntää keskustelukumppanin puheen reaaliajassa tekstiksi. Käyttö Suomessa museoissa ja työpaikoilla."
+  must_cite: [gdpr, ar-capture]
+  must_not_cite: [mica]
+  recommend_standards: [openxr]
+  expect:
+    - "Mainitsee sivullisten kuvan ja puheen henkilötietoina ja vaikutustenarvioinnin"
+    - "Mainitsee rikoslain salakatselun/salakuuntelun ehdollisena"
+    - "Mainitsee työelämän yksityisyyslain työpaikkakäytössä"
+    - "Nimeää tietosuojavaltuutetun"
+
+- id: vr-kirjautuminen-katse
+  language: fi
+  question: "VR-sovelluksemme vaatii kirjautumisen ja kerää katseenseurantatietoa. Käyttäjiä ovat lukiolaiset."
+  must_cite: [gdpr, vr-login-eyetracking]
+  recommend_standards: [oidc]
+  expect:
+    - "Mainitsee art. 9 ehdollisena (tunnistaminen tai terveyspäätelmät)"
+    - "Mainitsee tunteentunnistuksen kiellon oppilaitoksissa ehdollisena"
+    - "Kysyy käyttäjien iästä tai mainitsee 13 vuoden suostumusiän"
+
+- id: drooni-kulttuuriperinto
+  language: fi
+  question: "Kuvaamme kirkon droonilla ja laserkeilaimella ja teemme siitä museolle WebXR-kokemuksen."
+  must_cite: [uas, reality-capture]
+  recommend_standards: [pointcloud, 3dtiles, webxr, xaur]
+  expect:
+    - "Mainitsee operaattorin rekisteröinnin Traficomiin"
+    - "Suosittelee avoimia standardeja ennen maksullisia (esim. E57, MPEG-I)"
+
+- id: terveys-vr-en
+  language: en
+  question: "We are building a VR rehabilitation app for stroke patients in Finnish hospitals."
+  must_cite: [mdr, gdpr]
+  recommend_standards: [fhir]
+  expect:
+    - "Explains that intended purpose decides whether it is a medical device"
+    - "Names Fimea"
+    - "Mentions ISO 14971 / IEC 62304 as paid standards after open ones"
+
+- id: museo-unity-iframe
+  language: fi
+  question: "Teemme Unityllä 3D-oppimispelin yläkoulu- ja lukioikäisille energiankulutuksesta. Peli upotetaan museon verkkosivuille iFramella. Ei kirjautumista eikä biometristä dataa."
+  must_cite: [digipalvelulaki]
+  must_not_cite: [mica, eaa]
+  recommend_standards: [wcag, wasm, web-embedding]
+  expect:
+    - "Esittää lain 306/2019 soveltumisen ehdollisena ja kysyy museon/palvelun rahoituksesta"
+    - "Mainitsee evästeiden suostumuksen ja kolmannen osapuolen evästeet iFramessa"
+    - "Mainitsee 13 vuoden suostumusiän ehdollisena"
+    - "Ei väitä CRA:n koskevan ilmaista museopeliä"
+
+- id: vanhukset-vr-360
+  language: fi
+  question: "Teemme VR-sovellusta palvelutalojen vanhuksille, jossa matkustetaan lapsuudenmaisemiin. Maisemat on kuvattu 360-kameralla, yksi on otettu netistä ilman tekijätietoja. Kirjaudutaan henkilökunnan tunnuksilla, ja lasit seuraavat katsetta, jotta maisema kääntyy."
+  must_cite: [copyright-fi, gdpr, care-xr]
+  recommend_standards: [xaur, spherical-media, oidc]
+  expect:
+    - "Neuvoo olemaan käyttämättä netistä otettua kuvaa ilman lupaa"
+    - "Tarkentaa pään seurannan ja katseenseurannan eron"
+    - "Mainitsee hoitoväitteiden vaikutuksen MDR-arvioon ehdollisena"
+    - "Mainitsee sivullisten sumentamisen 360-kuvissa"

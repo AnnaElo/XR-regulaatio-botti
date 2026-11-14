@@ -1,0 +1,71 @@
+id: copyright-fi
+type: national-legislation
+name:
+  fi: Tekijänoikeuslaki
+  en: Copyright Act (Finland)
+reference:
+  fi: Laki 404/1961
+  en: Act 404/1961
+status:
+  fi: Voimassa
+  en: In force
+summary:
+  fi: Suojaa teokset ja mm. valokuvat. Valokuva, myös 360-kuva, on suojattu joko teoksena tai tavallisena valokuvana, vaikka tekijätietoja ei olisi saatavilla.
+  en: Protects works and, among other things, photographs. A photograph, including a 360° image, is protected either as a work or as an ordinary photograph even if no author information is available.
+jurisdiction: FI
+use_cases: []
+content_sources: [phone-camera, drone, 3d-artist, ai-generated]
+primary_sources:
+- title: Finlex, tekijänoikeuslaki 404/1961
+  url: https://www.finlex.fi/fi/lainsaadanto/1961/404
+finland:
+  authority:
+    fi: Opetus- ja kulttuuriministeriö (lainsäädäntö); neuvontaa Kopiraittila (Kopiosto)
+    en: Ministry of Education and Culture (legislation); guidance from Kopiraittila (Kopiosto)
+  national_guidance:
+  - title: Kopiraittila, kuvien käyttö
+    url: https://kopiraittila.fi/teosten-kaytto/kuvien-kaytto/
+  - title: Finlex, laki eräistä orpoteosten käyttötavoista 764/2013
+    url: https://www.finlex.fi/fi/lainsaadanto/2013/764
+related_standards: [c2pa, gltf]
+applies_when:
+- condition:
+    fi: XR-sisällössä käytetään internetistä tai muualta löydettyjä kuvia, 360-kuvia, videoita, 3D-malleja tai ääniä, joiden tekijä tai lisenssi ei ole tiedossa.
+    en: XR content uses images, 360° images, videos, 3D models or sounds found online or elsewhere whose author or licence is unknown.
+  obligation:
+    fi: 'Älä käytä aineistoa ilman lupaa tai sallivaa lisenssiä; tekijätietojen puuttuminen ei tarkoita, että aineisto olisi vapaa. Orpoteoslaki ei auta: sen mukaan orpoteoksia saavat käyttää vain yleisölle avoimet kirjastot, museot ja koulutusorganisaatiot, arkistot ja julkisen palvelun yleisradioyhtiöt, vain tiettyjä kokoelma-aineistoja ja vasta huolellisen selvityksen ja EU:n orpoteostietokantaan kirjaamisen jälkeen. Korvaa omalla tai lisensoidulla aineistolla ja kirjaa lisenssit metatietoihin.'
+    en: 'Do not use the material without permission or a permissive licence; missing author information does not make it free. The Orphan Works Act does not help: only libraries, museums and educational organisations open to the public, archives and public service broadcasters may use orphan works, only for certain collection materials, and only after a diligent search recorded in the EU orphan works database. Replace it with your own or licensed material and record licences in metadata.'
+  article: 1 §; orpoteoslaki 764/2013 2 §, 4 §, 5 §
+- condition:
+    fi: Käytetään valokuvia tai 360-kuvia, myös vanhoja tai arkistokuvia.
+    en: Photographs or 360° images are used, including old or archive images.
+  obligation:
+    fi: 'Valokuvaajalla on yksinoikeus valokuvaan muuttamattomana tai muutettuna; oikeus on voimassa 50 vuotta sen vuoden päättymisestä, jona kuva valmistettiin. Teoskynnyksen ylittävä valokuva on Kopiraittilan mukaan suojattu teoksena 70 vuotta kuvaajan kuolinvuoden päättymisestä. Valokuva tekijänoikeudeltaan vapaasta kuvataiteen teoksesta ei saa valokuvasuojaa. Tarkista arkistokuvien käyttöoikeus kuvakohtaisesti arkiston ilmoittamasta lisenssistä.'
+    en: 'A photographer has the exclusive right to a photograph, unchanged or modified; the right lasts 50 years from the end of the year the photograph was made. According to Kopiraittila, a photograph meeting the threshold of originality is protected as a work for 70 years after the end of the photographer''s year of death. A photograph of a public-domain work of visual art does not get photograph protection. Check the usage rights of archive images per image from the licence stated by the archive.'
+  article: 49 a §
+- condition:
+    fi: XR-sisältöä varten kuvataan, skannataan tai mallinnetaan rakennuksia tai julkisilla paikoilla olevia taideteoksia (esim. kaupunkimalli, 360-kuva, drooni- tai laserkeilaus).
+    en: Buildings or artworks in public places are photographed, scanned or modelled for XR content (e.g. a city model, 360° image, drone or laser scan).
+  obligation:
+    fi: 'Rakennuksen saa vapaasti kuvata. Julkiselle paikalle pysyvästi sijoitetun taideteoksen (esim. patsas, muraali) saa kuvata, mutta jos teos on kuvan pääaihe, kuvaa ei saa käyttää ansiotarkoituksessa. Kaupallisessa XR-sovelluksessa, jossa taideteos on keskeinen kohde, tarvitaan tekijän lupa.'
+    en: 'Buildings may be freely depicted. An artwork permanently placed in a public place (e.g. a statue, mural) may be depicted, but if the work is the main subject, the image may not be used for commercial purposes. A commercial XR app in which an artwork is a central subject needs the author''s permission.'
+  article: 25 a §
+- condition:
+    fi: Tiimin jäsen, alihankkija tai 3D-artisti tuottaa sisältöä hankkeeseen.
+    en: A team member, subcontractor or 3D artist produces content for the project.
+  obligation:
+    fi: Sovi kirjallisesti oikeuksien siirrosta tai käyttöluvasta (myös kaupallinen käyttö ja muokkaus), koska tekijänoikeus syntyy tekijälle.
+    en: Agree in writing on the transfer of rights or licence (including commercial use and modification), because copyright arises with the author.
+  article: ''
+keywords:
+- tekijänoikeus
+- copyright
+- lisenssi
+- licence
+- valokuva
+- photograph
+- 360-kuva
+- arkistokuva
+- käyttöoikeus
+last_verified: '2026-11-14'
+todo: 49 a § ja orpoteoslaki 764/2013 tarkistettu Finlexin tekstistä (Anna, 14.11.2026). 25 a §:n sanamuoto on hallituksen esityksestä HE 287/1994; varmista voimassa oleva sanamuoto Finlexistä.

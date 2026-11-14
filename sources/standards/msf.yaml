@@ -5,6 +5,8 @@ name:
   fi: Metaverse Standards Forum
   en: Metaverse Standards Forum
 publisher: Yritysten ja standardointijärjestöjen foorumi
+availability: open
+version: ''
 status:
   fi: Perustettu 21.6.2022
   en: Founded 21 Jun 2022
@@ -12,12 +14,27 @@ summary:
   fi: Ei laadi standardeja itse vaan edistää olemassa olevien yhteentoimivuutta. Julkaisi 2026 Web of Worlds -whitepaperin.
   en: Does not write standards itself but promotes interoperability of existing ones. Published the Web of Worlds white paper in 2026.
 jurisdiction: global
+use_cases: []
+content_sources: []
 primary_sources:
 - title: Metaverse Standards Forum
   url: https://metaverse-standards.org/
 - title: Metaverse Standards Forum, Web of Worlds -whitepaper
   url: https://webofworlds.github.io/initial_MSF_Whitepaper
-applies_when: []
-keywords: []
+related_regulation: []
+applies_when:
+- condition:
+    fi: Käyttäjä kysyy, mitkä standardit sopivat yhteen virtuaalimaailmojen välillä, tai rakentaa alustaa, jonka pitää toimia muiden virtuaalimaailmojen kanssa.
+    en: The user asks which standards work together across virtual worlds, or builds a platform that must interoperate with other virtual worlds.
+  obligation:
+    fi: Taustalähde, ei standardi. Ohjaa foorumin julkaisuihin ja suosittele varsinaisia standardeja (gltf, openusd, openxr, webxr). Toinen foorumi, OMI (omi), kehittää glTF-laajennuksia.
+    en: Background source, not a standard. Point to the forum's publications and recommend the actual standards (gltf, openusd, openxr, webxr). OMI (omi) is another forum that develops glTF extensions.
+  article: ''
+keywords:
+- metaverse
+- metaversumi
+- yhteentoimivuus
+- interoperability
+- virtuaalimaailma
 last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+todo: ''

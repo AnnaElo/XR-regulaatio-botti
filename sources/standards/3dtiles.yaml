@@ -4,18 +4,40 @@ category: geospatial
 name:
   fi: 3D Tiles
   en: 3D Tiles
-publisher: Cesium · OGC:n yhteisöstandardi
+publisher: Cesium · OGC:n yhteisöstandardi (Community Standard)
+availability: open
+version: '1.1'
 status:
-  fi: Versio 1.1
-  en: Version 1.1
+  fi: Versio 1.1, OGC Community Standard
+  en: Version 1.1, OGC Community Standard
 summary:
-  fi: Suurten 3D-aineistojen, kuten kaupunkimallien ja pistepilvien, suoratoisto. Perustuu glTF:ään.
-  en: Streaming of large 3D datasets such as city models and point clouds. Based on glTF.
+  fi: Suurten 3D-aineistojen, kuten kaupunkimallien, fotogrammetriamallien ja pistepilvien, suoratoisto. Perustuu glTF:ään.
+  en: Streaming of large 3D datasets such as city models, photogrammetry meshes and point clouds. Based on glTF.
 jurisdiction: global
+use_cases: [culture, industry]
+content_sources: [drone, laser-scanning]
 primary_sources:
-- title: Cesium, 3D Tiles -spesifikaatio
+- title: Cesium, 3D Tiles -spesifikaatio (GitHub)
   url: https://github.com/CesiumGS/3d-tiles
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: OGC, 3D Tiles 1.1 Community Standard
+  url: https://docs.ogc.org/cs/22-025r4/22-025r4.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: Droonilla tai laserkeilaimella tuotettu aineisto (fotogrammetriamalli, pistepilvi, kaupunki- tai kulttuuriympäristömalli) on liian suuri ladattavaksi kerralla XR-laitteeseen tai selaimeen.
+    en: Drone or laser-scanning data (photogrammetry mesh, point cloud, city or heritage site model) is too large to load at once into an XR device or browser.
+  obligation:
+    fi: 'Muunna aineisto 3D Tiles -muotoon (tasot ja yksityiskohtaisuus, LOD). Antaa: vain näkyvä osa ladataan, joten suuretkin mallit toimivat laseissa ja selaimessa.'
+    en: 'Convert the data to 3D Tiles (hierarchy and level of detail). Gives: only the visible part is loaded, so even large models run on headsets and in browsers.'
+  article: ''
+keywords:
+- suoratoisto
+- streaming
+- pistepilvi
+- point cloud
+- fotogrammetria
+- drooni
+- kaupunkimalli
+- LOD
+last_verified: '2026-11-14'
+todo: OGC:n 22-025r4-sivu ei avautunut tarkistuksessa; varmista linkki.

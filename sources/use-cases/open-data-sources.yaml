@@ -1,0 +1,51 @@
+id: open-data-sources
+type: use-case-guidance
+name:
+  fi: Avoimet paikkatieto- ja arkistoaineistot XR-sisällön pohjana
+  en: Open geospatial and archive data as a basis for XR content
+summary:
+  fi: Suomen avoimista aineistoista saa maastomalleja, laserkeilausaineistoja, ortokuvia ja rakennusten 3D-malleja. Lisenssin nimeämisvaatimus on täytettävä, ja arkistokuvien käyttöoikeus tarkistetaan kuvakohtaisesti.
+  en: Finnish open data provides terrain models, laser scanning data, orthophotos and 3D building models. The licence attribution requirement must be met, and usage rights of archive images are checked per image.
+jurisdiction: FI
+use_cases: [culture, education, healthcare, industry]
+content_sources: [laser-scanning, drone]
+primary_sources:
+- title: Maanmittauslaitos, avoimen datan lisenssi CC BY 4.0
+  url: https://www.maanmittauslaitos.fi/en/opendata-licence-cc40
+- title: Maanmittauslaitos, tuotekuvaukset
+  url: https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/datasets-and-interfaces/product-descriptions
+- title: Maanmittauslaitos, tiedostopalvelu
+  url: https://asiointi.maanmittauslaitos.fi/karttapaikka/tiedostopalvelu
+finland:
+  authority:
+    fi: Maanmittauslaitos (aineiston tarjoaja)
+    en: National Land Survey of Finland (data provider)
+  national_guidance: []
+related_documents: [copyright-fi, pointcloud, cog, citygml, 3dtiles, ogcfeat, culture-xr]
+applies_when:
+- condition:
+    fi: XR-kokemus rakentaa suomalaisia maisemia, kaupunkeja tai paikkoja (esim. lapsuudenmaisemat, kotiseutu, matkailukohteet) avoimista paikkatietoaineistoista.
+    en: An XR experience builds Finnish landscapes, towns or places (e.g. childhood landscapes, home regions, tourist sites) from open geospatial data.
+  obligation:
+    fi: 'Maanmittauslaitoksen avoin data on CC BY 4.0 -lisensoitua: mainitse lisenssinantaja (Maanmittauslaitos), aineiston nimi ja toimitusajankohta. Saatavilla mm. laserkeilausaineistot, ortokuvat ja Rakennukset 3D. Käytä avoimia muotoja (LAS/COPC, COG, 3D Tiles).'
+    en: 'Open data from the National Land Survey is licensed CC BY 4.0: credit the licensor (National Land Survey of Finland), the dataset name and delivery date. Available data includes laser scanning data, orthophotos and Buildings 3D. Use open formats (LAS/COPC, COG, 3D Tiles).'
+  article: ''
+- condition:
+    fi: Käytetään museoiden, arkistojen tai kirjastojen vanhoja valokuvia tai muuta arkistoaineistoa.
+    en: Old photographs or other archive material from museums, archives or libraries are used.
+  obligation:
+    fi: Tarkista jokaisen kuvan käyttöoikeus aineiston tarjoajan ilmoittamasta lisenssistä (esim. CC-lisenssi tai "käyttöoikeus tarkistettava"). Ks. copyright-fi.
+    en: Check each image's usage rights from the licence stated by the provider (e.g. a CC licence or "rights to be checked"). See copyright-fi.
+  article: ''
+keywords:
+- avoin data
+- open data
+- Maanmittauslaitos
+- National Land Survey
+- maastomalli
+- ortokuva
+- arkistokuva
+- lisenssi
+- CC BY
+last_verified: '2026-11-14'
+todo: ''

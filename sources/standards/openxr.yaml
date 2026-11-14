@@ -5,17 +5,51 @@ name:
   fi: OpenXR
   en: OpenXR
 publisher: Khronos Group
+availability: open
+version: '1.1'
 status:
-  fi: Versio 1.1, 15.4.2024
-  en: Version 1.1, 15 Apr 2024
+  fi: Versio 1.1 (julkaistu 15.4.2024), päivittyy jatkuvasti 1.1.x-revisioina
+  en: Version 1.1 (released 15 Apr 2024), continuously updated as 1.1.x revisions
 summary:
   fi: 'Yhteinen rajapinta natiiveille XR-sovelluksille: sama sovellus toimii eri valmistajien laitteilla. Tuettu mm. Unityssä, Unreal Enginessä ja Godotissa.'
   en: 'A common API for native XR apps: the same app runs on devices from different vendors. Supported in Unity, Unreal Engine and Godot, among others.'
 jurisdiction: global
+use_cases: []
+content_sources: []
 primary_sources:
-- title: Khronos Group, OpenXR 1.1 -tiedote
-  url: https://khronos.org/news/press/khronos-releases-openxr-1.1-to-further-streamline-cross-platform-xr-development
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: Khronos Group, OpenXR 1.1 -spesifikaatio (ratifioidut laajennukset)
+  url: https://registry.khronos.org/OpenXR/specs/1.1-khr/html/xrspec.html
+- title: Khronos Group, OpenXR 1.1 -spesifikaatio (kaikki laajennukset)
+  url: https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html
+related_regulation:
+- id: cra
+  relation:
+    fi: OpenXR ei itsessään täytä CRA:n vaatimuksia, mutta yhteinen rajapinta helpottaa tietoturvapäivitysten jakelua useille laitteille.
+    en: OpenXR does not itself meet CRA requirements, but a common API makes it easier to ship security updates across devices.
+applies_when:
+- condition:
+    fi: Rakennetaan asennettava (natiivi) XR-sovellus, jonka pitää toimia usean valmistajan laseilla, esim. koulutus-, teollisuus- tai terveydenhuollon simulaatio.
+    en: You build an installable (native) XR app that must run on headsets from several vendors, e.g. a training, industrial or healthcare simulation.
+  obligation:
+    fi: 'Käytä OpenXR:ää laiterajapintana pelimoottorin kautta (Unity OpenXR Plugin, Unreal, Godot). Antaa: yksi koodipohja usealle laitteelle, vähemmän riippuvuutta yhdestä valmistajasta.'
+    en: 'Use OpenXR as the device API through the engine (Unity OpenXR Plugin, Unreal, Godot). Gives: one codebase for many devices and less vendor lock-in.'
+  article: ''
+- condition:
+    fi: Sovellus käyttää käsien, katseen tai kasvojen seurantaa tai passthrough-kameraa.
+    en: The app uses hand, eye or face tracking or the passthrough camera.
+  obligation:
+    fi: Valitse ratifioidut KHR/EXT-laajennukset valmistajakohtaisten sijaan ja tarkista laajennuksen kuvauksesta, mitä sensoridataa sovellus saa. Sama data on usein henkilötietoa (ks. gdpr).
+    en: Prefer ratified KHR/EXT extensions over vendor-specific ones and check from the extension description what sensor data the app receives. The same data is often personal data (see gdpr).
+  article: Extensions
+keywords:
+- natiivi sovellus
+- native app
+- Unity
+- Unreal
+- Godot
+- VR-lasit
+- headset
+- käsienseuranta
+- hand tracking
+last_verified: '2026-11-14'
+todo: Kirjaa tarkka 1.1.x-revisio spesifikaation otsikosta seuraavassa tarkistuksessa.

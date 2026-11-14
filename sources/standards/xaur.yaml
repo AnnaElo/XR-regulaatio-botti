@@ -1,0 +1,44 @@
+id: xaur
+type: standard
+category: accessibility
+name:
+  fi: XR Accessibility User Requirements (XAUR)
+  en: XR Accessibility User Requirements (XAUR)
+publisher: W3C
+availability: open
+version: Working Group Note 2021-08-25
+status:
+  fi: W3C Working Group Note 25.8.2021 (ohjeistus, ei standardi)
+  en: W3C Working Group Note, 25 Aug 2021 (guidance, not a standard)
+summary:
+  fi: Käyttäjävaatimukset XR-kokemusten saavutettavuudelle, esim. vaihtoehtoiset ohjaustavat, tekstitys tilaäänelle, liikkumisen asetukset ja pahoinvoinnin ehkäisy.
+  en: User requirements for accessible XR, e.g. alternative input, captions for spatial audio, locomotion settings and motion sickness prevention.
+jurisdiction: global
+use_cases: []
+content_sources: []
+primary_sources:
+- title: W3C, XR Accessibility User Requirements
+  url: https://www.w3.org/TR/xaur/
+related_regulation:
+- id: eaa
+  relation:
+    fi: Ei velvoittava, mutta täydentää EN 301 549:ää, jossa ei ole XR-kohtaisia vaatimuksia.
+    en: Not binding, but supplements EN 301 549, which has no XR-specific requirements.
+applies_when:
+- condition:
+    fi: Rakennetaan mikä tahansa VR- tai AR-kokemus, erityisesti koulutukseen, kulttuuriin tai julkiseen palveluun, jossa käyttäjiä ei voi valita.
+    en: You build any VR or AR experience, especially for education, culture or a public service where users cannot be chosen.
+  obligation:
+    fi: 'Käytä XAUR:ia suunnittelun ja testauksen tarkistuslistana (esim. yhden käden ohjaus, istuma-asento, tekstitys, säädettävä teksti ja liike). Antaa: XR-kohtaiset saavutettavuusvaatimukset, joita EN 301 549:ssä ei ole.'
+    en: 'Use XAUR as a design and testing checklist (e.g. one-handed control, seated mode, captions, adjustable text and motion). Gives: XR-specific accessibility requirements missing from EN 301 549.'
+  article: ''
+keywords:
+- saavutettavuus
+- accessibility
+- XR
+- pahoinvointi
+- motion sickness
+- tekstitys
+- istuma-asento
+last_verified: '2026-11-14'
+todo: ''

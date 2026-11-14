@@ -1,0 +1,45 @@
+id: gpsr
+type: eu-legislation
+name:
+  fi: Yleinen tuoteturvallisuusasetus (GPSR)
+  en: General Product Safety Regulation (GPSR)
+reference:
+  fi: Asetus (EU) 2023/988
+  en: Regulation (EU) 2023/988
+status:
+  fi: Sovellettu 13.12.2024 alkaen
+  en: Applied since 13 Dec 2024
+summary:
+  fi: Kuluttajille tarkoitettujen tuotteiden on oltava turvallisia, kun niillä ei ole omaa alakohtaista turvallisuussääntelyä. Korvasi yleisen tuoteturvallisuusdirektiivin 2001/95/EY.
+  en: Products intended for consumers must be safe where no sector-specific safety rules apply. Replaced the General Product Safety Directive 2001/95/EC.
+jurisdiction: EU
+use_cases: []
+content_sources: []
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2023/988
+  url: https://eur-lex.europa.eu/eli/reg/2023/988/oj
+related_standards: [iso-iec-5927, ieee-3079, xaur]
+applies_when:
+- condition:
+    fi: Kuluttajille myydään tai annetaan XR-laite tai laitteen ja sovelluksen paketti (esim. valmiiksi asennettu VR-sarja palvelutaloon tai kotikäyttöön).
+    en: An XR device, or a device-and-app bundle, is sold or supplied to consumers (e.g. a pre-installed VR kit for a care home or home use).
+  obligation:
+    fi: 'Arvioi käyttöturvallisuus myös haavoittuvien käyttäjien (esim. lapset, iäkkäät) kannalta: kaatumisriski, pahoinvointi, valoherkkyys, hygienia. Anna selkeät varoitukset ja käyttöohjeet suomeksi ja ruotsiksi.'
+    en: 'Assess safety of use also for vulnerable users (e.g. children, older people): fall risk, motion sickness, photosensitivity, hygiene. Provide clear warnings and instructions in Finnish and Swedish.'
+  article: ''
+- condition:
+    fi: Kyse on pelkästä ohjelmistosta tai sovelluksesta.
+    en: The product is software or an app only.
+  obligation:
+    fi: Asetuksen soveltuminen pelkkään ohjelmistoon on tarkistettava; botti ei ratkaise sitä. Turvallisuuden arviointi on silti hyvä käytäntö.
+    en: Whether the regulation applies to software alone must be checked; the bot does not decide it. Assessing safety is good practice regardless.
+  article: ''
+keywords:
+- tuoteturvallisuus
+- product safety
+- kuluttaja
+- consumer
+- GPSR
+- varoitukset
+last_verified: '2026-11-14'
+todo: Artiklaviittaukset puuttuvat (EUR-Lexistä saatiin vain otsikkotiedot). Varmista asetuksen soveltuminen ohjelmistoihin (3 artiklan tuote-määritelmä) ja kieliä koskeva vaatimus. Suomen viranomaista ei lisätä (Annan linjaus 14.11.2026).
