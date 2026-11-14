@@ -26,6 +26,13 @@ finland:
 related_documents: [gdpr, aiact, oidc, eidas, openxr, cra, dataact]
 applies_when:
 - condition:
+    fi: Käyttäjä tai kehittäjä puhuu "katseenseurannasta", mutta tarkoittaa sitä, että näkymä kääntyy pään liikkeen mukaan.
+    en: The user or developer talks about "eye tracking" but means that the view turns with head movement.
+  obligation:
+    fi: 'Tarkenna ero. Pään seuranta (asento ja sijainti, 3DoF/6DoF) on kaikissa VR-laseissa, ja sitä käsitellään yleensä vain laitteella. Varsinainen katseenseuranta (silmien liike) on vain osassa laseja. Molemmat voivat olla henkilötietoa, jos dataa tallennetaan käyttäjäkohtaisesti. Liikedatasta voi tunnistaa ihmisen, ja siitä voi päätellä terveydentilaa.'
+    en: 'Clarify the difference. Head tracking (pose and position, 3DoF/6DoF) is in every VR headset and is usually processed only on the device. Actual eye tracking (eye movement) is only in some headsets. Both can be personal data if stored per user; motion data can identify a person and reveal health information.'
+  article: GDPR art. 4(1)
+- condition:
     fi: Käyttäjä kirjautuu sovellukseen ja katseenseurantadataa tallennetaan tai analysoidaan käyttäjäkohtaisesti.
     en: The user signs in and eye-tracking data is stored or analysed per user.
   obligation:
@@ -50,9 +57,9 @@ applies_when:
     fi: Käyttäjinä on alle 13-vuotiaita, ja käsittely perustuu suostumukseen.
     en: Users include children under 13 and processing is based on consent.
   obligation:
-    fi: Suomessa tietoyhteiskunnan palvelujen suostumusikäraja on 13 vuotta; nuoremmilta tarvitaan huoltajan suostumus. Älä kerää lapsilta katseenseurantadataa ilman välttämätöntä tarvetta.
-    en: In Finland the age of consent for information society services is 13; younger children need a guardian's consent. Do not collect eye-tracking data from children without a strict need.
-  article: GDPR art. 8; tietosuojalaki 5 §
+    fi: Kun tietoyhteiskunnan palvelua tarjotaan suoraan lapselle ja käsittely perustuu suostumukseen (GDPR art. 6(1)(a)), lapsen oma suostumus riittää Suomessa, jos lapsi on vähintään 13-vuotias; nuoremmilta tarvitaan huoltajan suostumus. Ikäraja ei koske muihin käsittelyperusteisiin perustuvaa käsittelyä. Älä kerää lapsilta katseenseurantadataa ilman välttämätöntä tarvetta.
+    en: When an information society service is offered directly to a child and processing is based on consent (GDPR Art. 6(1)(a)), the child's own consent is enough in Finland if the child is at least 13; younger children need a guardian's consent. The age limit does not apply to processing based on other legal bases. Do not collect eye-tracking data from children without a strict need.
+  article: GDPR art. 6(1)(a), 8; tietosuojalaki 1050/2018 5 §
 - condition:
     fi: Kirjautuminen toteutetaan.
     en: Sign-in is implemented.
@@ -72,4 +79,4 @@ keywords:
 - lapset
 - children
 last_verified: '2026-11-14'
-todo: Artikla- ja pykäläviittaukset ovat yleisesti tunnettuja, mutta tekstiä ei saatu luettua EUR-Lexistä/Finlexistä tarkistuksessa; varmista ennen julkaisua.
+todo: Tietosuojalain 5 § tarkistettu Finlexistä (Anna, 14.11.2026). GDPR- ja tekoälyasetuksen artiklojen tekstiä ei saatu luettua EUR-Lexistä; varmista ennen julkaisua.

@@ -1,0 +1,58 @@
+id: care-xr
+type: use-case-guidance
+name:
+  fi: XR iäkkäille ja hoivapalveluissa (palvelutalot, kotihoito, hyvinvointikäyttö)
+  en: XR for older people and in care services (assisted living, home care, wellbeing use)
+summary:
+  fi: Iäkkäiden hyvinvointi- ja virkistyskäytössä korostuvat käyttöturvallisuus, saavutettavuus, asukkaiden ja henkilökunnan tietosuoja sekä se, ettei sovelluksesta tule markkinointiväitteillä lääkinnällistä laitetta.
+  en: In wellbeing and recreational use by older people, the focus is on safe use, accessibility, data protection of residents and staff, and avoiding marketing claims that would turn the app into a medical device.
+jurisdiction: FI
+use_cases: [healthcare]
+content_sources: [phone-camera, drone]
+primary_sources:
+- title: EUR-Lex, tietosuoja-asetus (EU) 2016/679
+  url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+- title: EUR-Lex, asetus (EU) 2017/745 (MDR)
+  url: https://eur-lex.europa.eu/eli/reg/2017/745/oj
+finland:
+  authority:
+    fi: Tietosuojavaltuutetun toimisto, Fimea (lääkinnälliset laitteet)
+    en: Office of the Data Protection Ombudsman, Fimea (medical devices)
+  national_guidance: []
+related_documents: [healthcare-xr, mdr, gdpr, vr-login-eyetracking, xaur, ieee-3079, iso-iec-5927, oidc, cra, copyright-fi, reality-capture, spatial-audio, gpsr]
+applies_when:
+- condition:
+    fi: VR-sovellus on tarkoitettu iäkkäiden virkistykseen, muisteluun tai yksinäisyyden helpottamiseen, ei sairauden hoitoon.
+    en: The VR app is intended for older people's recreation, reminiscence or easing loneliness, not for treating a disease.
+  obligation:
+    fi: Kuvaa käyttötarkoitus hyvinvointina ja vältä väitteitä sairauksien (esim. masennus, muistisairaus) hoitamisesta, ehkäisystä tai lievittämisestä. Ne voivat tehdä sovelluksesta lääkinnällisen laitteen.
+    en: Describe the purpose as wellbeing and avoid claims about treating, preventing or alleviating diseases (e.g. depression, dementia), which could make the app a medical device.
+  article: MDR art. 2(1)
+- condition:
+    fi: Laseja käyttävät iäkkäät, liikuntarajoitteiset tai muistisairaat henkilöt ohjatusti.
+    en: Headsets are used by older, mobility-impaired or cognitively impaired people under supervision.
+  obligation:
+    fi: Suunnittele istuma-asento, ei virtuaalista kävelyä, lyhyet istunnot, helppo keskeytys, suuri teksti ja selkeä ääni. Laadi henkilökunnalle ohje (hygienia, valvonta, pahoinvointi). Tukena xaur (avoin) sekä ieee-3079 ja iso-iec-5927 (maksulliset).
+    en: Design for seated use, no virtual locomotion, short sessions, easy interruption, large text and clear audio. Write staff instructions (hygiene, supervision, motion sickness). Supported by xaur (open) and ieee-3079 and iso-iec-5927 (paid).
+  article: ''
+- condition:
+    fi: Kirjautuminen tehdään henkilökunnan tunnuksilla, ja käyttökertoja tai asukkaiden tietoja tallennetaan.
+    en: Sign-in uses staff accounts, and sessions or residents' data are stored.
+  obligation:
+    fi: Henkilökunnan ja asukkaiden tiedot ovat henkilötietoja. Jos asukaskohtaisia tietoja kirjataan hoivan yhteydessä, ne voivat olla terveystietoja (art. 9). Kerää vain tarpeellinen ja sovi palvelutalon kanssa rekisterinpitäjän roolista.
+    en: Staff and residents' data are personal data. If resident-level data is recorded as part of care, it may be health data (Art. 9). Collect only what is needed and agree on the controller role with the care provider.
+  article: GDPR art. 5, 9, 28
+keywords:
+- iäkkäät
+- vanhukset
+- older people
+- elderly
+- palvelutalo
+- hoivakoti
+- care home
+- muistelu
+- reminiscence
+- yksinäisyys
+- loneliness
+last_verified: '2026-11-14'
+todo: ''

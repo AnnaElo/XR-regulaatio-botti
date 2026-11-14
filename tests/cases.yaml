@@ -140,3 +140,14 @@
     - "Mainitsee evästeiden suostumuksen ja kolmannen osapuolen evästeet iFramessa"
     - "Mainitsee 13 vuoden suostumusiän ehdollisena"
     - "Ei väitä CRA:n koskevan ilmaista museopeliä"
+
+- id: vanhukset-vr-360
+  language: fi
+  question: "Teemme VR-sovellusta palvelutalojen vanhuksille, jossa matkustetaan lapsuudenmaisemiin. Maisemat on kuvattu 360-kameralla, yksi on otettu netistä ilman tekijätietoja. Kirjaudutaan henkilökunnan tunnuksilla, ja lasit seuraavat katsetta, jotta maisema kääntyy."
+  must_cite: [copyright-fi, gdpr, care-xr]
+  recommend_standards: [xaur, spherical-media, oidc]
+  expect:
+    - "Neuvoo olemaan käyttämättä netistä otettua kuvaa ilman lupaa"
+    - "Tarkentaa pään seurannan ja katseenseurannan eron"
+    - "Mainitsee hoitoväitteiden vaikutuksen MDR-arvioon ehdollisena"
+    - "Mainitsee sivullisten sumentamisen 360-kuvissa"

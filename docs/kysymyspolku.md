@@ -58,6 +58,12 @@ Botti kysyy enintään kolme asiaa kerrallaan eikä kysy uudelleen sitä, minkä
 | Tieteellinen tai lääketieteellinen visualisointi | | `anari`, `dicom` |
 | Upotus toisen sivustolle iFramella | `sahkoinen-viestinta` (evästeet) | `web-embedding` |
 | Evästeet, analytiikka tai paikallinen tallennus | `sahkoinen-viestinta`, `gdpr` | |
+| Iäkkäät käyttäjät, palvelutalot, hyvinvointikäyttö | `use-cases/care-xr`, `mdr`, `gdpr`, `gpsr` | `xaur`; maksulliset `ieee-3079`, `iso-iec-5927` |
+| Muiden tekemä tai netistä löydetty sisältö, arkistokuvat | `copyright-fi` | |
+| 360-kuvat ja -videot | `reality-capture`, `copyright-fi` | `spherical-media`; maksullinen `mpeg-i` |
+| Äänimaisemat, tilaääni | `copyright-fi` | `spatial-audio` |
+| Avoimet paikkatietoaineistot (Maanmittauslaitos) | `use-cases/open-data-sources` | `pointcloud`, `cog`, `3dtiles` |
+| Kuluttajille myytävä laite tai laitepaketti | `gpsr`, `cra` | |
 | Julkisen sektorin tai EAA:n piiriin kuuluva palvelu | `eaa`, `digipalvelulaki` | `en301549`, `wcag`, `xaur` |
 
 Maksulliset standardit (`availability: paid`, esim. `mpeg-i`, `iso-9241`, `iso-iec-mar`) mainitaan aina avointen jälkeen omana kohtanaan.

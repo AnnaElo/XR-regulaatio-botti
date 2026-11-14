@@ -1,0 +1,61 @@
+id: spatial-audio
+type: standard
+category: 3d-content
+name:
+  fi: Tilaääni (Web Audio API ja glTF-ääni)
+  en: Spatial audio (Web Audio API and glTF audio)
+publisher: W3C (Web Audio API), Khronos Group (glTF-äänilaajennus)
+availability: open
+version: Web Audio API 1.1 (WD 2026-09-22)
+status:
+  fi: Web Audio API 1.1 on W3C Working Draft (22.9.2026), selaimissa laajasti tuettu. glTF:n äänilaajennus KHR_audio_emitter on luonnos (tila "Draft") eikä ratifioitu; se tukee MP3- ja WAV-ääntä sekä globaaleja ja paikkaan sidottuja äänilähteitä (äänikartiot, etäisyysmallit Web Audio API:n PannerNoden mukaan).
+  en: Web Audio API 1.1 is a W3C Working Draft (22 Sep 2026), widely supported in browsers. glTF's audio extension KHR_audio_emitter is a draft (status "Draft"), not ratified; it supports MP3 and WAV audio and global and positional emitters (sound cones, distance models following the Web Audio API PannerNode).
+summary:
+  fi: Äänilähteiden sijoittaminen 3D-tilaan, esim. luontoäänet, opastukset ja äänimaisemat. Pelimoottoreissa (Unity, Unreal) tilaääni on sisäänrakennettu; standardit koskevat erityisesti selain-XR:ää ja äänen siirtämistä 3D-mallien mukana.
+  en: Placing audio sources in 3D space, e.g. nature sounds, guidance and soundscapes. Game engines (Unity, Unreal) have built-in spatial audio; the standards matter especially for browser XR and for carrying audio with 3D models.
+jurisdiction: global
+use_cases: [culture, education, healthcare]
+content_sources: []
+primary_sources:
+- title: W3C, Web Audio API 1.1
+  url: https://www.w3.org/TR/webaudio-1.1/
+- title: Khronos Group, KHR_audio_emitter (glTF pull request)
+  url: https://github.com/KhronosGroup/glTF/pull/2137
+- title: KHR_audio_emitter README (luonnos, PR-haaran versio)
+  url: https://github.com/meta/glTF/blob/db364d24de052c76d10f9a6f04b7ae827d7375d6/extensions/2.0/Khronos/KHR_audio_emitter/README.md
+related_regulation:
+- id: copyright-fi
+  relation:
+    fi: Äänitteet (esim. luontoäänikirjastot) ovat suojattuja; tarkista lisenssi ennen käyttöä.
+    en: Sound recordings (e.g. nature sound libraries) are protected; check the licence before use.
+- id: eaa
+  relation:
+    fi: Tärkeä ääni-informaatio tarvitsee tekstivastineen (saavutettavuus, ks. xaur ja wcag).
+    en: Important audio information needs a text alternative (accessibility, see xaur and wcag).
+applies_when:
+- condition:
+    fi: Ääni on keskeinen osa kokemusta (luontoäänet, äänimaisema, äänioppaat), ja kokemus toimii selaimessa tai ääniä siirretään 3D-mallien mukana.
+    en: Audio is central to the experience (nature sounds, soundscape, audio guides), and the experience runs in a browser or audio travels with 3D models.
+  obligation:
+    fi: 'Käytä selaimessa Web Audio API:n PannerNodea tilaääneen. glTF:n KHR_audio_emitter on vasta luonnos, jota tukevat vain harvat toteutukset (esim. Third Room, UX3D:n kokeellinen toteutus), joten pidä äänet myös erillisinä tiedostoina ja kirjaa niiden sijainti. Antaa: äänet kuuluvat oikeista suunnista eri laitteilla.'
+    en: 'In the browser, use the Web Audio API PannerNode for spatial audio. glTF''s KHR_audio_emitter is only a draft supported by few implementations (e.g. Third Room, UX3D''s experimental implementation), so also keep sounds as separate files and record their positions. Gives: sounds come from the right directions on different devices.'
+  article: Web Audio API 1.27 PannerNode
+- condition:
+    fi: Käyttäjinä on iäkkäitä tai kuulovammaisia.
+    en: Users include older people or people with hearing impairments.
+  obligation:
+    fi: Tarjoa säädettävä äänenvoimakkuus, puheen tekstitys ja mahdollisuus kuunnella ilman tilaääntä (mono).
+    en: Offer adjustable volume, captions for speech and an option to listen without spatial audio (mono).
+  article: ''
+keywords:
+- ääni
+- audio
+- tilaääni
+- spatial audio
+- äänimaisema
+- soundscape
+- luontoäänet
+- nature sounds
+- Web Audio
+last_verified: '2026-11-14'
+todo: KHR_audio_emitterin tila (Draft) tarkistettu PR-haaran README:stä (Anna, 14.11.2026). Seuraa, siirtyykö laajennus Khronosin pääkansioon tai korvautuuko se KHR_audio_graph-ehdotuksella.
