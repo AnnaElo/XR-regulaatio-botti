@@ -5,17 +5,45 @@ name:
   fi: CityGML 3.0
   en: CityGML 3.0
 publisher: Open Geospatial Consortium
+availability: open
+version: 3.0.0
 status:
-  fi: Avoin OGC-standardi
-  en: Open OGC standard
+  fi: 'Part 1: Conceptual Model, versio 3.0.0, julkaistu 13.9.2021'
+  en: 'Part 1: Conceptual Model, version 3.0.0, published 13 Sep 2021'
 summary:
-  fi: Kaupunkien semanttiset 3D-mallit ja niiden siirto järjestelmien välillä.
-  en: Semantic 3D city models and their exchange between systems.
+  fi: Kaupunkien semanttiset 3D-mallit (rakennukset, tiet, kasvillisuus ominaisuustietoineen) ja niiden siirto järjestelmien välillä.
+  en: Semantic 3D city models (buildings, roads, vegetation with attributes) and their exchange between systems.
 jurisdiction: global
+use_cases: [industry, culture, education]
+content_sources: [drone, laser-scanning]
 primary_sources:
-- title: OGC, CityGML
+- title: OGC, CityGML 3.0 Part 1 Conceptual Model
+  url: https://docs.ogc.org/is/20-010/20-010.html
+- title: OGC, CityGML-standardin sivu
   url: https://www.ogc.org/standard/citygml/
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+related_regulation: []
+applies_when:
+- condition:
+    fi: Hankkeessa on kaupungin, alueen tai rakennetun ympäristön digitaalinen kaksonen, jossa kohteilla pitää olla ominaisuustietoja (esim. käyttötarkoitus, kerrosluku, rakennusvuosi).
+    en: The project has a digital twin of a city, area or built environment where objects need attributes (e.g. use, number of floors, year of construction).
+  obligation:
+    fi: 'Käytä CityGML 3.0:aa (tai sen JSON-koodausta CityJSON) tietomallina ja muunna näyttöä varten 3D Tilesiksi. Antaa: sama malli kelpaa analyysiin, suunnitteluun ja XR-visualisointiin.'
+    en: 'Use CityGML 3.0 (or its JSON encoding CityJSON) as the data model and convert to 3D Tiles for display. Gives: the same model serves analysis, planning and XR visualisation.'
+  article: ''
+- condition:
+    fi: Kaupunkimalli rakennetaan drooni- tai laserkeilausaineistosta, tai käytetään Suomen kuntien tai Maanmittauslaitoksen 3D-aineistoja.
+    en: The city model is built from drone or laser-scanning data, or uses 3D data from Finnish municipalities or the National Land Survey.
+  obligation:
+    fi: Tarkista aineiston lisenssi ja koordinaattijärjestelmä (Suomessa yleensä ETRS-TM35FIN ja N2000) ennen yhdistämistä.
+    en: Check the data licence and coordinate reference system (in Finland usually ETRS-TM35FIN and N2000) before combining data.
+  article: ''
+keywords:
+- kaupunkimalli
+- city model
+- digitaalinen kaksonen
+- digital twin
+- CityJSON
+- rakennukset
+- semanttinen
+last_verified: '2026-11-14'
+todo: ''

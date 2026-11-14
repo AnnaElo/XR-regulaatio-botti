@@ -1,0 +1,63 @@
+id: reality-capture
+type: use-case-guidance
+name:
+  fi: Drooni-, laserkeilaus- ja fotogrammetria-aineiston tuottaminen XR-käyttöön
+  en: Producing drone, laser-scanning and photogrammetry data for XR
+summary:
+  fi: Kuvauslento ja keilaus edellyttävät ilmailusääntöjen noudattamista ja usein myös tietosuojan huomioimista, koska aineistoon tallentuu ihmisiä, ajoneuvoja ja yksityisiä pihoja.
+  en: Survey flights and scanning require compliance with aviation rules and often data protection, because people, vehicles and private yards end up in the data.
+jurisdiction: FI
+use_cases: [culture, industry, education]
+content_sources: [drone, laser-scanning, phone-camera]
+primary_sources:
+- title: EUR-Lex, täytäntöönpanoasetus (EU) 2019/947
+  url: https://eur-lex.europa.eu/eli/reg/2019/947/oj
+- title: Traficom, miehittämätön ilmailu
+  url: https://www.traficom.fi/fi/miehittamaton-ilmailu
+- title: EUR-Lex, tietosuoja-asetus (EU) 2016/679
+  url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+- title: Finlex, aluevalvontalaki 755/2000
+  url: https://www.finlex.fi/fi/lainsaadanto/2000/755
+finland:
+  authority:
+    fi: Traficom (droonit), tietosuojavaltuutetun toimisto (henkilötiedot)
+    en: Traficom (drones), Office of the Data Protection Ombudsman (personal data)
+  national_guidance:
+  - title: Traficom, UAS-ilmatilavyöhykkeet
+    url: https://www.traficom.fi/fi/miehittamaton-ilmailu/uas-ilmatilavyohykkeet-koneluettavassa-muodossa
+related_documents: [uas, gdpr, pointcloud, cog, 3dtiles, citygml, geopose, astm-e57]
+applies_when:
+- condition:
+    fi: Aineisto kuvataan droonilla.
+    en: Data is captured with a drone.
+  obligation:
+    fi: Ks. uas (operaattorin rekisteröinti, pätevyys, ilmatilavyöhykkeet).
+    en: See uas (operator registration, competency, geographical zones).
+  article: (EU) 2019/947 art. 14(5)
+- condition:
+    fi: Drooni-, keilaus- tai puhelinaineistossa näkyy tunnistettavia ihmisiä, rekisterikilpiä, ikkunoista sisätiloja tai yksityispihoja, ja aineisto julkaistaan XR-mallina.
+    en: Drone, scanning or phone data shows identifiable people, licence plates, interiors through windows or private yards, and the data is published as an XR model.
+  obligation:
+    fi: Aineisto sisältää henkilötietoja. Suunnittele kuvaus niin, että ihmisiä on vähän (ajankohta, tiedottaminen), poista tai sumenna tunnistettavat henkilöt ja rekisterikilvet ennen julkaisua ja kerro käsittelystä.
+    en: The data contains personal data. Plan the capture to minimise people (timing, notices), remove or blur identifiable people and licence plates before publication, and give information on the processing.
+  article: GDPR art. 5(1)(c), 13–14, 25
+- condition:
+    fi: Kuvattava alue on puolustusvoimien tai muu suojattava kohde, tai kuvataan kriittistä infrastruktuuria.
+    en: The area is a defence or other protected site, or critical infrastructure is captured.
+  obligation:
+    fi: Aluevalvontalaki voi rajoittaa kuvaamista ilma-aluksesta suojattavien kohteiden alueella. Tarkista rajoitukset ennen kuvausta ja harkitse aineiston julkaisun rajaamista.
+    en: The Territorial Surveillance Act may restrict imaging from aircraft over protected areas. Check restrictions before capture and consider limiting publication of the data.
+  article: aluevalvontalaki 755/2000
+keywords:
+- drooni
+- drone
+- laserkeilaus
+- laser scanning
+- fotogrammetria
+- photogrammetry
+- pistepilvi
+- kuvauslento
+- yksityisyys
+- privacy
+last_verified: '2026-11-14'
+todo: Varmista aluevalvontalain kuvaamisrajoitusta koskeva pykälä Finlexin ajantasaisesta tekstistä (ei avautunut tarkistuksessa).

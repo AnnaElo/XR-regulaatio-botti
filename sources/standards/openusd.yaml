@@ -4,7 +4,9 @@ category: 3d-content
 name:
   fi: OpenUSD
   en: OpenUSD
-publisher: Alliance for OpenUSD
+publisher: Alliance for OpenUSD (AOUSD), Linux Foundation
+availability: open
+version: Core Specification 1.0
 status:
   fi: Core Specification 1.0, 17.12.2025
   en: Core Specification 1.0, 17 Dec 2025
@@ -12,10 +14,38 @@ summary:
   fi: Laajojen 3D-näkymien kuvaaminen, koostaminen ja yhteismuokkaus. Täydentää glTF:ää.
   en: Describing, composing and collaboratively editing large 3D scenes. Complements glTF.
 jurisdiction: global
+use_cases: [industry, culture]
+content_sources: [3d-artist, laser-scanning]
 primary_sources:
-- title: Alliance for OpenUSD, Core Specification 1.0
+- title: Alliance for OpenUSD, Core Specification 1.0 -julkistus
   url: https://aousd.org/uncategorized/foundations-of-open-3d-development-introducing-aousd-core-specification-1-0/
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: Alliance for OpenUSD, USD Core Specification (sivu ja linkki spesifikaatioon)
+  url: https://aousd.org/usd-core-specification
+- title: AOUSD, julkiset spesifikaatiot (GitHub)
+  url: https://github.com/aousd/specifications-public
+related_regulation: []
+applies_when:
+- condition:
+    fi: Useampi tekijä tai työkalu muokkaa samaa laajaa näkymää, esim. teollisuuden digitaalinen kaksonen, tehdassimulaatio tai elokuva-/kulttuurituotannon putki.
+    en: Several people or tools edit the same large scene, e.g. an industrial digital twin, a factory simulation or a film/cultural production pipeline.
+  obligation:
+    fi: 'Käytä OpenUSD:tä työ- ja koostamisformaattina (layerit, referenssit) ja vie jakeluun glTF:ksi tarvittaessa. Antaa: rinnakkainen muokkaus ilman tiedostojen ylikirjoitusta.'
+    en: 'Use OpenUSD as the working and composition format (layers, references) and export to glTF for distribution where needed. Gives: parallel editing without overwriting files.'
+  article: ''
+- condition:
+    fi: AR-sisältö jaetaan Applen laitteille (USDZ).
+    en: AR content is shared to Apple devices (USDZ).
+  obligation:
+    fi: USDZ on OpenUSD-pohjainen pakkausmuoto. Tarjoa sama malli sekä .glb- että .usdz-muodossa, jos kohdelaitteet vaihtelevat.
+    en: USDZ is an OpenUSD-based package format. Offer the same model as both .glb and .usdz if target devices vary.
+  article: ''
+keywords:
+- USD
+- USDZ
+- digitaalinen kaksonen
+- digital twin
+- näkymä
+- scene
+- Omniverse
+last_verified: '2026-11-14'
+todo: AOUSD:n sivuilla ei ilmoiteta spesifikaation lisenssiä; tarkista ja korjaa availability tarvittaessa.

@@ -5,17 +5,35 @@ name:
   fi: OGC API – Features
   en: OGC API – Features
 publisher: Open Geospatial Consortium
+availability: open
+version: 1.0.1
 status:
-  fi: Avoin rajapintastandardi
-  en: Open API standard
+  fi: 'Part 1: Core, versio 1.0.1 (korjattu painos), julkaistu 11.5.2022'
+  en: 'Part 1: Core, version 1.0.1 (corrigendum), published 11 May 2022'
 summary:
   fi: Paikkatietokohteiden jakaminen web-rajapinnan kautta yhtenäisellä tavalla.
   en: Sharing geospatial features through a web API in a consistent way.
 jurisdiction: global
+use_cases: [industry, culture, education]
+content_sources: []
 primary_sources:
-- title: OGC, OGC API – Features
-  url: https://ogc.org/standard/ogcapi-features
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: OGC, OGC API – Features – Part 1 Core (corrigendum)
+  url: https://docs.ogc.org/is/17-069r4/17-069r4.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: XR-sovellus hakee paikkatietokohteita (esim. rakennukset, kohdepisteet, putkistot, nähtävyydet) toisesta järjestelmästä tai avaa omat kohteensa muiden käyttöön.
+    en: The XR app fetches geospatial features (e.g. buildings, points of interest, pipelines, sights) from another system or opens its own features for others.
+  obligation:
+    fi: 'Käytä OGC API – Features -rajapintaa (GeoJSON). Antaa: suomalaiset viranomaisrajapinnat (esim. Maanmittauslaitos) tarjoavat samaa rajapintamallia.'
+    en: 'Use the OGC API – Features interface (GeoJSON). Gives: Finnish public APIs (e.g. National Land Survey) offer the same API model.'
+  article: ''
+keywords:
+- rajapinta
+- API
+- GeoJSON
+- paikkatieto
+- geospatial
+- kohteet
+last_verified: '2026-11-14'
+todo: Lisää linkki Maanmittauslaitoksen OGC API -palveluihin ensisijaisesta lähteestä.

@@ -1,0 +1,49 @@
+id: en301549
+type: standard
+category: accessibility
+name:
+  fi: EN 301 549 – ICT-tuotteiden ja -palvelujen esteettömyysvaatimukset
+  en: EN 301 549 – Accessibility requirements for ICT products and services
+publisher: ETSI, CEN ja CENELEC
+availability: free-download
+version: V3.2.1 (2021); V4.1.x valmisteilla/julkaistu 2026
+status:
+  fi: V3.2.1 on julkisen sektorin saavutettavuusdirektiivin yhdenmukaistettu standardi elokuusta 2021. V4-versio on tehty esteettömyysdirektiiviä (EAA) varten; luonnos V4.1.0 (11/2025) oli julkisella lausuntokierroksella. Viittaus EU:n virallisessa lehdessä ratkaisee, milloin V4 antaa vaatimustenmukaisuusolettaman.
+  en: V3.2.1 has been the harmonised standard for the Web Accessibility Directive since August 2021. V4 is written for the European Accessibility Act (EAA); draft V4.1.0 (11/2025) went to public enquiry. Citation in the Official Journal decides when V4 gives a presumption of conformity.
+summary:
+  fi: Eurooppalainen esteettömyysstandardi verkkosivuille, sovelluksille, ohjelmistoille ja laitteille. Sisältää WCAG 2.x -vaatimukset sekä vaatimuksia mm. kahdensuuntaiselle puheviestinnälle ja videolle.
+  en: The European accessibility standard for websites, apps, software and hardware. Includes the WCAG 2.x requirements plus requirements for e.g. two-way voice communication and video.
+jurisdiction: EU
+use_cases: []
+content_sources: []
+primary_sources:
+- title: ETSI, EN 301 549 V3 – harmonised European standard for ICT accessibility
+  url: https://www.etsi.org/human-factors-accessibility/en-301-549-v3-the-harmonized-european-standard-for-ict-accessibility
+- title: ETSI, Draft EN 301 549 V4.1.0 (2025-11)
+  url: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_20/en_301549v040100ev.pdf
+related_regulation:
+- id: eaa
+  relation:
+    fi: Esteettömyysdirektiivin piiriin kuuluvan palvelun (esim. verkkokaupan AR-sovitus) vaatimustenmukaisuus osoitetaan käytännössä EN 301 549:n avulla, kun V4 on viitattu virallisessa lehdessä. Suomessa valvoja on Traficom.
+    en: For a service in scope of the Accessibility Act (e.g. AR try-on in an online shop), conformity is shown in practice with EN 301 549 once V4 is cited in the Official Journal. The Finnish supervisor is Traficom.
+- id: digipalvelulaki
+  relation:
+    fi: Julkisen sektorin verkkopalveluilta ja mobiilisovelluksilta (laki 306/2019) edellytetään saavutettavuutta; vaatimukset perustuvat EN 301 549 -standardiin.
+    en: Public sector websites and mobile apps (Act 306/2019) must be accessible; the requirements are based on EN 301 549.
+applies_when:
+- condition:
+    fi: XR-kokemus on osa julkisen sektorin palvelua (esim. kunta, oppilaitos, museo, sairaala) tai esteettömyysdirektiivin piiriin kuuluvaa kuluttajapalvelua.
+    en: The XR experience is part of a public sector service (e.g. municipality, school, museum, hospital) or a consumer service in scope of the Accessibility Act.
+  obligation:
+    fi: 'Arvioi XR-kokemus ja sitä ympäröivä verkko- tai mobiilipalvelu EN 301 549:n mukaan ja laadi saavutettavuusseloste. XR-sisällölle standardissa ei ole omaa lukua, joten täydennä W3C:n XR-saavutettavuusvaatimuksilla (xaur). Antaa: oikeudellisesti tunnustettu mittari.'
+    en: 'Assess the XR experience and the surrounding web or mobile service against EN 301 549 and publish an accessibility statement. The standard has no XR-specific clause, so supplement it with the W3C XR accessibility requirements (xaur). Gives: a legally recognised yardstick.'
+  article: luvut 9–11 (web, dokumentit, ohjelmistot)
+keywords:
+- saavutettavuus
+- esteettömyys
+- accessibility
+- saavutettavuusseloste
+- julkinen sektori
+- WCAG
+last_verified: '2026-11-14'
+todo: Varmista ETSI:n sivulta lopullisen V4.1.1:n julkaisupäivä (toissijaisen lähteen mukaan 2.9.2026) ja EU:n virallisen lehden viittaus (toissijaisen lähteen mukaan odotetaan 22.1.2027). Lisää V3.2.1:n PDF-linkki.

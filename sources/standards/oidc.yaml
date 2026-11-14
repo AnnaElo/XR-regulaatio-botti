@@ -2,20 +2,60 @@ id: oidc
 type: standard
 category: identity
 name:
-  fi: OpenID Connect
-  en: OpenID Connect
+  fi: OpenID Connect ja OpenID4VC
+  en: OpenID Connect and OpenID4VC
 publisher: OpenID Foundation
+availability: open
+version: Core 1.0 (errata set 2); OpenID4VP 1.0; OpenID4VCI 1.0
 status:
-  fi: Core 1.0, perustuu OAuth 2.0:aan
-  en: Core 1.0, built on OAuth 2.0
+  fi: Core 1.0 errata set 2 (15.12.2023); OpenID4VP 1.0 Final (9.7.2025); OpenID4VCI 1.0 Final (16.9.2025)
+  en: Core 1.0 errata set 2 (15 Dec 2023); OpenID4VP 1.0 Final (9 Jul 2025); OpenID4VCI 1.0 Final (16 Sep 2025)
 summary:
-  fi: Kirjautuminen eri palveluihin yhdellä tunnistautumisella. Sovelluksen ei tarvitse käsitellä salasanoja.
-  en: Sign-in to different services with a single authentication. The app does not need to handle passwords.
+  fi: Kirjautuminen eri palveluihin yhdellä tunnistautumisella, ja OpenID4VC-laajennuksilla todisteiden myöntäminen ja esittäminen lompakosta. Sovelluksen ei tarvitse käsitellä salasanoja.
+  en: Sign-in to different services with a single authentication, and with the OpenID4VC extensions, issuing and presenting credentials from a wallet. The app does not need to handle passwords.
 jurisdiction: global
+use_cases: []
+content_sources: []
 primary_sources:
-- title: OpenID Foundation, How OpenID Connect Works
-  url: https://openid.net/developers/how-connect-works/
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: OpenID Foundation, OpenID Connect Core 1.0
+  url: https://openid.net/specs/openid-connect-core-1_0.html
+- title: OpenID Foundation, OpenID for Verifiable Presentations 1.0
+  url: https://openid.net/specs/openid-4-verifiable-presentations-1_0.html
+- title: OpenID Foundation, OpenID for Verifiable Credential Issuance 1.0
+  url: https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html
+related_regulation:
+- id: eidas
+  relation:
+    fi: EUDI-lompakon ARF käyttää OpenID4VP:tä etäesittämiseen ja OpenID4VCI:tä todisteiden myöntämiseen. Täytäntöönpanoasetuksen (EU) 2024/2982 liite viittaa ISO/IEC 18013-5:2021- ja ISO/IEC TS 18013-7:2024 -standardeihin.
+    en: The EUDI Wallet ARF uses OpenID4VP for remote presentation and OpenID4VCI for issuance. The annex of Implementing Regulation (EU) 2024/2982 refers to ISO/IEC 18013-5:2021 and ISO/IEC TS 18013-7:2024.
+- id: gdpr
+  relation:
+    fi: Keskitetty kirjautuminen vähentää sovelluksen käsittelemiä tunnistetietoja (tietojen minimointi).
+    en: Federated sign-in reduces the credentials the app handles (data minimisation).
+applies_when:
+- condition:
+    fi: XR-sovellus tai -palvelu vaatii käyttäjältä kirjautumisen (esim. oppilaitoksen, työnantajan tai sairaalan tunnuksilla).
+    en: The XR app or service requires users to sign in (e.g. with school, employer or hospital accounts).
+  obligation:
+    fi: 'Käytä OpenID Connectia organisaation tai tunnistuspalvelun kautta, ja XR-laseilla laitekoodikirjautumista (Device Authorization Grant), ettei salasanaa tarvitse kirjoittaa laseilla. Antaa: ei omaa salasanarekisteriä.'
+    en: 'Use OpenID Connect through the organisation or identity provider, and on headsets the device code flow (Device Authorization Grant) so passwords need not be typed in the headset. Gives: no password database of your own.'
+  article: ''
+- condition:
+    fi: Palvelu ottaa vastaan tietoja EU:n digitaalisen identiteetin lompakosta (esim. ikä, henkilöllisyys, pätevyys).
+    en: The service receives data from the EU Digital Identity Wallet (e.g. age, identity, qualifications).
+  obligation:
+    fi: Toteuta OpenID4VP ja pyydä vain tarvittavat attribuutit (valikoiva paljastaminen).
+    en: Implement OpenID4VP and request only the attributes needed (selective disclosure).
+  article: ''
+keywords:
+- kirjautuminen
+- login
+- sign-in
+- SSO
+- tunnistautuminen
+- authentication
+- lompakko
+- wallet
+- OpenID4VP
+last_verified: '2026-11-14'
+todo: Device Authorization Grant on IETF RFC 8628; lisää ensisijainen linkki, jos ohje halutaan tarkentaa.

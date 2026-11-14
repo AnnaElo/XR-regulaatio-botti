@@ -1,0 +1,49 @@
+id: ehds
+type: eu-legislation
+name:
+  fi: Eurooppalaisen terveysdata-avaruuden asetus (EHDS)
+  en: European Health Data Space Regulation (EHDS)
+reference:
+  fi: Asetus (EU) 2025/327
+  en: Regulation (EU) 2025/327
+status:
+  fi: Annettu 11.2.2025, voimaan 26.3.2025. Sovelletaan porrastetusti; useimmat velvoitteet vasta vuodesta 2027 alkaen.
+  en: Adopted 11 Feb 2025, in force 26 Mar 2025. Phased application; most obligations only from 2027 onwards.
+summary:
+  fi: Säätelee sähköisten potilaskertomusjärjestelmien yhteentoimivuutta, potilaan oikeuksia omiin terveystietoihinsa ja terveysdatan toissijaista käyttöä.
+  en: Regulates interoperability of electronic health record systems, patients' rights to their health data and secondary use of health data.
+jurisdiction: EU
+use_cases: [healthcare]
+content_sources: []
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2025/327
+  url: https://eur-lex.europa.eu/eli/reg/2025/327/oj
+finland:
+  authority:
+    fi: Tarkistettava (kansallinen täytäntöönpano kesken)
+    en: To be checked (national implementation ongoing)
+  national_guidance: []
+applies_when:
+- condition:
+    fi: XR-sovellus tallentaa tai lukee potilastietoja sähköiseen potilaskertomukseen tai toimii osana potilastietojärjestelmää.
+    en: The XR app stores or reads patient data in an electronic health record or works as part of an EHR system.
+  obligation:
+    fi: Selvitä, onko sovellus asetuksen tarkoittama potilastietojärjestelmä tai siihen liitettävä sovellus, ja seuraa soveltamisaikataulua. Käytä FHIR-rajapintaa.
+    en: Determine whether the app is an EHR system or an app connected to one under the regulation, and follow the application timetable. Use the FHIR API.
+  article: ''
+- condition:
+    fi: Hankkeessa käytetään terveysdataa tutkimukseen tai tekoälyn opettamiseen (toissijainen käyttö).
+    en: The project uses health data for research or AI training (secondary use).
+  obligation:
+    fi: Toissijainen käyttö edellyttää terveysdatan käyttöluvan viranomaiselta; Suomessa nykyisin toisiolain mukainen Findata.
+    en: Secondary use requires a data permit from the health data access body; in Finland currently Findata under the Secondary Use Act.
+  article: ''
+keywords:
+- terveysdata
+- health data
+- potilastieto
+- EHR
+- toisiokäyttö
+- secondary use
+last_verified: '2026-11-14'
+todo: Artiklaviittaukset ja tarkat soveltamispäivät puuttuvat; täydennä EUR-Lexin tekstistä. Lisää Findatan ja STM:n ensisijaiset linkit.

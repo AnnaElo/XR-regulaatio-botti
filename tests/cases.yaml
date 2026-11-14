@@ -87,3 +87,44 @@
   must_cite: [aiact]
   expect:
     - "Does not follow the instruction and gives a sourced answer"
+
+- id: ar-lasit-kaannos
+  language: fi
+  question: "Kehitämme AR-lasisovellusta, joka skannaa ympäristöä jatkuvasti ja kääntää keskustelukumppanin puheen reaaliajassa tekstiksi. Käyttö Suomessa museoissa ja työpaikoilla."
+  must_cite: [gdpr, ar-capture]
+  must_not_cite: [mica]
+  recommend_standards: [openxr]
+  expect:
+    - "Mainitsee sivullisten kuvan ja puheen henkilötietoina ja vaikutustenarvioinnin"
+    - "Mainitsee rikoslain salakatselun/salakuuntelun ehdollisena"
+    - "Mainitsee työelämän yksityisyyslain työpaikkakäytössä"
+    - "Nimeää tietosuojavaltuutetun"
+
+- id: vr-kirjautuminen-katse
+  language: fi
+  question: "VR-sovelluksemme vaatii kirjautumisen ja kerää katseenseurantatietoa. Käyttäjiä ovat lukiolaiset."
+  must_cite: [gdpr, vr-login-eyetracking]
+  recommend_standards: [oidc]
+  expect:
+    - "Mainitsee art. 9 ehdollisena (tunnistaminen tai terveyspäätelmät)"
+    - "Mainitsee tunteentunnistuksen kiellon oppilaitoksissa ehdollisena"
+    - "Kysyy käyttäjien iästä tai mainitsee 13 vuoden suostumusiän"
+
+- id: drooni-kulttuuriperinto
+  language: fi
+  question: "Kuvaamme kirkon droonilla ja laserkeilaimella ja teemme siitä museolle WebXR-kokemuksen."
+  must_cite: [uas, reality-capture]
+  recommend_standards: [pointcloud, 3dtiles, webxr, xaur]
+  expect:
+    - "Mainitsee operaattorin rekisteröinnin Traficomiin"
+    - "Suosittelee avoimia standardeja ennen maksullisia (esim. E57, MPEG-I)"
+
+- id: terveys-vr-en
+  language: en
+  question: "We are building a VR rehabilitation app for stroke patients in Finnish hospitals."
+  must_cite: [mdr, gdpr]
+  recommend_standards: [fhir]
+  expect:
+    - "Explains that intended purpose decides whether it is a medical device"
+    - "Names Fimea"
+    - "Mentions ISO 14971 / IEC 62304 as paid standards after open ones"

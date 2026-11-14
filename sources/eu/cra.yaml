@@ -23,6 +23,7 @@ finland:
     fi: null
     en: null
   national_guidance: []
+related_standards: [openxr]
 applies_when:
 - condition:
     fi: EU:ssa myydään digitaalisia tuotteita, esim. XR-laitteita tai -ohjelmistoja.

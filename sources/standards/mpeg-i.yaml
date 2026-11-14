@@ -1,0 +1,45 @@
+id: mpeg-i
+type: standard
+category: 3d-content
+name:
+  fi: MPEG-I (ISO/IEC 23090) – immersiivinen media
+  en: MPEG-I (ISO/IEC 23090) – Coded representation of immersive media
+reference:
+  fi: ISO/IEC 23090, mm. osat 2 (OMAF), 5 (V3C/V-PCC), 9 (G-PCC), 12 (MIV), 14 (Scene Description)
+  en: ISO/IEC 23090, incl. parts 2 (OMAF), 5 (V3C/V-PCC), 9 (G-PCC), 12 (MIV), 14 (Scene Description)
+publisher: ISO/IEC JTC 1/SC 29 (MPEG)
+availability: paid
+open_alternative: [gltf, pointcloud, 3dtiles]
+version: ''
+status:
+  fi: Standardisarja, osia julkaistu ja päivitetään (painokset tarkistamatta)
+  en: Standard series, parts published and updated (editions not verified)
+summary:
+  fi: 360-videon, volumetrisen videon ja pistepilvien pakkaus ja siirto sekä immersiivisen näkymän kuvaus (osa 14 laajentaa glTF:ää).
+  en: Compression and delivery of 360° video, volumetric video and point clouds, and description of immersive scenes (part 14 extends glTF).
+jurisdiction: global
+use_cases: [culture, education]
+content_sources: [laser-scanning, phone-camera]
+primary_sources:
+- title: ISO/IEC JTC 1/SC 29 (MPEG) – ks. iso.org, haku "ISO/IEC 23090"
+  url: https://www.iso.org/committee/45316.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: Jaetaan 360-videota, volumetristä videota (esim. kuvattu esiintyjä tai haastateltava) tai suuria pistepilviä suoratoistona verkon yli.
+    en: 360° video, volumetric video (e.g. a captured performer or interviewee) or large point clouds are streamed over the network.
+  obligation:
+    fi: 'Toissijainen, maksullinen. V-PCC/G-PCC ja MIV soveltuvat volumetrisen sisällön pakkaukseen, osa 14 (Scene Description) glTF-pohjaiseen näkymäkuvaukseen. Aloita avoimilla (glTF, LAS/COPC, 3D Tiles) ja harkitse MPEG-I:tä, kun tarvitaan videon kaltaista pakkausta.'
+    en: 'Secondary, paid. V-PCC/G-PCC and MIV suit compression of volumetric content, part 14 (Scene Description) a glTF-based scene description. Start with open formats (glTF, LAS/COPC, 3D Tiles) and consider MPEG-I when video-like compression is needed.'
+  article: ''
+keywords:
+- MPEG-I
+- 360-video
+- volumetrinen video
+- volumetric video
+- V-PCC
+- G-PCC
+- pistepilven pakkaus
+- point cloud compression
+last_verified: ''
+todo: Varmista iso.org-linkit, osien nimet ja nykyiset painokset (ISO:n haku ei toiminut tarkistuksessa). Varmista myös komitean URL.

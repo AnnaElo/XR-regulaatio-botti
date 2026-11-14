@@ -1,0 +1,47 @@
+id: fhir
+type: standard
+category: domain-data
+name:
+  fi: HL7 FHIR
+  en: HL7 FHIR
+publisher: HL7 International
+availability: open
+version: R5 (5.0.0)
+status:
+  fi: FHIR R5 (v5.0.0) on nykyinen julkaistu versio. Lisenssi CC0.
+  en: FHIR R5 (v5.0.0) is the current published version. Licence CC0.
+summary:
+  fi: Terveystietojen siirtorajapinta (esim. potilastiedot, mittaukset, hoitosuunnitelmat).
+  en: An API standard for exchanging health data (e.g. patient records, observations, care plans).
+jurisdiction: global
+use_cases: [healthcare]
+content_sources: []
+primary_sources:
+- title: HL7, FHIR
+  url: https://hl7.org/fhir/
+related_regulation:
+- id: gdpr
+  relation:
+    fi: Terveystiedot ovat erityisiä henkilötietoryhmiä (art. 9).
+    en: Health data is a special category of personal data (Art. 9).
+- id: ehds
+  relation:
+    fi: Eurooppalaisen terveysdata-avaruuden asetus (EU) 2025/327 koskee sähköisten potilaskertomusjärjestelmien yhteentoimivuutta.
+    en: The European Health Data Space Regulation (EU) 2025/327 covers interoperability of electronic health record systems.
+applies_when:
+- condition:
+    fi: XR-sovellus lukee tai kirjaa potilastietoja (esim. kuntoutusharjoitusten tulokset, mittaukset) sairaalan tai Kanta-palvelujen järjestelmiin.
+    en: An XR app reads or writes patient data (e.g. rehabilitation results, measurements) to hospital or national health record systems.
+  obligation:
+    fi: 'Käytä FHIR-rajapintaa. Antaa: yhteensopivuus suomalaisten ja eurooppalaisten terveystietojärjestelmien kanssa.'
+    en: 'Use the FHIR API. Gives: compatibility with Finnish and European health information systems.'
+  article: ''
+keywords:
+- FHIR
+- potilastieto
+- health record
+- kuntoutus
+- rehabilitation
+- Kanta
+last_verified: '2026-11-14'
+todo: Tarkista Kanta-palvelujen FHIR-käyttö ensisijaisesta lähteestä (kanta.fi), ennen kuin botti mainitsee sen tarkemmin.

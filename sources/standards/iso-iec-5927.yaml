@@ -1,0 +1,43 @@
+id: iso-iec-5927
+type: standard
+category: safety-ergonomics
+name:
+  fi: ISO/IEC 5927:2024 – AR- ja VR-turvallisuus
+  en: ISO/IEC 5927:2024 – Augmented and virtual reality safety
+reference:
+  fi: ISO/IEC 5927:2024
+  en: ISO/IEC 5927:2024
+publisher: ISO/IEC JTC 1/SC 24
+availability: paid
+open_alternative: [xaur]
+version: '2024'
+status:
+  fi: Julkaistu 2/2024, painos 1
+  en: Published Feb 2024, edition 1
+summary:
+  fi: Ohjeet turvalliseen immersioon, laitteiden käyttöönottoon ja käyttöön (esim. tila, istuntojen kesto, pahoinvointi, hygienia).
+  en: Guidance on safe immersion, set-up and use (e.g. play area, session length, motion sickness, hygiene).
+jurisdiction: global
+use_cases: [education, industry, healthcare, culture]
+content_sources: []
+primary_sources:
+- title: ISO, ISO/IEC 5927:2024
+  url: https://www.iso.org/standard/81847.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: VR-laseja käyttävät monet eri ihmiset ohjatusti, esim. luokassa, museossa, messuilla tai työpaikkakoulutuksessa.
+    en: VR headsets are used by many different people under supervision, e.g. in a classroom, museum, trade fair or workplace training.
+  obligation:
+    fi: 'Toissijainen, maksullinen. Käytä turvallisen käyttöönoton ja käyttöohjeiden pohjana (tila, kesto, tauot, hygienia, valvonta). Antaa: perusteltu turvallisuuskäytäntö.'
+    en: 'Secondary, paid. Use as the basis for safe set-up and usage instructions (space, duration, breaks, hygiene, supervision). Gives: a well-founded safety practice.'
+  article: ''
+keywords:
+- turvallisuus
+- safety
+- pahoinvointi
+- cybersickness
+- hygienia
+- käyttöohje
+last_verified: '2026-11-14'
+todo: ''

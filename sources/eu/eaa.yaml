@@ -21,6 +21,7 @@ finland:
     fi: Traficom
     en: Traficom
   national_guidance: []
+related_standards: [en301549, wcag, xaur, webxr]
 applies_when:
 - condition:
     fi: Tuote tai palvelu kuuluu soveltamisalaan, esim. verkkokaupan AR-sovitus. Mikroyritykset on vapautettu palveluvaatimuksista.

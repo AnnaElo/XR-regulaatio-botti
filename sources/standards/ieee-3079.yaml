@@ -1,0 +1,43 @@
+id: ieee-3079
+type: standard
+category: safety-ergonomics
+name:
+  fi: IEEE 3079-2020 – VR-pahoinvoinnin vähentäminen
+  en: IEEE 3079-2020 – HMD-based VR sickness reduction technology
+reference:
+  fi: IEEE 3079-2020
+  en: IEEE 3079-2020
+publisher: IEEE Standards Association
+availability: paid
+open_alternative: [xaur]
+version: '2020'
+status:
+  fi: Voimassa (Active), julkaistu 29.4.2021
+  en: Active, published 29 Apr 2021
+summary:
+  fi: Menetelmät VR-lasien aiheuttaman pahoinvoinnin arviointiin ja vähentämiseen.
+  en: Methods for assessing and reducing sickness caused by VR headsets.
+jurisdiction: global
+use_cases: [education, healthcare, industry, culture]
+content_sources: []
+primary_sources:
+- title: IEEE SA, IEEE 3079-2020
+  url: https://standards.ieee.org/ieee/3079/7283/
+related_regulation: []
+applies_when:
+- condition:
+    fi: VR-sovelluksessa liikutaan virtuaalisesti (esim. lento, ajoneuvo, kävely ohjaimella) tai istunnot ovat pitkiä, tai käyttäjiä ovat potilaat, lapset tai iäkkäät.
+    en: The VR app uses virtual locomotion (e.g. flying, vehicles, joystick walking) or long sessions, or users are patients, children or older people.
+  obligation:
+    fi: Toissijainen, maksullinen. Käytä pahoinvoinnin arvioinnin ja testauksen tukena; avoimena vaihtoehtona XAUR:n liikkumis- ja mukavuusvaatimukset.
+    en: Secondary, paid. Use to support sickness assessment and testing; the open alternative is XAUR's locomotion and comfort requirements.
+  article: ''
+keywords:
+- pahoinvointi
+- VR sickness
+- cybersickness
+- liikkuminen
+- locomotion
+- mukavuus
+last_verified: '2026-11-14'
+todo: ''

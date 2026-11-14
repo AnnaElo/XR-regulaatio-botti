@@ -1,0 +1,40 @@
+id: cog
+type: standard
+category: reality-capture
+name:
+  fi: Cloud Optimized GeoTIFF (COG)
+  en: Cloud Optimized GeoTIFF (COG)
+publisher: Open Geospatial Consortium
+availability: open
+version: '1.0'
+status:
+  fi: OGC-standardi versio 1.0, julkaistu 14.7.2023
+  en: OGC Standard version 1.0, published 14 Jul 2023
+summary:
+  fi: Georeferoitujen rasterikuvien (esim. droonin ortokuvat ja korkeusmallit) muoto, jota voi lukea osissa suoraan verkosta.
+  en: A format for georeferenced raster images (e.g. drone orthophotos and elevation models) that can be read in parts directly over the web.
+jurisdiction: global
+use_cases: [industry, culture, education]
+content_sources: [drone]
+primary_sources:
+- title: OGC, Cloud Optimized GeoTIFF Standard
+  url: https://docs.ogc.org/is/21-026/21-026.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: Droonikuvauksesta tuotetaan ortokuva, korkeusmalli tai muu rasteriaineisto, jota käytetään XR-näkymän pohjana.
+    en: A drone survey produces an orthophoto, elevation model or other raster used as the base of an XR view.
+  obligation:
+    fi: 'Tallenna rasterit COG-muodossa. Antaa: sama tiedosto toimii paikkatieto-ohjelmissa ja verkkojakelussa ilman erillistä palvelinta.'
+    en: 'Store rasters as COG. Gives: the same file works in GIS software and web delivery without a separate server.'
+  article: ''
+keywords:
+- ortokuva
+- orthophoto
+- korkeusmalli
+- elevation model
+- GeoTIFF
+- drooni
+- drone
+last_verified: '2026-11-14'
+todo: ''

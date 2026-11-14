@@ -1,0 +1,40 @@
+id: ifc
+type: standard
+category: domain-data
+name:
+  fi: Industry Foundation Classes (IFC)
+  en: Industry Foundation Classes (IFC)
+publisher: buildingSMART International (myös ISO 16739-1:2024)
+availability: open
+version: IFC 4.3.2.0
+status:
+  fi: IFC 4.3, julkaistu ISO:ssa nimellä ISO 16739-1:2024. buildingSMART julkaisee spesifikaation maksutta Creative Commons -lisenssillä.
+  en: IFC 4.3, published by ISO as ISO 16739-1:2024. buildingSMART publishes the specification free of charge under a Creative Commons licence.
+summary:
+  fi: Rakennusten ja infran tietomallien (BIM) avoin siirtomuoto.
+  en: The open exchange format for building and infrastructure information models (BIM).
+jurisdiction: global
+use_cases: [industry, education]
+content_sources: [3d-artist, laser-scanning]
+primary_sources:
+- title: buildingSMART, Industry Foundation Classes
+  url: https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/
+related_regulation: []
+applies_when:
+- condition:
+    fi: XR:ssä katsellaan rakennus- tai infrahankkeen tietomallia (esim. työmaa-AR, suunnitelmien katselmointi, kiinteistön digitaalinen kaksonen).
+    en: An XR view shows a building or infrastructure information model (e.g. on-site AR, design review, a building digital twin).
+  obligation:
+    fi: 'Hae lähtöaineisto IFC-muodossa ja säilytä kohteiden tunnisteet (GlobalId) XR-muunnoksessa. Antaa: XR-näkymän havainnot voidaan liittää takaisin oikeaan rakennusosaan.'
+    en: 'Take source data as IFC and keep object identifiers (GlobalId) through the XR conversion. Gives: findings in XR can be linked back to the right building element.'
+  article: ''
+keywords:
+- BIM
+- IFC
+- tietomalli
+- rakentaminen
+- construction
+- työmaa
+- digitaalinen kaksonen
+last_verified: '2026-11-14'
+todo: ''

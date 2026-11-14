@@ -5,6 +5,8 @@ name:
   fi: Verifiable Credentials
   en: Verifiable Credentials
 publisher: W3C
+availability: open
+version: Data Model v2.0
 status:
   fi: Data Model v2.0, suositus 15.5.2025
   en: Data Model v2.0, Recommendation 15 May 2025
@@ -12,10 +14,40 @@ summary:
   fi: Väärentämiseltä suojatut, koneellisesti todennettavat todisteet, esim. jäsenyydestä, pätevyydestä tai omistajuudesta.
   en: Tamper-proof, machine-verifiable credentials, e.g. of membership, qualifications or ownership.
 jurisdiction: global
+use_cases: [education, industry]
+content_sources: []
 primary_sources:
 - title: W3C, Verifiable Credentials Data Model v2.0
   url: https://www.w3.org/TR/vc-data-model-2.0/
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: EUDI-lompakon arkkitehtuuri- ja viitekehys (ARF), tietomalli ja protokollat
+  url: https://eudi.dev/latest/main/05-data-model-and-data-exchange-protocols/
+related_regulation:
+- id: eidas
+  relation:
+    fi: EUDI-lompakon ARF (v3.0.0, 21.7.2026) edellyttää ISO/IEC 18013-5 (mdoc) ja IETF SD-JWT VC -muotoja. W3C VC 2.0 on valinnainen ja tarkoitettu vain ei-hyväksytyille (non-qualified) attribuuttitodisteille.
+    en: The EUDI Wallet ARF (v3.0.0, 21 Jul 2026) requires the ISO/IEC 18013-5 (mdoc) and IETF SD-JWT VC formats. W3C VC 2.0 is optional and meant only for non-qualified attestations of attributes.
+applies_when:
+- condition:
+    fi: XR-koulutuksesta myönnetään todistus tai osaamismerkki (esim. työturvallisuus- tai laiteperehdytys), jonka työnantaja tai oppilaitos haluaa tarkistaa.
+    en: XR training issues a certificate or badge (e.g. safety or equipment induction) that an employer or school wants to verify.
+  obligation:
+    fi: 'Myönnä todistus Verifiable Credential -muodossa (esim. Open Badges 3.0 perustuu VC:hen). Antaa: todistus on tarkistettavissa ilman yhteyttä myöntäjän järjestelmään.'
+    en: 'Issue the certificate as a Verifiable Credential (e.g. Open Badges 3.0 is based on VC). Gives: the credential can be verified without contacting the issuer''s system.'
+  article: ''
+- condition:
+    fi: Palvelu hyväksyy EU:n digitaalisen identiteetin lompakon todisteita.
+    en: The service accepts credentials from the EU Digital Identity Wallet.
+  obligation:
+    fi: Tue ensisijaisesti ARF:n vaatimia muotoja (mdoc, SD-JWT VC) ja OpenID4VP-protokollaa (ks. oidc); W3C VC on lisävaihtoehto.
+    en: Primarily support the formats the ARF requires (mdoc, SD-JWT VC) and the OpenID4VP protocol (see oidc); W3C VC is an additional option.
+  article: ''
+keywords:
+- todiste
+- credential
+- osaamismerkki
+- badge
+- sertifikaatti
+- lompakko
+- wallet
+last_verified: '2026-11-14'
+todo: Open Badges 3.0 -viittaukselle ei ole vielä ensisijaista lähdettä tietopohjassa (1EdTech).

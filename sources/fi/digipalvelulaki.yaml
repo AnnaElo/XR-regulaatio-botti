@@ -1,0 +1,45 @@
+id: digipalvelulaki
+type: national-legislation
+name:
+  fi: Laki digitaalisten palvelujen tarjoamisesta
+  en: Act on the Provision of Digital Services
+reference:
+  fi: Laki 306/2019
+  en: Act 306/2019
+status:
+  fi: Voimassa
+  en: In force
+summary:
+  fi: Julkisen sektorin (ja eräiden muiden toimijoiden) verkkosivujen ja mobiilisovellusten on oltava saavutettavia, ja niistä on julkaistava saavutettavuusseloste. Panee täytäntöön EU:n saavutettavuusdirektiivin (EU) 2016/2102.
+  en: Websites and mobile apps of the public sector (and some other bodies) must be accessible and have an accessibility statement. Implements the EU Web Accessibility Directive (EU) 2016/2102.
+jurisdiction: FI
+use_cases: [education, culture, healthcare]
+content_sources: []
+primary_sources:
+- title: Finlex, laki 306/2019
+  url: https://www.finlex.fi/fi/lainsaadanto/2019/306
+finland:
+  authority:
+    fi: Traficom (saavutettavuusvaatimusten valvonta keskitetty Traficomiin 1.1.2025 alkaen)
+    en: Traficom (accessibility supervision centralised at Traficom from 1 Jan 2025)
+  national_guidance:
+  - title: Traficom, Saavutettavuusvaatimukset
+    url: https://www.saavutettavuusvaatimukset.fi/fi
+applies_when:
+- condition:
+    fi: XR-kokemus julkaistaan julkisen sektorin toimijan (esim. kunta, oppilaitos, korkeakoulu, julkinen museo, hyvinvointialue) verkkosivulla tai mobiilisovelluksessa.
+    en: The XR experience is published on a website or mobile app of a public sector body (e.g. municipality, school, university, public museum, wellbeing services county).
+  obligation:
+    fi: Toteuta saavutettavuus EN 301 549 / WCAG AA -tasolla ja julkaise saavutettavuusseloste, jossa kerrotaan myös XR-sisällön puutteista ja vaihtoehtoisesta tavasta saada sama tieto.
+    en: Implement accessibility at EN 301 549 / WCAG AA level and publish an accessibility statement that also covers gaps in the XR content and an alternative way to get the same information.
+  article: ''
+keywords:
+- saavutettavuus
+- accessibility
+- julkinen sektori
+- public sector
+- saavutettavuusseloste
+- oppilaitos
+- museo
+last_verified: '2026-11-14'
+todo: Lisää pykäläviittaukset (soveltamisala ja poikkeukset, esim. kulttuuriperintökokoelmat) Finlexin ajantasaisesta tekstistä; ei avautunut tarkistuksessa.

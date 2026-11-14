@@ -5,17 +5,50 @@ name:
   fi: glTF 2.0
   en: glTF 2.0
 publisher: Khronos Group
+availability: open
+version: '2.0'
 status:
-  fi: ISO/IEC 12113:2022
-  en: null
+  fi: Versio 2.0. Sama sisältö on julkaistu myös maksullisena ISO/IEC 12113:2022 -standardina.
+  en: Version 2.0. The same content is also published as the paid standard ISO/IEC 12113:2022.
 summary:
   fi: Kevyt formaatti 3D-mallien siirtoon ja reaaliaikaiseen käyttöön. Oletusvalinta yksittäisille 3D-objekteille.
   en: A lightweight format for transferring 3D models and using them in real time. The default choice for single 3D objects.
 jurisdiction: global
+use_cases: []
+content_sources: []
 primary_sources:
-- title: Khronos Group, glTF 2.0 ISO/IEC-standardiksi
-  url: https://www.khronos.org/news/press/khronos-gltf-2.0-released-as-an-iso-iec-international-standard
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: Khronos Group, glTF 2.0 -spesifikaatio
+  url: https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html
+- title: Khronos Group, glTF-laajennusten rekisteri
+  url: https://github.com/KhronosGroup/glTF/tree/main/extensions
+related_regulation:
+- id: aiact
+  relation:
+    fi: Jos 3D-malli on tekoälyn tuottama, koneluettava merkintä (art. 50(2)) voidaan kuljettaa tiedoston metatiedoissa tai erillisellä sisällön alkuperätiedolla (ks. c2pa).
+    en: If a 3D model is AI-generated, the machine-readable marking (Art. 50(2)) can travel in file metadata or as separate content provenance (see c2pa).
+applies_when:
+- condition:
+    fi: Yksittäisiä 3D-malleja (3D-artistin mallintamia, tekoälyllä generoituja tai puhelimella/fotogrammetrialla skannattuja) siirretään työkalusta toiseen tai näytetään reaaliaikaisesti XR:ssä tai selaimessa.
+    en: Single 3D models (made by a 3D artist, generated with AI, or scanned with a phone or photogrammetry) are moved between tools or shown in real time in XR or in a browser.
+  obligation:
+    fi: 'Vie mallit glTF 2.0 -muodossa (.glb), PBR-materiaalit ja tarvittaessa Draco/Meshopt-pakkaus ja KTX2-tekstuurit. Antaa: toimii lähes kaikissa moottoreissa ja selaimissa ilman muunnoksia.'
+    en: 'Export models as glTF 2.0 (.glb) with PBR materials, and Draco/Meshopt compression and KTX2 textures where needed. Gives: works in nearly all engines and browsers without conversion.'
+  article: ''
+- condition:
+    fi: Sisältöä tallennetaan pitkäaikaisesti tai jaetaan organisaatioiden välillä, esim. museokokoelmat, opetusmateriaalit tai tuoteluettelot.
+    en: Content is stored long-term or shared between organisations, e.g. museum collections, teaching materials or product catalogues.
+  obligation:
+    fi: Käytä glTF:ää jakeluformaattina, mutta säilytä myös alkuperäinen lähdeaineisto (esim. pistepilvi tai mallinnustiedosto) ja lisensointitiedot metatietoina (asset.copyright, extras).
+    en: Use glTF as the distribution format, but also keep the original source data (e.g. point cloud or modelling file) and licence information as metadata (asset.copyright, extras).
+  article: asset
+keywords:
+- 3D-malli
+- 3D model
+- .glb
+- mallinnus
+- fotogrammetria
+- photogrammetry
+- 3D-skannaus
+- tekoälyllä generoitu 3D
+last_verified: '2026-11-14'
+todo: Tarkista ISO/IEC 12113:2022:n sivu iso.org:sta (ei avautunut tarkistuksessa). KHR_gaussian_splatting oli julkaisuehdokas 3.2.2026 (ratifiointia odotettiin Q2/2026); tarkista tila ja lisää applies_when-ehto puhelin-/drooniskannatuille Gaussian splat -malleille.

@@ -1,0 +1,49 @@
+id: medical-device-standards
+type: standard
+category: safety-ergonomics
+name:
+  fi: Lääkinnällisten laitteiden ohjelmistostandardit (ISO 14971, IEC 62304, IEC 62366-1)
+  en: Medical device software standards (ISO 14971, IEC 62304, IEC 62366-1)
+reference:
+  fi: ISO 14971 (riskienhallinta), IEC 62304 (ohjelmiston elinkaari), IEC 62366-1 (käytettävyyssuunnittelu)
+  en: ISO 14971 (risk management), IEC 62304 (software life cycle), IEC 62366-1 (usability engineering)
+publisher: ISO ja IEC
+availability: paid
+open_alternative: []
+version: ''
+status:
+  fi: Voimassa olevat painokset tarkistettava. EU:n yhdenmukaistetut standardit MDR:lle on lueteltu täytäntöönpanopäätöksessä (EU) 2021/1182 muutoksineen (viimeisin 9.11.2026).
+  en: Current editions to be checked. EU harmonised standards for the MDR are listed in Implementing Decision (EU) 2021/1182 as amended (latest 9 Nov 2026).
+summary:
+  fi: Lääkinnällisenä laitteena toimivan XR-ohjelmiston kehitysprosessin keskeiset standardit.
+  en: Key standards for the development process of XR software that is a medical device.
+jurisdiction: global
+use_cases: [healthcare]
+content_sources: []
+primary_sources:
+- title: Euroopan komissio, yhdenmukaistetut standardit – lääkinnälliset laitteet
+  url: https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/harmonised-standards/medical-devices_en
+related_regulation:
+- id: mdr
+  relation:
+    fi: Yhdenmukaistettujen standardien noudattaminen antaa olettaman MDR:n vastaavien vaatimusten täyttymisestä. Tarkista komission listasta, mitkä painokset on viitattu.
+    en: Following harmonised standards gives a presumption of conformity with the corresponding MDR requirements. Check the Commission list for the cited editions.
+applies_when:
+- condition:
+    fi: Terveydenhuollon XR-sovellus on tai voi olla lääkinnällinen laite (esim. diagnoosi, hoito, kuntoutuksen ohjaus, leikkauksen suunnittelu).
+    en: A healthcare XR app is or may be a medical device (e.g. diagnosis, treatment, guided rehabilitation, surgical planning).
+  obligation:
+    fi: Toissijainen, maksullinen, mutta käytännössä välttämätön. Rakenna riskienhallinta (ISO 14971), ohjelmiston elinkaariprosessi (IEC 62304) ja käytettävyyssuunnittelu (IEC 62366-1) alusta asti. Avointa vaihtoehtoa ei ole.
+    en: Secondary and paid, but essential in practice. Build risk management (ISO 14971), the software life cycle (IEC 62304) and usability engineering (IEC 62366-1) in from the start. There is no open alternative.
+  article: ''
+keywords:
+- lääkinnällinen laite
+- medical device
+- MDR
+- riskienhallinta
+- risk management
+- ISO 14971
+- IEC 62304
+- IEC 62366
+last_verified: '2026-11-14'
+todo: Lisää iso.org/iec.ch-linkit ja varmista komission listasta, mitkä EN-painokset on viitattu MDR:n alla.

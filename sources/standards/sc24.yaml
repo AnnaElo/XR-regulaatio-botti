@@ -5,17 +5,34 @@ name:
   fi: ISO/IEC JTC 1/SC 24
   en: ISO/IEC JTC 1/SC 24
 publisher: ISO ja IEC
+availability: paid
+open_alternative: []
+version: ''
 status:
-  fi: Metaverse-työpaja 26.6.2023
-  en: Metaverse workshop 26 Jun 2023
+  fi: Alikomitea; metaverse-työpaja 26.6.2023
+  en: Subcommittee; metaverse workshop 26 Jun 2023
 summary:
-  fi: Alikomitea, joka valmistelee mm. VR-, AR- ja metaverse-aiheisia ISO/IEC-standardeja.
-  en: Subcommittee preparing ISO/IEC standards on VR, AR and the metaverse, among others.
+  fi: Alikomitea, joka valmistelee mm. VR-, AR- ja metaverse-aiheisia ISO/IEC-standardeja (esim. ISO/IEC 5927, ISO/IEC 18039/18040, ISO/IEC 24931).
+  en: Subcommittee preparing ISO/IEC standards on VR, AR and the metaverse (e.g. ISO/IEC 5927, ISO/IEC 18039/18040, ISO/IEC 24931).
 jurisdiction: global
+use_cases: []
+content_sources: []
 primary_sources:
 - title: JTC 1, SC 24:n metaverse-työpaja
   url: https://jtc1info.org/replay-of-the-jtc-1-sc-24-workshop-on-metaverse/
-applies_when: []
-keywords: []
+related_regulation: []
+applies_when:
+- condition:
+    fi: Käyttäjä kysyy, mitä ISO/IEC-standardeja VR:lle, AR:lle tai metaversumille on tai on tulossa.
+    en: The user asks which ISO/IEC standards exist or are coming for VR, AR or the metaverse.
+  obligation:
+    fi: Taustalähde. Mainitse toissijaisesti avointen standardien jälkeen ja ohjaa yksittäisiin standardeihin (iso-iec-5927, iso-iec-mar, watchlist/iso-iec-24931-1). Suomessa ISO/IEC-standardit myy SFS.
+    en: Background source. Mention second, after open standards, and point to individual standards (iso-iec-5927, iso-iec-mar, watchlist/iso-iec-24931-1). In Finland, ISO/IEC standards are sold by SFS.
+  article: ''
+keywords:
+- ISO/IEC
+- SC 24
+- metaverse
+- tietokonegrafiikka
 last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+todo: ''

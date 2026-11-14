@@ -5,17 +5,36 @@ name:
   fi: OGC API – Tiles
   en: OGC API – Tiles
 publisher: Open Geospatial Consortium
+availability: open
+version: '1.0'
 status:
-  fi: 'Part 1: Core, versio 1.0'
-  en: 'Part 1: Core, version 1.0'
+  fi: 'Part 1: Core, versio 1.0, julkaistu 10.11.2022'
+  en: 'Part 1: Core, version 1.0, published 10 Nov 2022'
 summary:
   fi: Paikkatiedon jakelu laattoina web-rajapinnan kautta. WMTS-standardin seuraaja.
   en: Serving geospatial data as tiles through a web API. Successor to the WMTS standard.
 jurisdiction: global
+use_cases: [industry, culture, education]
+content_sources: [drone]
 primary_sources:
-- title: OGC, OGC API – Tiles
-  url: https://www.ogc.org/standard/ogcapi-tiles/
-applies_when: []
-keywords: []
-last_verified: ''
-todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
+- title: OGC, OGC API – Tiles – Part 1 Core
+  url: https://docs.ogc.org/is/20-057/20-057.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: XR- tai web-näkymässä tarvitaan taustakarttaa, ilmakuvia tai droonin ortokuvia, jotka ovat liian suuria ladattaviksi kerralla.
+    en: An XR or web view needs a base map, aerial images or drone orthophotos that are too large to load at once.
+  obligation:
+    fi: 'Jaa karttakuvat ja ortokuvat OGC API – Tiles -rajapinnan kautta. Antaa: vain näkyvä alue ladataan, ja rajapinta toimii yleisten karttakirjastojen kanssa.'
+    en: 'Serve maps and orthophotos through OGC API – Tiles. Gives: only the visible area is loaded, and the API works with common map libraries.'
+  article: ''
+keywords:
+- kartta
+- map
+- laatat
+- tiles
+- ortokuva
+- orthophoto
+- ilmakuva
+last_verified: '2026-11-14'
+todo: ''

@@ -1,0 +1,75 @@
+id: vr-login-eyetracking
+type: use-case-guidance
+name:
+  fi: VR-sovellus, joka vaatii kirjautumisen ja kerää katseenseurantatietoa
+  en: VR app that requires sign-in and collects eye-tracking data
+summary:
+  fi: Kirjautuminen liittää katseen-, liike- ja käyttödatan tunnistettavaan henkilöön. Katseenseuranta voi paljastaa terveyteen, tunteisiin tai kiinnostuksen kohteisiin liittyvää tietoa, joten tietosuoja ja tekoälyasetus on arvioitava huolellisesti.
+  en: Sign-in links eye-tracking, motion and usage data to an identifiable person. Eye tracking can reveal information on health, emotions or interests, so data protection and the AI Act must be assessed carefully.
+jurisdiction: EU
+use_cases: [education, culture, industry, healthcare]
+content_sources: []
+primary_sources:
+- title: EUR-Lex, tietosuoja-asetus (EU) 2016/679
+  url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+- title: EUR-Lex, tekoälyasetus (EU) 2024/1689
+  url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- title: Finlex, tietosuojalaki 1050/2018
+  url: https://www.finlex.fi/fi/lainsaadanto/2018/1050
+finland:
+  authority:
+    fi: Tietosuojavaltuutetun toimisto; Traficom (tekoälyasetus)
+    en: Office of the Data Protection Ombudsman; Traficom (AI Act)
+  national_guidance:
+  - title: Tietosuojavaltuutetun toimisto
+    url: https://tietosuoja.fi/
+related_documents: [gdpr, aiact, oidc, eidas, openxr, cra, dataact]
+applies_when:
+- condition:
+    fi: Käyttäjä kirjautuu sovellukseen ja katseenseurantadataa tallennetaan tai analysoidaan käyttäjäkohtaisesti.
+    en: The user signs in and eye-tracking data is stored or analysed per user.
+  obligation:
+    fi: 'Katseenseurantadata on henkilötietoa. Määritä käyttötarkoitus ja peruste, kerää vain tarvittava (esim. foveated rendering ei vaadi tallennusta), käsittele laitteella, säilytä lyhyesti ja tee vaikutustenarviointi (DPIA).'
+    en: 'Eye-tracking data is personal data. Define the purpose and legal basis, collect only what is needed (e.g. foveated rendering needs no storage), process on the device, keep it briefly and carry out a DPIA.'
+  article: GDPR art. 5, 6, 25, 35
+- condition:
+    fi: Katse- tai liikedataa käytetään käyttäjän tunnistamiseen tai siitä päätellään terveyteen liittyviä asioita (esim. väsymys, neurologiset oireet).
+    en: Eye or motion data is used to identify the user or to infer health-related matters (e.g. fatigue, neurological symptoms).
+  obligation:
+    fi: Kyseessä on erityinen henkilötietoryhmä (biometrinen tai terveystieto), joka vaatii art. 9:n mukaisen perusteen, yleensä nimenomaisen suostumuksen.
+    en: This is special category data (biometric or health data) and needs an Art. 9 basis, usually explicit consent.
+  article: GDPR art. 4(14), 4(15), 9
+- condition:
+    fi: Katseesta päätellään tunteita, tarkkaavaisuutta tai stressiä, ja sovellusta käytetään työpaikalla tai oppilaitoksessa.
+    en: Emotions, attention or stress are inferred from gaze, and the app is used at a workplace or educational institution.
+  obligation:
+    fi: Tunteiden tunnistus on kielletty työpaikoilla ja oppilaitoksissa (poikkeuksena lääketieteelliset ja turvallisuussyyt). Muualla käyttäjille on ilmoitettava tunteentunnistuksesta.
+    en: Emotion recognition is prohibited in workplaces and educational institutions (except for medical or safety reasons). Elsewhere users must be informed.
+  article: AI Act art. 5(1)(f), 50(3)
+- condition:
+    fi: Käyttäjinä on alle 13-vuotiaita, ja käsittely perustuu suostumukseen.
+    en: Users include children under 13 and processing is based on consent.
+  obligation:
+    fi: Suomessa tietoyhteiskunnan palvelujen suostumusikäraja on 13 vuotta; nuoremmilta tarvitaan huoltajan suostumus. Älä kerää lapsilta katseenseurantadataa ilman välttämätöntä tarvetta.
+    en: In Finland the age of consent for information society services is 13; younger children need a guardian's consent. Do not collect eye-tracking data from children without a strict need.
+  article: GDPR art. 8; tietosuojalaki 5 §
+- condition:
+    fi: Kirjautuminen toteutetaan.
+    en: Sign-in is implemented.
+  obligation:
+    fi: Käytä OpenID Connectia (oidc) ja laitekoodikirjautumista laseilla; älä yhdistä katseenseurantadataa käyttäjätunnukseen, jos se ei ole välttämätöntä (pseudonymisointi).
+    en: Use OpenID Connect (oidc) and device code sign-in on headsets; do not link eye-tracking data to the user account unless necessary (pseudonymisation).
+  article: GDPR art. 25, 32
+keywords:
+- katseenseuranta
+- eye tracking
+- kirjautuminen
+- login
+- sign-in
+- biometriikka
+- biometrics
+- tunteentunnistus
+- lapset
+- children
+last_verified: '2026-11-14'
+todo: Artikla- ja pykäläviittaukset ovat yleisesti tunnettuja, mutta tekstiä ei saatu luettua EUR-Lexistä/Finlexistä tarkistuksessa; varmista ennen julkaisua.

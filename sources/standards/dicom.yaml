@@ -1,0 +1,48 @@
+id: dicom
+type: standard
+category: domain-data
+name:
+  fi: DICOM
+  en: DICOM
+publisher: NEMA / DICOM Standards Committee (myös ISO 12052)
+availability: open
+version: Current Edition (päivittyy useita kertoja vuodessa)
+status:
+  fi: Osat 1–22, julkaistaan uudelleen useita kertoja vuodessa
+  en: Parts 1–22, republished several times a year
+summary:
+  fi: Lääketieteellisten kuvien (esim. TT, MRI) ja niistä johdettujen 3D-mallien tallennus- ja siirtostandardi.
+  en: The standard for storing and exchanging medical images (e.g. CT, MRI) and 3D models derived from them.
+jurisdiction: global
+use_cases: [healthcare]
+content_sources: []
+primary_sources:
+- title: DICOM Standard, Current Edition
+  url: https://www.dicomstandard.org/current
+related_regulation:
+- id: mdr
+  relation:
+    fi: Jos XR-sovellus käyttää potilaan kuvantamisaineistoa diagnoosiin tai hoidon suunnitteluun, se voi olla lääkinnällinen laite.
+    en: If an XR app uses a patient's imaging data for diagnosis or treatment planning, it may be a medical device.
+- id: gdpr
+  relation:
+    fi: Potilaan kuvat ovat terveystietoja, eli erityisiä henkilötietoryhmiä (art. 9).
+    en: Patient images are health data, a special category of personal data (Art. 9).
+applies_when:
+- condition:
+    fi: Terveydenhuollon XR-sovellus näyttää potilaan TT-, MRI- tai muita kuvantamistietoja tai niistä tehtyjä 3D-malleja (esim. leikkauksen suunnittelu, potilasohjaus).
+    en: A healthcare XR app shows a patient's CT, MRI or other imaging data or 3D models made from them (e.g. surgical planning, patient education).
+  obligation:
+    fi: 'Lue kuvat DICOM-muodossa sairaalan järjestelmästä ja säilytä potilas- ja tutkimustunnisteet. Antaa: yhteensopivuus sairaalan kuvantamisjärjestelmien (PACS) kanssa.'
+    en: 'Read images as DICOM from the hospital system and keep patient and study identifiers. Gives: compatibility with hospital imaging systems (PACS).'
+  article: ''
+keywords:
+- DICOM
+- lääketieteellinen kuva
+- medical imaging
+- TT
+- MRI
+- PACS
+- leikkaussuunnittelu
+last_verified: '2026-11-14'
+todo: ''

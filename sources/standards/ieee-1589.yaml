@@ -1,0 +1,48 @@
+id: ieee-1589
+type: standard
+category: domain-data
+name:
+  fi: IEEE 1589-2020 – AR-oppimiskokemuksen malli (ARLEM)
+  en: IEEE 1589-2020 – Augmented Reality Learning Experience Model (ARLEM)
+reference:
+  fi: IEEE 1589-2020
+  en: IEEE 1589-2020
+publisher: IEEE Standards Association
+availability: paid
+open_alternative: []
+version: '2020'
+status:
+  fi: Voimassa (Active), julkaistu 17.4.2020
+  en: Active, published 17 Apr 2020
+summary:
+  fi: Tietomalli AR-pohjaisille oppimis- ja työohjekokemuksille (tehtävät, ohjeet, työympäristö, laitteet).
+  en: A data model for AR-based learning and work instruction experiences (activities, instructions, workplace, devices).
+jurisdiction: global
+use_cases: [education, industry]
+content_sources: []
+primary_sources:
+- title: IEEE SA, IEEE 1589-2020
+  url: https://standards.ieee.org/ieee/1589/6073/
+related_regulation:
+- id: aiact
+  relation:
+    fi: Jos AR-koulutuksessa tekoäly arvioi oppijaa, ks. tekoälyasetuksen liite III.
+    en: If AI assesses the learner in AR training, see AI Act Annex III.
+applies_when:
+- condition:
+    fi: Rakennetaan AR-työohjeita tai -koulutusta (esim. huolto, kokoonpano, ammatillinen koulutus), joiden sisältöä halutaan siirtää työkalujen tai organisaatioiden välillä.
+    en: You build AR work instructions or training (e.g. maintenance, assembly, vocational training) whose content should move between tools or organisations.
+  obligation:
+    fi: 'Toissijainen, maksullinen. Käytä ARLEM-mallia ohjesisällön rakenteena. Antaa: työkaluriippumaton AR-oppimissisältö.'
+    en: 'Secondary, paid. Use ARLEM as the structure of instruction content. Gives: tool-independent AR learning content.'
+  article: ''
+keywords:
+- ARLEM
+- AR-koulutus
+- AR training
+- työohje
+- work instruction
+- huolto
+- maintenance
+last_verified: '2026-11-14'
+todo: ''

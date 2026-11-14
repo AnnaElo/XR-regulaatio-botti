@@ -1,0 +1,42 @@
+id: astm-e57
+type: standard
+category: reality-capture
+name:
+  fi: E57 – 3D-kuvantamisdatan siirtomuoto (ASTM E2807)
+  en: E57 – 3D imaging data exchange format (ASTM E2807)
+reference:
+  fi: ASTM E2807-11(2019)e1 / E2807-11R26
+  en: ASTM E2807-11(2019)e1 / E2807-11R26
+publisher: ASTM International
+availability: paid
+open_alternative: [pointcloud]
+version: 1.0
+status:
+  fi: Voimassa (E2807-11R26 Active)
+  en: Active (E2807-11R26)
+summary:
+  fi: Laserkeilainten pistepilvien ja niihin liittyvien kuvien siirtomuoto. Spesifikaatio on maksullinen, mutta muotoa tukevat useimmat keilausohjelmistot.
+  en: An exchange format for laser-scanner point clouds and associated images. The specification is paid, but most scanning software supports the format.
+jurisdiction: global
+use_cases: [industry, culture]
+content_sources: [laser-scanning]
+primary_sources:
+- title: ASTM, E2807 Standard Specification for 3D Imaging Data Exchange
+  url: https://store.astm.org/e2807-11r19e01.html
+related_regulation: []
+applies_when:
+- condition:
+    fi: Maalaserkeilaimen raakadata (skannaukset ja panoraamakuvat) siirretään ohjelmistosta toiseen.
+    en: Raw terrestrial laser scanner data (scans and panoramic images) is moved between software.
+  obligation:
+    fi: Toissijainen, maksullinen spesifikaatio. E57 on käytännössä yleinen siirtomuoto; jalostettuun aineistoon ja verkkojakeluun suositellaan avoimia LAS/COPC-muotoja.
+    en: Secondary, paid specification. E57 is a common exchange format in practice; for processed data and web delivery, the open LAS/COPC formats are recommended.
+  article: ''
+keywords:
+- E57
+- laserkeilaus
+- laser scanning
+- pistepilvi
+- point cloud
+last_verified: '2026-11-14'
+todo: ''

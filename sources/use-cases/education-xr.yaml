@@ -1,0 +1,59 @@
+id: education-xr
+type: use-case-guidance
+name:
+  fi: XR koulutuksessa ja oppilaitoksissa
+  en: XR in education and educational institutions
+summary:
+  fi: Oppilaitoksissa korostuvat lasten tietosuoja, tekoälyasetuksen tunteentunnistuskielto ja suuririskinen arviointi sekä julkisen sektorin saavutettavuusvaatimukset.
+  en: In education the focus is on children's data protection, the AI Act's emotion recognition ban and high-risk assessment, and public sector accessibility requirements.
+jurisdiction: FI
+use_cases: [education]
+content_sources: []
+primary_sources:
+- title: EUR-Lex, tekoälyasetus (EU) 2024/1689
+  url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- title: EUR-Lex, tietosuoja-asetus (EU) 2016/679
+  url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+- title: Finlex, laki 306/2019
+  url: https://www.finlex.fi/fi/lainsaadanto/2019/306
+finland:
+  authority:
+    fi: Traficom (tekoälyasetus, saavutettavuus), tietosuojavaltuutetun toimisto
+    en: Traficom (AI Act, accessibility), Office of the Data Protection Ombudsman
+  national_guidance: []
+related_documents: [aiact, gdpr, digipalvelulaki, en301549, xaur, vc, ieee-1589, iso-iec-5927, vr-login-eyetracking]
+applies_when:
+- condition:
+    fi: Tekoäly arvioi oppijan suoritusta, ohjaa oppimista tai valvoo koetilannetta XR-ympäristössä.
+    en: AI assesses learner performance, steers learning or monitors exams in an XR environment.
+  obligation:
+    fi: Voi olla tekoälyasetuksen liitteen III suuririskinen järjestelmä (koulutus), jonka vaatimukset sovelletaan 2.12.2027 alkaen.
+    en: May be an AI Act Annex III high-risk system (education), with requirements applying from 2 Dec 2027.
+  article: AI Act art. 6, liite III kohta 3
+- condition:
+    fi: Oppijoiden tunteita, tarkkaavaisuutta tai stressiä päätellään biometrisistä tiedoista.
+    en: Learners' emotions, attention or stress are inferred from biometric data.
+  obligation:
+    fi: Kielletty oppilaitoksissa (poikkeuksena lääketieteelliset ja turvallisuussyyt).
+    en: Prohibited in educational institutions (except for medical or safety reasons).
+  article: AI Act art. 5(1)(f)
+- condition:
+    fi: Käyttäjinä on lapsia, tai palvelu on julkisen oppilaitoksen.
+    en: Users include children, or the service belongs to a public educational institution.
+  obligation:
+    fi: Ks. vr-login-eyetracking (lasten suostumus) ja digipalvelulaki (saavutettavuus ja saavutettavuusseloste).
+    en: See vr-login-eyetracking (children's consent) and digipalvelulaki (accessibility and accessibility statement).
+  article: GDPR art. 8; laki 306/2019
+keywords:
+- koulutus
+- education
+- oppilaitos
+- school
+- opiskelija
+- student
+- arviointi
+- assessment
+- lapset
+- children
+last_verified: '2026-11-14'
+todo: Artiklaviittaukset tarkistettava artiklatekstistä.

@@ -1,0 +1,59 @@
+id: culture-xr
+type: use-case-guidance
+name:
+  fi: XR kulttuurissa ja kulttuuriperinnössä (museot, kohteet, esitykset)
+  en: XR in culture and cultural heritage (museums, sites, performances)
+summary:
+  fi: Kulttuurikohteiden 3D-digitoinnissa on huomioitava tekijänoikeudet, kuvattavien ihmisten tietosuoja, julkisten museoiden saavutettavuusvaatimukset ja aineistojen pitkäaikaissäilytys avoimissa muodoissa.
+  en: 3D digitisation of cultural heritage must consider copyright, data protection of people captured, accessibility requirements of public museums and long-term preservation in open formats.
+jurisdiction: FI
+use_cases: [culture]
+content_sources: [drone, laser-scanning, phone-camera, 3d-artist, ai-generated]
+primary_sources:
+- title: EUR-Lex, tekijänoikeusdirektiivi (EU) 2019/790
+  url: https://eur-lex.europa.eu/eli/dir/2019/790/oj
+- title: EUR-Lex, komission suositus (EU) 2021/1970 kulttuuriperinnön data-avaruudesta
+  url: https://eur-lex.europa.eu/eli/reco/2021/1970/oj
+- title: Finlex, laki 306/2019
+  url: https://www.finlex.fi/fi/lainsaadanto/2019/306
+finland:
+  authority:
+    fi: Traficom (saavutettavuus), tietosuojavaltuutetun toimisto
+    en: Traficom (accessibility), Office of the Data Protection Ombudsman
+  national_guidance: []
+related_documents: [digipalvelulaki, en301549, xaur, gltf, 3dtiles, pointcloud, c2pa, reality-capture, ai-generated-3d]
+applies_when:
+- condition:
+    fi: Digitoidaan tai mallinnetaan taideteos, rakennus tai esine, jonka tekijänoikeus on voimassa.
+    en: An artwork, building or object still under copyright is digitised or modelled.
+  obligation:
+    fi: 3D-malli on teoksen kappale; tarvitaan oikeudenhaltijan lupa, ellei laissa säädetty poikkeus sovellu.
+    en: A 3D model is a copy of the work; the rightholder's permission is needed unless a statutory exception applies.
+  article: ''
+- condition:
+    fi: Digitoidaan tekijänoikeudeltaan vapaa kuvataiteen teos (public domain).
+    en: A public-domain work of visual art is digitised.
+  obligation:
+    fi: Uskollinen jäljennös ei saa uutta tekijänoikeussuojaa, ellei se ole itsessään omaperäinen luomus. Julkaise malli avoimella lisenssillä ja merkitse lisenssi metatietoihin.
+    en: A faithful reproduction does not get new copyright protection unless it is itself an original creation. Publish the model under an open licence and record the licence in metadata.
+  article: direktiivi (EU) 2019/790 art. 14
+- condition:
+    fi: XR-kokemus julkaistaan julkisen museon tai kulttuurilaitoksen verkkosivulla tai sovelluksessa.
+    en: The XR experience is published on a public museum's or cultural institution's website or app.
+  obligation:
+    fi: Ks. digipalvelulaki ja xaur. Tarjoa vaihtoehtoinen tapa saada sama sisältö (esim. 2D-näkymä, äänikuvaus).
+    en: See digipalvelulaki and xaur. Offer an alternative way to access the same content (e.g. 2D view, audio description).
+  article: ''
+keywords:
+- kulttuuri
+- culture
+- museo
+- museum
+- kulttuuriperintö
+- cultural heritage
+- digitointi
+- digitisation
+- tekijänoikeus
+- copyright
+last_verified: '2026-11-14'
+todo: Varmista art. 14 ja suosituksen 2021/1970 3D-digitointia koskeva sisältö tekstistä. Lisää tekijänoikeuslaki 404/1961 ja Museoviraston ohjeet ensisijaisista lähteistä.
