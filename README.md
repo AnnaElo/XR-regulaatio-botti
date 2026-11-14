@@ -4,12 +4,18 @@ XR-toteutuksille sekä sovelluksille luotu AI-avusteinen botti, joka suosittelee
 ## Arkkitehtuuri
 
 ```mermaid
-flowchart LR
-  U[Käyttäjän selain<br>public/index.html] -- POST /api/chat --> W[Cloudflare Worker<br>worker/index.js]
-  W --> B[worker/bot.js]
-  B -- järjestelmäkehote + tietopohja<br>dokumentteina --> C[Claude API]
-  C -- vastaus ja lähdeviitteet --> B
-  KB[sources/*.yaml<br>prompts/system-prompt.md] -- scripts/build-kb.mjs<br>julkaisun yhteydessä --> J[worker/kb.generated.json]
+flowchart TB
+  subgraph build["Julkaisun yhteydessä"]
+    direction LR
+    KB["sources/*.yaml<br>prompts/system-prompt.md"] -->|build-kb.mjs| J["worker/kb.generated.json"]
+  end
+  subgraph runtime["Käytön aikana"]
+    direction LR
+    U["Selain<br>public/index.html"] -->|POST /api/chat| W["Cloudflare Worker<br>worker/index.js"]
+    W --> B["Botin ydin<br>worker/bot.js"]
+    B -->|kysymys + tietopohja| C["Claude API"]
+    C -->|vastaus + lähteet| B
+  end
   J --> B
 ```
 
