@@ -4,14 +4,14 @@ name:
   fi: Arpajaislaki
   en: Lotteries Act (Finland)
 reference:
-  fi: Laki 1047/2001; muutos HE 16/2025 (voimaan 1.7.2027); rahapeleistä rahapelilaki 10/2026
-  en: Act 1047/2001; amended per HE 16/2025 (in force 1 Jul 2027); gambling in the Gambling Act 10/2026
+  fi: Laki 1047/2001; muutoslaki 11/2026 (HE 16/2025, voimaan 1.7.2027); rahapeleistä rahapelilaki 10/2026
+  en: Act 1047/2001; amending Act 11/2026 (HE 16/2025, in force 1 Jul 2027); gambling in the Gambling Act 10/2026
 status:
   fi: Voimassa; muutettu 2 §:n määritelmä ja rahapelien siirto rahapelilakiin voimaan 1.7.2027
   en: In force; the amended section 2 definition and the move of gambling to the Gambling Act apply from 1 Jul 2027
 summary:
-  fi: 'Arpajaisia ovat toiminta, johon osallistutaan vastiketta vastaan ja jossa voi saada sattumaan perustuvan rahanarvoisen voiton (ei rahavoittoa). Arpajaisia saa toimeenpanna vain yleishyödyllinen yhteisö, jonka kotipaikka on Suomessa, ja muu toimeenpano on kielletty. Rahavoittoisista peleistä säädetään rahapelilaissa 10/2026.'
-  en: 'A lottery is an activity with paid participation where a participant can win a prize of monetary value based wholly or partly on chance (not a cash prize). Lotteries may only be run by a non-profit organisation domiciled in Finland; other forms are prohibited. Games with cash prizes are governed by the Gambling Act 10/2026.'
+  fi: 'Arpajaisia ovat toiminta, johon osallistutaan vastiketta vastaan ja jossa voi saada kokonaan tai osittain sattumaan perustuvan rahanarvoisen voiton. 30.6.2027 asti määritelmä kattaa myös rahavoitot, kasinopelit ja raha-automaatit; 1.7.2027 alkaen rahavoitot on rajattu pois ja niistä säädetään rahapelilaissa. 1.7.2027 alkaen arpajaisia saa toimeenpanna vain yleishyödyllinen yhteisö, jonka kotipaikka on Suomessa, ja muu toimeenpano on kielletty.'
+  en: 'A lottery is an activity with paid participation where a participant can win a prize of monetary value based wholly or partly on chance. Until 30 Jun 2027 the definition also covers cash prizes, casino games and slot machines; from 1 Jul 2027 cash prizes are excluded and governed by the Gambling Act. From 1 Jul 2027, lotteries may only be run by a non-profit organisation domiciled in Finland; other forms are prohibited.'
 jurisdiction: FI
 use_cases: []
 content_sources: []
@@ -31,7 +31,7 @@ applies_when:
   obligation:
     fi: 'Järjestely voi täyttää arpajaisten määritelmän: vastike, sattuma ja rahanarvoinen voitto. Yritys ei voi toimeenpanna arpajaisia, koska oikeus on vain yleishyödyllisillä yhteisöillä, ja muu toimeenpano on kielletty (62 §). Jos voiton saa rahana, kyse voi olla rahapelistä (rahapelilaki 10/2026). Botti ei voi ratkaista, onko virtuaaliesine rahanarvoinen voitto: pyydä oikeudellinen arvio ennen toteutusta.'
     en: 'The arrangement may meet the lottery definition: consideration, chance and a prize of monetary value. A company cannot run lotteries, as only non-profit organisations may, and other forms are prohibited (s. 62). If the prize can be obtained as money, it may be gambling (Gambling Act 10/2026). The bot cannot decide whether a virtual item is a prize of monetary value: get a legal assessment before implementing.'
-  article: Arpajaislaki 2 §, 5 § ja 62 § (muutettu sanamuoto voimaan 1.7.2027)
+  article: Arpajaislaki 2 § (sekä nykyinen että 1.7.2027 voimaan tuleva sanamuoto); 5 § ja 62 § 1.7.2027 alkaen
 - condition:
     fi: Asiakkaalle annetaan sattumanvarainen etu markkinoinnissa, ja edun saaminen edellyttää vain tuotteen ostamista.
     en: A random benefit is given in marketing, and getting it requires only buying a product.
@@ -41,4 +41,4 @@ applies_when:
   article: Arpajaislaki 1 § 3 mom.
 keywords: [arpajaiset, loot box, ryöstölaatikko, satunnaispalkinto, rahapeli, lottery, gambling]
 last_verified: '2026-11-15'
-todo: Muutoslain teksti (HE 16/2025, Helsingissä 16.1.2026) tarkistettu (Anna, 15.11.2026). 30.6.2027 asti voimassa olevan 2 §:n sanamuotoa ei ole tarkistettu. Rahapelilakia 10/2026 ei ole tietopohjassa. Viranomaisen kannanottoa loot boxeihin ei löytynyt.
+todo: Muutoslaki 11/2026 ja 2 §:n nykyinen sanamuoto tarkistettu Finlexistä (Anna, 15.11.2026). 30.6.2027 asti voimassa olevia 5 §:ää (toimeenpano-oikeus) ja rahapelien yksinoikeutta ei ole tarkistettu. Rahapelilakia 10/2026 ei ole tietopohjassa. Viranomaisen kannanottoa loot boxeihin ei löytynyt.
