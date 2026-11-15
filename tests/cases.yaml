@@ -151,3 +151,16 @@
     - "Tarkentaa pään seurannan ja katseenseurannan eron"
     - "Mainitsee hoitoväitteiden vaikutuksen MDR-arvioon ehdollisena"
     - "Mainitsee sivullisten sumentamisen 360-kuvissa"
+
+- id: virtuaalimaailma-kauppa
+  language: fi
+  question: "Olen luomassa virtuaalimaailmaa, jossa käyttäjät voivat vaihtaa/myydä assettejansa (hahmojen skinejä, muita sisältöjä). Tarkoituksena on hajautetun tunnistautumisen kautta saada tämä toimimaan ja alustalla olisi ns. oma valuutta käytössä. Mitä standardeja ja lakeja minun tulisi noudattaa?"
+  must_cite: [dsa, consumer-digital-content, virtual-world-economy]
+  must_not_cite: [mdr, uas]
+  recommend_standards: [did, vc, gltf]
+  expect:
+    - "Kysyy, voiko valuutan lunastaa rahaksi tai siirtää ja perustuuko se lohkoketjuun"
+    - "Esittää MiCA:n ja maksupalvelusääntelyn ehdollisina ja ohjaa Finanssivalvontaan"
+    - "Mainitsee CPC:n virtuaalivaluuttaperiaatteet"
+    - "Mainitsee arpajaislain vain ehdollisena (loot box)"
+    - "Ei väitä KHR_audio_emitteriä ratifioiduksi"

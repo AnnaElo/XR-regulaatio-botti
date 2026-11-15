@@ -1,0 +1,59 @@
+id: payment-services
+type: eu-legislation
+name:
+  fi: Maksupalvelut ja sähköraha (PSD2, EMD2)
+  en: Payment services and electronic money (PSD2, EMD2)
+reference:
+  fi: Direktiivit (EU) 2015/2366 ja 2009/110/EY; Suomessa maksulaitoslaki 297/2010 ja maksupalvelulaki 290/2010
+  en: Directives (EU) 2015/2366 and 2009/110/EC; in Finland the Payment Institutions Act 297/2010 and the Payment Services Act 290/2010
+status:
+  fi: Voimassa
+  en: In force
+summary:
+  fi: Maksupalvelua saa Suomessa tarjota vain Finanssivalvonnan toimiluvalla tai Finanssivalvonnalle ennen toiminnan aloittamista tehdyn ilmoituksen perusteella. Maksupalvelusta on tyypillisesti kyse, kun maksajan ja maksunsaajan välissä toimiva palveluntarjoaja siirtää varoja osapuolten välillä. Jos alustan oman valuutan voi lunastaa rahaksi tai käyttää muualla kuin alustan omiin sisältöihin, se voi olla sähkörahaa.
+  en: In Finland, payment services may only be provided with an FIN-FSA authorisation or on the basis of a notification made to the FIN-FSA before starting. A payment service is typically involved when a provider between payer and payee transfers funds between them. If an in-platform currency can be redeemed for money or used beyond the platform's own content, it may be electronic money.
+jurisdiction: EU
+use_cases: []
+content_sources: []
+primary_sources:
+- title: Finanssivalvonta, Maksupalvelun tarjoajat
+  url: https://www.finanssivalvonta.fi/fi/toimiluvat-ja-rekisterointi/maksupalvelun-tarjoajat/
+- title: EUR-Lex, direktiivi (EU) 2015/2366 (PSD2)
+  url: https://eur-lex.europa.eu/eli/dir/2015/2366/oj
+- title: EUR-Lex, direktiivi 2009/110/EY (EMD2)
+  url: https://eur-lex.europa.eu/eli/dir/2009/110/oj
+- title: Finlex, maksulaitoslaki 297/2010
+  url: https://www.finlex.fi/fi/lainsaadanto/2010/297
+- title: Finanssivalvonta, rajatun verkon poikkeuksen ilmoituslomake
+  url: https://www.finanssivalvonta.fi/globalassets/fi/toimiluvat-ja-rekisterointi/maksupalvelun-tarjoajat/rajatun_verkon_poikkeus_lomake.docx
+finland:
+  authority:
+    fi: Finanssivalvonta; kuluttaja-asiamies valvoo ilman toimilupaa toimivien tarjoajien kuluttajasopimuksia
+    en: Financial Supervisory Authority (FIN-FSA); the Consumer Ombudsman supervises consumer terms of providers operating without authorisation
+  national_guidance: []
+related_documents: [mica, consumer-digital-content, virtual-world-economy]
+applies_when:
+- condition:
+    fi: Käyttäjät maksavat toisilleen oikeaa rahaa alustan kautta (esim. assettien myynti), ja alusta välittää maksut.
+    en: Users pay each other real money through the platform (e.g. selling assets), and the platform relays the payments.
+  obligation:
+    fi: 'Varojen siirtäminen maksajan ja maksunsaajan välillä on tyypillisesti maksupalvelua, joka vaatii Finanssivalvonnan toimiluvan tai ennen toiminnan aloittamista tehtävän ilmoituksen. Ilmoitusmenettely edellyttää mm., että maksutapahtumien yhteismäärä ei 12 kuukauden aikana ylitä oikeushenkilöllä keskimäärin 3 miljoonaa euroa kuukaudessa (luonnollisella henkilöllä 50 000 euroa). Vaihtoehto: käytä toimiluvallista maksupalveluntarjoajaa, jolloin alusta ei itse välitä varoja.'
+    en: 'Transferring funds between payer and payee is typically a payment service requiring an FIN-FSA authorisation or a notification before starting. The notification route requires, among other things, that total payment transactions over 12 months do not exceed on average EUR 3 million per month for a legal person (EUR 50,000 for a natural person). Alternative: use an authorised payment service provider so the platform does not handle the funds itself.'
+  article: Maksulaitoslaki 297/2010 (Finanssivalvonnan mukaan)
+- condition:
+    fi: Alustalla on oma valuutta tai saldo, jonka käyttäjä ostaa oikealla rahalla ja jonka voi lunastaa takaisin rahaksi, siirtää alustan ulkopuolelle tai käyttää muiden kuin alustan omien tuotteiden ostamiseen.
+    en: The platform has its own currency or balance that users buy with real money and can redeem for money, transfer off the platform or use to buy things other than the platform's own products.
+  obligation:
+    fi: Valuutta voi olla sähkörahaa, jonka liikkeeseen laskeminen vaatii toimiluvan. Selvitä asia Finanssivalvonnan kanssa ennen julkaisua; botti ei voi ratkaista sitä.
+    en: The currency may be electronic money, whose issuance requires authorisation. Clarify with the FIN-FSA before launch; the bot cannot decide this.
+  article: EMD2 art. 2(2) (tarkistamaton)
+- condition:
+    fi: Valuuttaa voi käyttää vain alustan omien sisältöjen ostamiseen, eikä sitä voi lunastaa rahaksi tai siirtää.
+    en: The currency can only be used to buy the platform's own content and cannot be redeemed for money or transferred.
+  obligation:
+    fi: Rajatun verkon poikkeus voi soveltua. Finanssivalvonnalla on poikkeukselle oma ilmoituslomake; tarkista Finanssivalvonnalta, koskeeko ilmoitusvelvollisuus palvelua.
+    en: The limited network exclusion may apply. The FIN-FSA has a notification form for it; check with the FIN-FSA whether the notification duty applies.
+  article: PSD2 art. 3(k) (tarkistamaton)
+keywords: [maksupalvelu, sähköraha, pelivaluutta, virtuaalivaluutta, rajattu verkko, payment service, e-money, in-game currency]
+last_verified: '2026-11-15'
+todo: Finanssivalvonnan maksupalvelusivu tarkistettu (Anna, 15.11.2026). Tarkistamatta PSD2 art. 3(k) ja 37(2), EMD2 art. 2(2) sekä maksulaitoslain vastaavat pykälät ja rajatun verkon ilmoitusraja. Rahanpesulainsäädäntö (asetus (EU) 2024/1624, Suomessa laki 444/2017) puuttuu.

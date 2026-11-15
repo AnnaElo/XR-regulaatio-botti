@@ -12,7 +12,7 @@ Botti selvittää ensin käyttäjän tilanteen ja vertaa sitä tietopohjan `appl
 | 4 | Käytetäänkö tekoälyä: hahmot, chatbotit, generoitu sisältö, tunteentunnistus, ihmisten arviointi? | AI Actin velvoitteet ja riskiluokka. |
 | 5 | Toimiala ja käyttöympäristö: koulutus, kulttuuri, teollisuus vai terveydenhuolto; kuluttajat, työntekijät, opiskelijat, potilaat vai julkiset palvelut? | Tunteentunnistuksen kielto ja suuririskisyys, MDR, saavutettavuus, toimialan standardit. |
 | 6 | Mistä 3D-sisältö tulee: tekoäly, drooni, laserkeilain, kännykkäkamera vai 3D-artisti? Kuvaako laite ympäristöä käytön aikana? | Drooni- ja tietosuojasäännöt, tekoälysisällön merkintä, sisällön standardit. |
-| 7 | Alustan ominaisuudet: käyttäjien sisältö, kirjautuminen tai digitaalinen identiteetti, maksut tai tokenit, verkkoon liitetyt laitteet? | DSA, eIDAS, MiCA, Data Act. |
+| 7 | Alustan ominaisuudet: käyttäjien sisältö, kirjautuminen tai digitaalinen identiteetti, maksut, oma valuutta tai tokenit, käyttäjien välinen kauppa, maksulliset satunnaispalkinnot (loot box), verkkoon liitetyt laitteet? | DSA, eIDAS, MiCA, maksupalvelut, kuluttajansuoja, arpajaislaki, Data Act. |
 | 8 | Organisaation koko ja vaihe: konsepti, prototyyppi vai markkinoilla? | Mikroyritysten vapautukset (EAA), NIS2:n kokorajat, aikataulut. |
 
 Botti kysyy enintään kolme asiaa kerrallaan eikä kysy uudelleen sitä, minkä käyttäjä on jo kertonut.
@@ -31,6 +31,9 @@ Botti kysyy enintään kolme asiaa kerrallaan eikä kysy uudelleen sitä, minkä
 | Digitaalinen tuote myydään EU:ssa | `cra` | |
 | Kirjautuminen tai sähköinen tunnistaminen | `eidas` | `oidc`, `did`, `vc` |
 | Kryptovarat tai tokenit | `mica` | |
+| Oma valuutta, maksut tai käyttäjien välinen kauppa | `use-cases/virtual-world-economy`, `payment-services`, `consumer-digital-content`, `mica` | `did`, `vc`, `gltf` |
+| Maksulliset satunnaispalkinnot (loot box) | `arpajaislaki`, `consumer-digital-content` | |
+| Virtuaalimaailma tai -alusta | `web40`, `dsa` | `msf`, `omi`, `gltf`, `openusd` |
 | Kuluttajapalvelu, esim. verkkokaupan AR-sovitus | `eaa` | `design` |
 | Organisaatio kuuluu NIS2-toimialoihin | `nis2` | |
 | Natiivi XR-sovellus useille laitteille | | `openxr` |

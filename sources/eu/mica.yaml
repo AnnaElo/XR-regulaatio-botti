@@ -16,17 +16,33 @@ jurisdiction: EU
 primary_sources:
 - title: EUR-Lex, asetus (EU) 2023/1114
   url: https://eur-lex.europa.eu/eli/reg/2023/1114/oj
+- title: Finanssivalvonta, Crypto-asset activities
+  url: https://www.finanssivalvonta.fi/en/financial-market-participants/capital-markets/crypto-asset-activities/
 finland:
   authority:
     fi: Finanssivalvonta
     en: Financial Supervisory Authority (FIN-FSA)
-  national_guidance: []
+  national_guidance:
+  - title: Laki kryptovarapalvelujen tarjoajista ja kryptovaramarkkinoista 402/2024
+    url: https://www.finlex.fi/fi/lainsaadanto/2024/402
+  - title: Finanssivalvonnan määräykset ja ohjeet 2/2023, rahanpesun ja terrorismin rahoittamisen estäminen
+    url: https://www.finanssivalvonta.fi/en/financial-market-participants/capital-markets/crypto-asset-activities/
+related_documents: [payment-services, virtual-world-economy]
 applies_when:
 - condition:
     fi: Alustalla lasketaan liikkeeseen, tarjotaan tai välitetään kryptovaroja, esim. omia tokeneita.
     en: The platform issues, offers or trades crypto-assets, e.g. its own tokens.
-  obligation: null
+  obligation:
+    fi: 'Kryptovarapalvelujen tarjoaminen EU:ssa vaatii toimiluvan. Omaan arvoon sidotut tokenit (ART) ja sähkörahatokenit (EMT) vaativat liikkeeseenlaskijalta toimiluvan. Muiden kryptovarojen, kuten käyttötokenien, tarjoaminen yleisölle ei vaadi toimilupaa, mutta tarjoajan on laadittava kryptovaroja koskeva valkoinen kirja, ja markkinoinnin on oltava sen mukaista. Selvitä luokittelu Finanssivalvonnan kanssa; botti ei voi ratkaista sitä.'
+    en: 'Providing crypto-asset services in the EU requires authorisation. Issuing asset-referenced tokens (ART) and e-money tokens (EMT) requires authorisation. Offering other crypto-assets, such as utility tokens, to the public does not, but the offeror must draw up a crypto-asset white paper and marketing must be consistent with it. Clarify the classification with the FIN-FSA; the bot cannot decide it.'
   article: null
-keywords: []
-last_verified: ''
-todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).
+- condition:
+    fi: Alustan assetit ovat lohkoketjussa yksilöllisiä tokeneita (NFT), esim. skinit.
+    en: The platform's assets are unique blockchain tokens (NFTs), e.g. skins.
+  obligation:
+    fi: Yksilölliset ja keskenään vaihtokelvottomat kryptovarat jäävät pääsääntöisesti soveltamisalan ulkopuolelle, mutta suurina sarjoina tai osina myytävät tokenit voivat silti kuulua siihen. Arvioi tapauskohtaisesti.
+    en: Unique, non-fungible crypto-assets are generally out of scope, but tokens issued in large series or as fractions may still be in scope. Assess case by case.
+  article: MiCA art. 2(3) (tarkistamaton)
+keywords: [kryptovara, token, NFT, käyttötoken, valkoinen kirja, crypto-asset, utility token, white paper]
+last_verified: '2026-11-15'
+todo: Finanssivalvonnan kryptovarasivu tarkistettu (Anna, 15.11.2026). Tarkistamatta art. 2(3), art. 4(3) ja johdanto-osan NFT-kappaleet. Laki 402/2024 -linkkiä ei avattu.

@@ -27,8 +27,8 @@ applies_when:
     fi: 3D-maailmoja tai interaktiivisia kohteita (fysiikka, äänilähteet, istuimet) halutaan siirtää virtuaalimaailmasta toiseen glTF-muodossa.
     en: 3D worlds or interactive objects (physics, audio sources, seats) should move between virtual worlds as glTF.
   obligation:
-    fi: Kokeellinen. Käytä ensisijaisesti Khronosin ratifioituja KHR-laajennuksia (esim. KHR_audio_emitter) ja OMI-laajennuksia vain, kun kohdealusta tukee niitä; kerro käyttäjälle laajennuksen kehitysvaihe.
-    en: Experimental. Prefer ratified Khronos KHR extensions (e.g. KHR_audio_emitter) and use OMI extensions only where the target platform supports them; tell the user the extension's stage.
+    fi: Kokeellinen. Käytä ensisijaisesti Khronosin ratifioituja KHR-laajennuksia ja OMI-laajennuksia vain, kun kohdealusta tukee niitä; kerro käyttäjälle laajennuksen kehitysvaihe. KHR_audio_emitter on vielä Draft-vaiheessa (ks. spatial-audio).
+    en: Experimental. Prefer ratified Khronos KHR extensions and use OMI extensions only where the target platform supports them; tell the user the extension's stage. KHR_audio_emitter is still a Draft (see spatial-audio).
   article: ''
 keywords:
 - OMI

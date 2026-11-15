@@ -1,0 +1,54 @@
+id: virtual-world-economy
+type: use-case-guidance
+name:
+  fi: Virtuaalimaailman talous (assettikauppa, oma valuutta, hajautettu identiteetti)
+  en: Virtual world economy (asset trading, own currency, decentralised identity)
+summary:
+  fi: Kun käyttäjät myyvät ja vaihtavat assetteja ja alustalla on oma valuutta, ratkaisevin kysymys on valuutan luonne. Suljettuun pelivaluuttaan sovelletaan lähinnä kuluttajansuojaa. Rahaksi lunastettava tai siirrettävä valuutta voi olla sähkörahaa tai maksupalvelua, ja lohkoketjupohjainen valuutta kryptovara.
+  en: When users sell and trade assets and the platform has its own currency, the decisive question is the nature of the currency. A closed in-game currency is mainly a consumer protection matter. A currency that can be redeemed or transferred may be e-money or a payment service, and a blockchain-based one a crypto-asset.
+jurisdiction: EU
+use_cases: []
+content_sources: []
+primary_sources:
+- title: Finanssivalvonta, Maksupalvelun tarjoajat
+  url: https://www.finanssivalvonta.fi/fi/toimiluvat-ja-rekisterointi/maksupalvelun-tarjoajat/
+- title: Euroopan komissio, CPC Key principles on in-game virtual currencies (21.3.2025)
+  url: https://commission.europa.eu/document/download/8af13e88-6540-436c-b137-9853e7fe866a_en?filename=Key%20principles%20on%20in-game%20virtual%20currencies.pdf
+finland:
+  authority:
+    fi: Finanssivalvonta (maksut, sähköraha, kryptovarat), kuluttaja-asiamies, Traficom (DSA), Poliisihallitus (arpajaiset)
+    en: FIN-FSA (payments, e-money, crypto-assets), Consumer Ombudsman, Traficom (DSA), National Police Board (lotteries)
+  national_guidance: []
+related_documents: [payment-services, mica, consumer-digital-content, dsa, gdpr, copyright-fi, arpajaislaki, eidas, cra, web40, did, vc, oidc, gltf, omi, msf, wasm]
+applies_when:
+- condition:
+    fi: Alustalla on oma valuutta, jota ostetaan oikealla rahalla.
+    en: The platform has its own currency bought with real money.
+  obligation:
+    fi: Kysy, voiko valuutan lunastaa rahaksi tai siirtää alustan ulkopuolelle ja perustuuko se lohkoketjuun. Ohjaa payment-services-, mica- ja consumer-digital-content-tiedostoihin.
+    en: Ask whether the currency can be redeemed for money or moved off the platform and whether it is blockchain-based. Point to payment-services, mica and consumer-digital-content.
+  article: null
+- condition:
+    fi: Käyttäjät myyvät tai vaihtavat itse tekemiään tai lataamiaan sisältöjä.
+    en: Users sell or trade content they made or uploaded.
+  obligation:
+    fi: Ohjaa DSA:han (ilmoitusmenettely) ja tekijänoikeuteen. Käyttöehdoissa sovitaan oikeuksista ladattuun sisältöön ja siitä, mitä käyttäjä ostaessaan saa. Jos alusta välittää rahamaksut käyttäjien välillä, ks. payment-services.
+    en: Point to the DSA (notice and action) and copyright. Terms of service should set out rights to uploaded content and what a buyer gets. If the platform relays money between users, see payment-services.
+  article: null
+- condition:
+    fi: Tunnistautuminen on hajautettu.
+    en: Authentication is decentralised.
+  obligation:
+    fi: Kysy, tarkoitetaanko omia DID-tunnisteita vai EU:n digitaalisen identiteetin lompakkoa. Siirrettävään identiteettiin DID ja VC; EU-lompakolle OpenID4VP ja ARF:n muodot (mdoc, SD-JWT VC).
+    en: Ask whether this means own DIDs or the EU Digital Identity Wallet. For portable identity, DID and VC; for the EU wallet, OpenID4VP and the ARF formats (mdoc, SD-JWT VC).
+  article: null
+- condition:
+    fi: Myynnissä on maksullisia satunnaispalkintoja (loot box).
+    en: Paid random rewards (loot boxes) are sold.
+  obligation:
+    fi: Ohjaa arpajaislakiin ja CPC-periaatteisiin.
+    en: Point to the Lotteries Act and the CPC principles.
+  article: null
+keywords: [virtuaalimaailma, metaversumi, pelivaluutta, skinit, assettikauppa, virtual world, metaverse, in-game currency]
+last_verified: '2026-11-15'
+todo: Riippuu tiedostojen payment-services ja mica tarkistamattomista artikloista.

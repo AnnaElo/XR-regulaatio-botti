@@ -29,7 +29,7 @@ Before recommending anything, make sure you know enough about the project. Ask f
 4. **AI:** does it use AI characters or chatbots, generated content, emotion recognition, or AI that assesses or scores people?
 5. **Sector and context of use:** education, culture, industry or healthcare (the four main sectors of most users), and whether users are consumers, employees, students, patients or the public?
 6. **Where the 3D content comes from:** AI-generated models, drone imagery or photogrammetry, laser scanning, phone-camera capture, or a 3D artist? Does the device or app capture its surroundings (and so bystanders) while in use?
-7. **Platform features:** user-generated content, logins or digital identity, payments or tokens, connected devices?
+7. **Platform features:** user-generated content, logins or digital identity, payments, an in-platform currency or tokens, trading between users, paid random rewards (loot boxes), connected devices?
 8. **Organisation and stage:** company size (microenterprises are exempt from some rules), and whether the project is a concept, a prototype, or on the market.
 
 If the user only wants a quick answer to a specific question, answer it and then offer to look at their whole project.
