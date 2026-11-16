@@ -21,6 +21,7 @@ finland:
     fi: Traficom koordinoi, valvonta toimialoittain
     en: Traficom coordinates, supervision by sector
   national_guidance: []
+related_standards: [iso-iec-27001]
 applies_when:
 - condition:
     fi: Organisaatio kuuluu direktiivin toimialoihin ja kokorajoihin, esim. verkkoyhteisöalusta.
