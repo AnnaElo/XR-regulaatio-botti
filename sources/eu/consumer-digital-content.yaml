@@ -1,0 +1,59 @@
+id: consumer-digital-content
+type: eu-legislation
+name:
+  fi: Digitaalisen sisällön kuluttajansuoja ja pelien sisäiset ostot
+  en: Consumer protection for digital content and in-game purchases
+reference:
+  fi: Direktiivi (EU) 2019/770; Suomessa kuluttajansuojalaki 38/1978, 5 a luku
+  en: Directive (EU) 2019/770; in Finland Consumer Protection Act 38/1978, chapter 5 a
+status:
+  fi: Sovelletaan 1.1.2022 alkaen tehtyihin sopimuksiin
+  en: Applies to contracts concluded from 1 Jan 2022
+summary:
+  fi: Kuluttajansuoja kattaa myös digitaaliset sisällöt ja palvelut, kuten digitaaliset pelit, myös kun kuluttaja maksaa henkilötiedoillaan. EU:n kuluttajaviranomaisten verkosto (CPC) on julkaissut periaatteet pelien sisäisille virtuaalivaluutoille 21.3.2025.
+  en: Consumer protection also covers digital content and services such as digital games, including when the consumer pays with personal data. The EU consumer protection network (CPC) published principles on in-game virtual currencies on 21 March 2025.
+jurisdiction: EU
+use_cases: []
+content_sources: []
+primary_sources:
+- title: EUR-Lex, direktiivi (EU) 2019/770
+  url: https://eur-lex.europa.eu/eli/dir/2019/770/oj
+- title: KKV, Digitaaliset sisällöt ja palvelut
+  url: https://www.kkv.fi/kuluttaja-asiat/digitaaliset-sisallot-ja-palvelut/
+- title: Euroopan komissio, CPC Key principles on in-game virtual currencies (21.3.2025)
+  url: https://commission.europa.eu/document/download/8af13e88-6540-436c-b137-9853e7fe866a_en?filename=Key%20principles%20on%20in-game%20virtual%20currencies.pdf
+- title: Euroopan komissio, CPC:n koordinoidut toimet (sosiaalinen media, verkkopelit)
+  url: https://commission.europa.eu/topics/consumers/consumer-rights-and-complaints/enforcement-consumer-protection/coordinated-actions/social-media-online-games-and-search-engines_en
+finland:
+  authority:
+    fi: Kilpailu- ja kuluttajavirasto (kuluttaja-asiamies)
+    en: Finnish Competition and Consumer Authority (Consumer Ombudsman)
+  national_guidance:
+  - title: KKV, Digitaaliset sisällöt ja palvelut
+    url: https://www.kkv.fi/kuluttaja-asiat/digitaaliset-sisallot-ja-palvelut/
+related_documents: [payment-services, dsa, arpajaislaki, virtual-world-economy]
+applies_when:
+- condition:
+    fi: Kuluttajat ostavat palvelusta digitaalista sisältöä, kuten virtuaalivaluuttaa, skinejä tai lisäosia, tai maksavat palvelusta henkilötiedoillaan.
+    en: Consumers buy digital content in the service, such as virtual currency, skins or add-ons, or pay for the service with personal data.
+  obligation:
+    fi: Sisällön on vastattava sovittua ja yleisiä vaatimuksia, ja se on toimitettava ilman aiheetonta viivytystä. Sisältöä saa muuttaa vain rajatusti ja muutoksista on ilmoitettava selvästi; kuluttaja voi purkaa sopimuksen, jos muutos haittaa käyttöä.
+    en: Content must conform to the contract and general requirements and be supplied without undue delay. Changes are allowed only within limits and must be clearly notified; the consumer may terminate if a change impairs use.
+  article: Kuluttajansuojalaki 5 a luku
+- condition:
+    fi: Palvelussa myydään virtuaalivaluuttaa, jolla ostetaan sisältöjä.
+    en: The service sells virtual currency used to buy content.
+  obligation:
+    fi: 'CPC-periaatteiden mukaan: selkeä ja läpinäkyvä hinnoittelu ja ennakkotiedot, ei käytäntöjä, jotka piilottavat sisältöjen todellisen hinnan, peruuttamisoikeuden kunnioittaminen ja haavoittuvien kuluttajien, erityisesti lasten, huomioiminen.'
+    en: 'Per the CPC principles: clear and transparent pricing and pre-contractual information, no practices hiding the real cost of content, respect for the right of withdrawal, and attention to vulnerable consumers, especially children.'
+  article: null
+- condition:
+    fi: Käyttäjissä voi olla lapsia, tai peliä markkinoidaan ilmaisena, vaikka siinä on maksullisia sisältöjä.
+    en: Users may include children, or the game is marketed as free although it has paid content.
+  obligation:
+    fi: Älä kehota lapsia suoraan ostamaan maksullisia lisäosia, äläkä kutsu peliä ilmaiseksi, jos se ei ole kokonaan ilmainen (komission kirje pelialan järjestöille ISFE ja EGDF).
+    en: Do not directly exhort children to buy paid add-ons, and do not call a game free unless it is entirely free (Commission letter to ISFE and EGDF).
+  article: null
+keywords: [kuluttajansuoja, digitaalinen sisältö, pelivaluutta, peliostot, loot box, consumer protection, digital content, in-game currency]
+last_verified: '2026-11-15'
+todo: KKV:n sivu ja komission CPC-sivu tarkistettu. Tarkistamatta direktiivin 2019/770 artiklat, kuluttajansuojalain 5 a luvun pykälät ja peruuttamisoikeuden poikkeus (direktiivi 2011/83/EU art. 16(m)); CPC-periaatteiden PDF:ää ei luettu, periaatteet komission sivun tiivistelmästä.

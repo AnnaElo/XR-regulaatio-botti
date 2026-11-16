@@ -18,7 +18,15 @@ primary_sources:
   url: https://digital-strategy.ec.europa.eu/en/policies/virtual-worlds
 - title: Euroopan komissio, Web 4.0 ja virtuaalimaailmat (IP/23/3718)
   url: https://ec.europa.eu/commission/presscorner/detail/en/ip_23_3718
-applies_when: []
-keywords: []
-last_verified: ''
+related_standards: [msf, omi, gltf, openusd, openxr, webxr, did, vc]
+applies_when:
+- condition:
+    fi: Rakennetaan virtuaalimaailmaa tai -alustaa, tai kysytään EU:n linjauksista virtuaalimaailmoille.
+    en: A virtual world or platform is being built, or the user asks about EU policy on virtual worlds.
+  obligation:
+    fi: Taustalähde, ei velvoita. EU:n strategia tukee avoimia standardeja, jotta Web 4.0 ei olisi suurten toimijoiden hallussa. Suosittele varsinaisia avoimia standardeja (gltf, openxr, webxr, did, vc) ja mainitse VR/AR-teollisuuskoalitio vuoropuhelun kanavana.
+    en: Background source, not binding. The EU strategy supports open standards so that Web 4.0 is not dominated by larger organisations. Recommend the actual open standards (gltf, openxr, webxr, did, vc) and mention the VR/AR Industrial Coalition as a dialogue channel.
+  article: null
+keywords: [virtuaalimaailma, metaversumi, Web 4.0, virtual worlds]
+last_verified: '2026-11-15'
 todo: ''
