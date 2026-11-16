@@ -1,0 +1,54 @@
+id: iana-model-media-types
+type: standard
+category: 3d-content
+name:
+  fi: IANA:n 3D-mallien mediatyypit (model/*)
+  en: IANA media types for 3D models (model/*)
+reference:
+  fi: IANA Media Types -rekisteri, model-päätyyppi
+  en: IANA Media Types registry, model top-level type
+publisher: IANA
+availability: open
+open_alternative: []
+version: Rekisteri päivitetty 10.11.2026
+status:
+  fi: Rekisterissä on 45 model-tyyppiä (10.11.2026). XR:lle keskeisiä ovat model/gltf-binary, model/gltf+json, model/vnd.usdz+zip, model/vnd.usda, model/obj, model/mtl, model/stl, model/3mf, model/step, model/JT, model/e57 sekä X3D:n tyypit model/x3d+xml, model/x3d-vrml ja model/x3d+fastinfoset.
+  en: The registry lists 45 model types (10 Nov 2026). Key ones for XR are model/gltf-binary, model/gltf+json, model/vnd.usdz+zip, model/vnd.usda, model/obj, model/mtl, model/stl, model/3mf, model/step, model/JT, model/e57 and the X3D types model/x3d+xml, model/x3d-vrml and model/x3d+fastinfoset.
+summary:
+  fi: Viralliset mediatyypit (MIME-tyypit), joilla palvelin ja selain tunnistavat 3D-mallitiedoston. Väärä tai puuttuva tyyppi voi estää mallin avautumisen tai AR-esikatselun.
+  en: Official media types (MIME types) that let servers and browsers recognise a 3D model file. A wrong or missing type can stop the model from opening or prevent AR preview.
+jurisdiction: global
+use_cases: []
+content_sources: []
+primary_sources:
+- title: IANA, Media Types -rekisteri
+  url: https://www.iana.org/assignments/media-types/media-types.xhtml
+- title: IANA, model-tyypit CSV-muodossa
+  url: https://www.iana.org/assignments/media-types/model.csv
+related_regulation: []
+applies_when:
+- condition:
+    fi: 3D-malleja jaetaan verkossa, esim. selain-XR:ssä, verkkokaupan AR-esikatselussa, museon kokoelmasivulla tai rajapinnan kautta.
+    en: 3D models are served on the web, e.g. in browser XR, AR preview in an online shop, a museum collection page or via an API.
+  obligation:
+    fi: 'Määritä palvelimelle oikeat Content-Type-otsakkeet: .glb = model/gltf-binary, .gltf = model/gltf+json, .usdz = model/vnd.usdz+zip, .obj = model/obj, .stl = model/stl. Antaa: selain ja AR-katselin tunnistavat tiedoston, ja välimuisti ja pakkaus toimivat oikein.'
+    en: 'Configure correct Content-Type headers on the server: .glb = model/gltf-binary, .gltf = model/gltf+json, .usdz = model/vnd.usdz+zip, .obj = model/obj, .stl = model/stl. Gives: browsers and AR viewers recognise the file, and caching and compression work correctly.'
+  article: ''
+- condition:
+    fi: Rakennetaan rajapinta, käyttäjämanifesti tai kokoelmatietokanta, joka viittaa 3D-malleihin eri muodoissa.
+    en: An API, a user manifest or a collection database is built that links to 3D models in various formats.
+  obligation:
+    fi: Ilmoita jokaisen linkin muoto IANA:n mediatyypillä tiedostopäätteen sijaan, jotta vastaanottava järjestelmä voi valita tukemansa muodon.
+    en: State each link's format with its IANA media type instead of the file extension, so the receiving system can choose a format it supports.
+  article: ''
+keywords:
+- MIME
+- mediatyyppi
+- media type
+- Content-Type
+- glb
+- usdz
+- 3D-malli
+- 3D model
+last_verified: '2026-11-16'
+todo: 'Rekisteri tarkistettu model.csv-tiedostosta 16.11.2026. Lisätty Ouluverse-raportin (v0.9) taulukon 3 perusteella.'
