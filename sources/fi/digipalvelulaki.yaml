@@ -31,6 +31,13 @@ finland:
     url: https://www.saavutettavuusvaatimukset.fi/fi/mita-palveluja-ja-sisaltoja-laki-koskee
 applies_when:
 - condition:
+    fi: Yksityinen yritys tarjoaa kuluttajille esteettömyysdirektiivin piiriin kuuluvaa palvelua, esim. verkkokauppaa, jossa on AR-sovitus tai 3D-tuotenäkymä.
+    en: A private company provides consumers with a service covered by the European Accessibility Act, e.g. an online shop with AR try-on or a 3D product view.
+  obligation:
+    fi: Digipalvelulaki ei koske vain julkista sektoria. Sen 3 a luvussa on esteettömyysdirektiivin palveluvaatimukset (ks. eaa).
+    en: The Act does not only cover the public sector. Its Chapter 3 a contains the service requirements of the European Accessibility Act (see eaa).
+  article: 3 a luku
+- condition:
     fi: 'On epäselvää, kuuluuko toimija (esim. säätiöpohjainen museo, yhdistys tai yritys) lain piiriin.'
     en: 'It is unclear whether the organisation (e.g. a foundation-run museum, an association or a company) is in scope.'
   obligation:
@@ -60,4 +67,4 @@ keywords:
 - oppilaitos
 - museo
 last_verified: '2026-11-14'
-todo: Soveltamisala ja poikkeukset Traficomin sivuilta (tarkistettu 14.11.2026); pykälänumerot puuttuvat, koska Finlexin teksti ei avautunut.
+todo: Soveltamisala ja poikkeukset Traficomin sivuilta (tarkistettu 14.11.2026); pykälänumerot puuttuvat, koska Finlexin teksti ei avautunut. 3 a luvun viittaus perustuu lain 102/2023 2 §:ään; luvun sisältö tarkistamatta.

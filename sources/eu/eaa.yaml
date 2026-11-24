@@ -4,30 +4,63 @@ name:
   fi: Esteettömyysdirektiivi (EAA)
   en: European Accessibility Act (EAA)
 reference:
-  fi: Direktiivi (EU) 2019/882
-  en: Directive (EU) 2019/882
+  fi: Direktiivi (EU) 2019/882; Suomessa tuotteet laissa 102/2023 ja palvelut digipalvelulain 306/2019 3 a luvussa
+  en: Directive (EU) 2019/882; in Finland products in Act 102/2023 and services in Chapter 3 a of the Act on the Provision of Digital Services 306/2019
 status:
   fi: Sovellettu 28.6.2025 alkaen
   en: Applied since 28 Jun 2025
 summary:
-  fi: Muissa XR-ratkaisuissa saavutettavuus on suositeltava hyvä käytäntö.
-  en: For other XR solutions, accessibility is recommended good practice.
+  fi: 'Koskee vain direktiivissä lueteltuja kuluttajatuotteita ja -palveluja, jotka saatetaan markkinoille tai joita tarjotaan 28.6.2025 jälkeen: mm. verkkokaupan palvelut, pääsy audiovisuaalisiin mediapalveluihin, sähköiset viestintäpalvelut, kuluttajien pankkipalvelut, sähkökirjat ja henkilöliikenteen digipalvelut sekä kuluttajien tietokonelaitteistot ja niiden käyttöjärjestelmät. Muissa XR-ratkaisuissa saavutettavuus on suositeltava hyvä käytäntö.'
+  en: 'Applies only to the consumer products and services listed in the directive that are placed on the market or provided after 28 Jun 2025: e.g. e-commerce services, access to audiovisual media services, electronic communications services, consumer banking, e-books and passenger transport digital services, plus consumer general-purpose computer hardware and its operating systems. For other XR solutions, accessibility is recommended good practice.'
 jurisdiction: EU
 primary_sources:
 - title: EUR-Lex, direktiivi (EU) 2019/882
   url: https://eur-lex.europa.eu/eli/dir/2019/882/oj
+- title: Finlex, laki 102/2023 (tuotteiden esteettömyysvaatimukset)
+  url: https://www.finlex.fi/fi/lainsaadanto/2023/102
 finland:
   authority:
     fi: Traficom
     en: Traficom
   national_guidance: []
 related_standards: [en301549, wcag, xaur, webxr]
+related_documents: [digipalvelulaki, eidas]
 applies_when:
 - condition:
-    fi: Tuote tai palvelu kuuluu soveltamisalaan, esim. verkkokaupan AR-sovitus. Mikroyritykset on vapautettu palveluvaatimuksista.
-    en: The product or service is in scope, e.g. AR try-on in an online shop. Microenterprises are exempt from the service requirements.
-  obligation: null
-  article: null
-keywords: []
-last_verified: ''
-todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).
+    fi: 'XR- tai 3D-toiminto on osa kuluttajille tarjottavaa verkkokauppaa (esim. AR-sovitus, 3D-tuotenäkymä tai virtuaalimyymälä), pankkipalvelua, sähkökirjaa, henkilöliikenteen verkkosivua tai sovellusta tai palvelua, joka tarjoaa pääsyn audiovisuaalisiin mediapalveluihin.'
+    en: 'An XR or 3D feature is part of a consumer e-commerce service (e.g. AR try-on, 3D product view or virtual store), a banking service, an e-book, a passenger transport website or app, or a service giving access to audiovisual media services.'
+  obligation:
+    fi: Palvelun on täytettävä liitteen I esteettömyysvaatimukset (III ja IV jakso); Suomessa vaatimukset ovat digipalvelulain 3 a luvussa. Käytännössä tavoitteena on EN 301 549 ja WCAG AA, ja XR-osuudessa XAUR. Palveluja tarjoavat mikroyritykset on vapautettu palveluvaatimuksista; kysy yrityksen koko.
+    en: The service must meet the accessibility requirements of Annex I (Sections III and IV). In practice the target is EN 301 549 and WCAG AA, and XAUR for the XR part. Microenterprises providing services are exempt from the service requirements; ask about company size.
+  article: art. 2(2), art. 4(3), art. 4(5)
+- condition:
+    fi: Valmistetaan tai tuodaan markkinoille kuluttajille tarkoitettu laite, kuten yleiskäyttöinen tietokonelaitteisto tai sen käyttöjärjestelmä, tai päätelaite audiovisuaalisten mediapalvelujen tai sähköisen viestinnän käyttöön.
+    en: A consumer device is manufactured or placed on the market, such as general-purpose computer hardware or its operating system, or terminal equipment for audiovisual media services or electronic communications.
+  obligation:
+    fi: Tuotteen on täytettävä liitteen I I ja II jakson vaatimukset; Suomessa laki 102/2023, jonka soveltamisala (2 §) vastaa direktiivin tuoteluetteloa. Mikroyritysvapautus koskee vain palveluja, ei tuotteita. Se, kuuluuko XR-laite tai lasien käyttöjärjestelmä luokkaan "yleiskäyttöinen tietokonelaitteisto", on tulkintakysymys, jota botti ei voi ratkaista.
+    en: The product must meet the requirements of Annex I, Sections I and II. The microenterprise exemption covers only services, not products. Whether an XR headset or its operating system counts as "general purpose computer hardware" is a question of interpretation the bot cannot decide.
+  article: art. 2(1), art. 4(2)
+- condition:
+    fi: XR-sovellus tai -peli ei ole mikään direktiivissä luetelluista tuotteista tai palveluista (esim. viihde- tai oppimispeli, museon kokemus, teollisuuden koulutussovellus).
+    en: The XR app or game is none of the products or services listed in the directive (e.g. an entertainment or learning game, a museum experience, an industrial training app).
+  obligation:
+    fi: EAA ei todennäköisesti koske sitä, koska soveltamisala on suljettu luettelo. Saavutettavuus on silti suositeltavaa (xaur, wcag), ja julkisen sektorin toimijoita voi koskea digipalvelulaki.
+    en: The EAA probably does not apply, as its scope is a closed list. Accessibility is still recommended (xaur, wcag), and public sector bodies may be covered by the Finnish Act on the Provision of Digital Services.
+  article: art. 2
+- condition:
+    fi: Palvelun verkkosivulla tai sovelluksessa on karttoja, kolmansien osapuolten sisältöä, ennen 28.6.2025 julkaistua tallennettua mediaa tai toimistotiedostoja, tai arkistoitua sisältöä, jota ei enää päivitetä.
+    en: The service's website or app contains maps, third-party content, pre-recorded media or office files published before 28 Jun 2025, or archived content no longer updated.
+  obligation:
+    fi: Nämä on rajattu soveltamisen ulkopuolelle. Kartat vain, jos navigointikarttojen olennainen tieto on saatavilla saavutettavassa muodossa, ja kolmannen osapuolen sisältö vain, jos toimija ei rahoita, kehitä tai valvo sitä.
+    en: These are excluded. Maps only if the essential information of navigation maps is provided in an accessible digital format, and third-party content only if the operator does not fund, develop or control it.
+  article: art. 2(4)
+- condition:
+    fi: Esteettömyysvaatimusten täyttäminen XR-toiminnossa tuntuu mahdottomalta tai liian kalliilta, esim. VR-kokemus, jonka perusluonne muuttuisi tai jonka mukauttaminen olisi suhteettoman kallista.
+    en: Meeting the accessibility requirements in an XR feature seems impossible or too costly, e.g. a VR experience whose basic nature would change or whose adaptation would be disproportionately expensive.
+  obligation:
+    fi: 'Vaatimuksia sovelletaan vain siltä osin kuin ne eivät muuta tuotteen tai palvelun perusluonnetta tai aiheuta kohtuutonta rasitetta. Toimijan on itse arvioitava tämä liitteen VI perusteilla, dokumentoitava arvio ja säilytettävä se viisi vuotta sekä ilmoitettava vetoamisesta valvontaviranomaiselle. Palveluissa kohtuuttoman rasitteen arvio uusitaan palvelun muuttuessa, viranomaisen pyynnöstä ja vähintään viiden vuoden välein. Kohtuuttomaan rasitteeseen ei voi vedota, jos on saanut ulkopuolista rahoitusta esteettömyyden parantamiseen. Mikroyrityksiltä ei vaadita ilmoitusta viranomaiselle, eikä tuotteita käsitteleviltä mikroyrityksiltä dokumentointia. Vaatimuksia sovelletaan "siinä määrin kuin" ne eivät ole kohtuuttomia, joten poikkeus ei vapauta koko palvelua. Hyvä käytäntö: tarjoa vaihtoehtoinen tapa saada sama palvelu.'
+    en: 'The requirements apply only insofar as they do not fundamentally alter the basic nature of the product or service or impose a disproportionate burden. The operator must assess this using the criteria of Annex VI, document the assessment, keep it for five years and notify the surveillance authority when relying on it. For services, the disproportionate burden assessment is renewed when the service changes, at the authority''s request and at least every five years. Disproportionate burden cannot be invoked if the operator received external funding for improving accessibility. Microenterprises need not notify the authority, and microenterprises dealing with products need not document the assessment. The requirements apply "insofar as" they are not disproportionate, so the exception does not exempt the whole service. Good practice: offer an alternative way to get the same service.'
+  article: art. 14
+keywords: [esteettömyys, saavutettavuus, verkkokauppa, AR-sovitus, accessibility, e-commerce]
+last_verified: '2026-11-24'
+todo: Art. 2 ja 4 tarkistettu EUR-Lexin suomenkielisestä tekstistä (Anna, 24.11.2026). Lain 102/2023 2 § tarkistettu Finlexistä (Anna, 24.11.2026). Art. 14 tarkistettu (Anna, 24.11.2026). Tarkistamatta liitteen I ja VI vaatimukset, digipalvelulain 3 a luku sekä tuotteiden ja palvelujen valvontaviranomaiset Suomessa.

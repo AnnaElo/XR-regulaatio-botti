@@ -10,8 +10,8 @@ status:
   fi: Sovellettu pääosin 12.9.2025 alkaen
   en: Mostly applied since 12 Sep 2025
 summary:
-  fi: Laitteen käyttäjällä on oikeus laitteen keräämään dataan. Rajanveto XR-laitteiden osalta kannattaa varmistaa tapauskohtaisesti.
-  en: Device users have the right to the data their device collects. Scope for XR devices should be checked case by case.
+  fi: Verkkoon liitetyn tuotteen ja siihen liittyvän palvelun käyttäjällä on oikeus tuotteen tuottamaan dataan ja oikeus jakaa se kolmansille osapuolille. Datankäsittelypalvelujen (pilvi) tarjoajien on poistettava esteet palveluntarjoajan vaihtamiselta. Sovellettu 12.9.2025 alkaen; datan saatavuus suunnittelusta lähtien (art. 3(1)) koskee 12.9.2026 jälkeen markkinoille saatettuja tuotteita.
+  en: Users of a connected product and related service have the right to the data the product generates and to share it with third parties. Data processing (cloud) service providers must remove obstacles to switching provider. Applied from 12 Sep 2025; data access by design (Art. 3(1)) covers products placed on the market after 12 Sep 2026.
 jurisdiction: EU
 primary_sources:
 - title: EUR-Lex, asetus (EU) 2023/2854
@@ -21,12 +21,44 @@ finland:
     fi: Traficom (datakoordinaattori, hallituksen esitys 25.9.2025)
     en: Traficom (data coordinator, government proposal 25 Sep 2025)
   national_guidance: []
+related_documents: [gdpr, cra, nature-digital-twin, industry-xr]
+related_standards: [sensorthings]
 applies_when:
 - condition:
-    fi: Ratkaisuun kuuluu verkkoon liitettäviä, dataa kerääviä laitteita tai tarjotaan datankäsittelypalveluja.
-    en: The solution includes connected devices that collect data, or data processing services are offered.
-  obligation: null
-  article: null
-keywords: []
-last_verified: ''
-todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).
+    fi: Arvioidaan, onko XR-laite tai -sovellus Data Actin tarkoittama verkkoon liitetty tuote tai siihen liittyvä palvelu.
+    en: Assessing whether an XR device or app is a connected product or related service under the Data Act.
+  obligation:
+    fi: 'Verkkoon liitetty tuote on esine, joka saa, tuottaa tai kerää käytöstään ja ympäristöstään dataa ja voi välittää sitä (esim. XR-lasit, anturi tai mittalaite), ja jonka pääasiallinen toiminto ei ole datan tallennus tai käsittely muiden puolesta. Siihen liittyvä palvelu on digitaalinen palvelu tai ohjelmisto, joka on liitetty tuotteeseen osto-, vuokraus- tai liisaushetkellä niin, ettei tuote ilman sitä pystyisi suorittamaan jotain toiminnoistaan, tai jonka valmistaja tai kolmas osapuoli liittää myöhemmin lisätäkseen, päivittääkseen tai mukauttaakseen tuotteen toimintoja. Pelkkä toisen valmistajan laitteella toimiva XR-sovellus ei siis automaattisesti ole tuotteeseen liittyvä palvelu; botti ei voi ratkaista rajanvetoa. Mukaan luetaan myös virtuaaliavustajat (esim. ääni- tai eleohjaus) siltä osin kuin ne ovat vuorovaikutuksessa tuotteeseen. Käyttäjän oikeudet koskevat tuotteen suorituskykyä, käyttöä ja ympäristöä koskevaa dataa, ei datan sisältöä.'
+    en: 'A connected product is an item that obtains, generates or collects data concerning its use or environment and can communicate it (e.g. XR glasses, a sensor or a measuring device), and whose primary function is not storing or processing data on behalf of others. A related service is a digital service or software connected to the product at the time of purchase, rent or lease such that the product could not perform one of its functions without it, or subsequently connected by the manufacturer or a third party to add to, update or adapt its functions. A standalone XR app running on another manufacturer''s device is therefore not automatically a related service; the bot cannot decide the borderline. Virtual assistants (e.g. voice or gesture control) are covered insofar as they interact with the product. User rights cover data on the product''s performance, use and environment, not the content of the data.'
+  article: art. 1(2)(a), 1(4), art. 2(5), 2(6), 2(31)
+- condition:
+    fi: Laitteen tai palvelun data sisältää henkilötietoja (esim. käyttäjän liike-, katse- tai sijaintidataa) tai teollis- ja tekijänoikeuksin suojattua sisältöä.
+    en: The device or service data includes personal data (e.g. the user's movement, gaze or location data) or content protected by intellectual property rights.
+  obligation:
+    fi: 'Data Act ei rajoita GDPR:ää eikä sähköisen viestinnän tietosuojaa; ristiriitatilanteessa tietosuojasäännöt menevät edelle. Data Actin oikeudet täydentävät GDPR:n oikeutta saada pääsy tietoihin (art. 15) ja siirtää ne (art. 20). Myöskään tekijänoikeuksia ja muita teollis- ja tekijänoikeuksia ei rajoiteta (ks. gdpr).'
+    en: 'The Data Act is without prejudice to the GDPR and ePrivacy rules; in case of conflict, data protection law prevails. Data Act rights complement the GDPR rights of access (Art. 15) and portability (Art. 20). Copyright and other intellectual property rights are likewise unaffected (see gdpr).'
+  article: art. 1(5), art. 1(8)
+- condition:
+    fi: Valmistetaan verkkoon liitettävä laite, joka tuottaa käyttödataa (esim. XR-lasit, anturi tai digikaksosen mittalaite), tai tarjotaan siihen liittyvää palvelua, kuten laitteen ohjaussovellusta tai pilvipalvelua.
+    en: A connected device that generates usage data is manufactured (e.g. XR glasses, a sensor or a digital twin measuring device), or a related service is provided, such as a companion app or cloud service for the device.
+  obligation:
+    fi: 'Suunnittele tuote ja palvelu niin, että tuotteen ja palvelun data metatietoineen on käyttäjän saatavilla oletusarvoisesti, helposti, turvallisesti ja maksutta jäsennellyssä, yleisesti käytetyssä ja koneluettavassa muodossa, mahdollisuuksien mukaan suoraan laitteesta. Koskee 12.9.2026 jälkeen markkinoille saatettuja tuotteita. Kerro ennen sopimusta, mitä dataa syntyy, missä muodossa ja kuinka paljon, tallennetaanko sitä laitteeseen vai palvelimelle ja miten käyttäjä pääsee siihen.'
+    en: 'Design the product and service so that product and service data with metadata is available to the user by default, easily, securely and free of charge in a structured, commonly used and machine-readable format, directly from the device where possible. Applies to products placed on the market after 12 Sep 2026. Before the contract, tell the user what data is generated, in what format and volume, whether it is stored on the device or a server, and how the user can access it.'
+  article: art. 3, art. 50
+- condition:
+    fi: Käyttäjä ei saa laitteen dataa suoraan, ja data on valmistajan tai palveluntarjoajan (datan haltijan) palvelimella.
+    en: The user cannot get the device data directly, and the data is on the manufacturer's or service provider's (data holder's) server.
+  obligation:
+    fi: 'Anna data ja metatiedot käyttäjälle tai tämän pyynnöstä kolmannelle osapuolelle viipymättä, samanlaatuisena kuin itselläsi, maksutta ja tarvittaessa reaaliaikaisesti. Älä tee oikeuksien käyttämisestä hankalaa käyttöliittymäsuunnittelulla. Muuta kuin henkilötietoa saat käyttää vain sopimuksen perusteella. Jos dataan sisältyy toisen henkilön henkilötietoja, tarvitaan GDPR:n mukainen peruste. Liikesalaisuuksia voi suojata sopimuksin ja poikkeustapauksessa evätä pääsyn, mutta epäämisestä on ilmoitettava viranomaiselle.'
+    en: 'Make the data and metadata available to the user, or at their request to a third party, without undue delay, of the same quality as available to you, free of charge and in real time where relevant. Do not make exercising these rights difficult through interface design. You may use non-personal data only on the basis of a contract. If the data includes another person''s personal data, a GDPR legal basis is needed. Trade secrets can be protected by agreements and, exceptionally, access refused, but a refusal must be notified to the authority.'
+  article: art. 4, art. 5
+- condition:
+    fi: 'Tarjotaan datankäsittelypalvelua eli asiakkaalle digitaalista palvelua, joka antaa tarveperusteisen verkkokäytön skaalattaviin ja joustaviin jaettuihin tietoteknisiin resursseihin, jotka voidaan ottaa käyttöön ja poistaa nopeasti vähällä hallinnoinnilla: esim. XR-sisällön pilvialusta, pilvirenderöinti tai digikaksosen alustapalvelu.'
+    en: 'A data processing service is offered, i.e. a digital service giving customers on-demand network access to a shared pool of configurable, scalable and elastic computing resources that can be rapidly provisioned and released with minimal management effort: e.g. a cloud platform for XR content, cloud rendering or a digital twin platform service.'
+  obligation:
+    fi: 'Poista kaupalliset, tekniset, sopimusperusteiset ja organisatoriset esteet, jotka estävät asiakasta vaihtamasta toiseen palveluntarjoajaan tai omaan infrastruktuuriin, siirtämästä dataansa ja digitaalista omaisuuttaan tai tekemästä sopimusta toisen tarjoajan kanssa. Käytännössä: vientitoiminnot avoimissa muodoissa (esim. glTF, 3D Tiles, OGC API).'
+    en: 'Remove commercial, technical, contractual and organisational obstacles that prevent customers from switching to another provider or on-premises infrastructure, porting their data and digital assets, or contracting with another provider. In practice: export features in open formats (e.g. glTF, 3D Tiles, OGC API).'
+  article: art. 2(8), art. 23, art. 50
+keywords: [data, virtuaaliavustaja, tuotteeseen liittyvä palvelu, verkkoon liitetty tuote, datan saatavuus, pilvipalvelu, vaihtaminen, connected product, data access, cloud switching]
+last_verified: '2026-11-24'
+todo: Art. 1, 2, 3, 4, 5, 23 ja 50 tarkistettu EUR-Lexin suomenkielisestä tekstistä (Anna, 24.11.2026). Tarkistamatta "datan sisällön" rajaus johdanto-osasta (koskeeko se esim. käyttäjän tallentamia videoita ja 3D-malleja), mahdolliset mikro- ja pienyritysten poikkeukset (art. 7) sekä Suomen toimivaltainen viranomainen.

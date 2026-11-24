@@ -10,8 +10,8 @@ status:
   fi: Sovellettu 25.5.2018 alkaen
   en: Applied since 25 May 2018
 summary:
-  fi: Tietosuoja sisällytetään suunnitteluun ja oletusasetuksiin. Tunnistamiseen käytettävä biometrinen data on erityistä henkilötietoa.
-  en: Data protection is built into design and default settings. Biometric data used for identification is a special category of personal data.
+  fi: Tietosuoja sisällytetään suunnitteluun ja oletusasetuksiin. Tunnistamiseen käytettävä biometrinen data ja terveystiedot ovat erityisiä henkilötietoryhmiä. Korkean riskin käsittelystä tehdään vaikutustenarviointi.
+  en: Data protection is built into design and default settings. Biometric data used for identification and health data are special categories of personal data. High-risk processing requires an impact assessment.
 jurisdiction: EU
 primary_sources:
 - title: EUR-Lex, asetus (EU) 2016/679
@@ -26,26 +26,33 @@ finland:
 related_standards: [oidc, design]
 applies_when:
 - condition:
-    fi: Sovellus kerää katseenseuranta-, liike-, ääni- tai kasvodataa, josta käyttäjä voidaan tunnistaa.
-    en: The application collects eye-tracking, motion, voice or face data from which the user can be identified.
+    fi: XR-sovellus käsittelee mitä tahansa henkilötietoja, myös testikäyttäjien dataa. Henkilötietoa on kaikki tieto, josta henkilö voidaan tunnistaa suoraan tai epäsuorasti, esim. sijainti, verkkotunnisteet tai fyysiset ja fysiologiset tekijät, kuten liike- tai katsedata.
+    en: The XR app processes any personal data, including test users' data. Personal data is any information from which a person can be identified directly or indirectly, e.g. location, online identifiers or physical and physiological factors such as motion or gaze data.
   obligation:
-    fi: 'Tunnistamiseen käytetty biometrinen data on erityinen henkilötietoryhmä: tarvitaan art. 9 mukainen peruste, yleensä nimenomainen suostumus.'
-    en: 'Biometric data used for identification is a special category: an Art. 9 basis is needed, usually explicit consent.'
-  article: art. 4(14), art. 9
+    fi: 'Sisäänrakennettu ja oletusarvoinen tietosuoja: toteuta jo suunnitteluvaiheessa tekniset ja organisatoriset toimet, kuten tietojen minimointi ja pseudonymisointi. Oletusarvoisesti käsitellään vain kunkin tarkoituksen kannalta tarpeelliset tiedot (määrä, laajuus, säilytysaika ja saatavilla olo); käytännössä kerää vain tarvittava sensoridata ja käsittele se laitteella, kun mahdollista. Henkilötietoja, kuten profiilia, avataria tai tallenteita, ei saa oletusarvoisesti asettaa rajoittamattoman joukon saataville ilman käyttäjän omaa toimea.'
+    en: 'Data protection by design and by default: implement technical and organisational measures, such as data minimisation and pseudonymisation, from the design stage. By default only the data needed for each purpose is processed (amount, extent, storage period and accessibility); in practice collect only the sensor data needed and process it on the device where possible. Personal data such as a profile, avatar or recordings must not by default be made accessible to an unlimited number of people without the user''s own action.'
+  article: art. 4(1), art. 25
 - condition:
-    fi: Käsittely on laajamittaista tai siihen liittyy uutta teknologiaa ja korkea riski, esim. XR-sensoridatan analyysi.
-    en: Processing is large-scale or uses new technology with high risk, e.g. analysis of XR sensor data.
+    fi: Sovellus kerää katseenseuranta-, liike-, ääni- tai kasvodataa, ja sitä käytetään tai voidaan käyttää käyttäjän tunnistamiseen tai tunnistamisen varmistamiseen (esim. iiris- tai kasvotunnistus kirjautumisessa).
+    en: The app collects eye-tracking, motion, voice or face data, and it is or can be used to identify the user or confirm their identity (e.g. iris or face recognition at login).
   obligation:
-    fi: Tehdään tietosuojaa koskeva vaikutustenarviointi (DPIA).
-    en: Carry out a data protection impact assessment (DPIA).
-  article: art. 35
+    fi: 'Biometrisiä tietoja ovat fyysisiin, fysiologisiin tai käyttäytymiseen liittyviin ominaisuuksiin perustuvalla teknisellä käsittelyllä saadut tiedot, joilla henkilö voidaan tunnistaa tai tunnistaminen varmistaa. Niiden käsittely henkilön yksiselitteistä tunnistamista varten on erityisen henkilötietoryhmän käsittelyä ja lähtökohtaisesti kiellettyä; tarvitaan art. 9(2) mukainen poikkeus, XR-palveluissa yleensä nimenomainen suostumus tiettyyn tarkoitukseen. Jäsenvaltiot voivat asettaa biometrisille ja terveystiedoille lisäehtoja; tarkista Suomen tietosuojalaki.'
+    en: 'Biometric data is data resulting from specific technical processing of physical, physiological or behavioural characteristics that allows or confirms the unique identification of a person. Processing it for the purpose of uniquely identifying a person is processing of a special category and prohibited by default; an Art. 9(2) exception is needed, in XR services usually explicit consent for a specific purpose. Member States may add conditions for biometric and health data; check the Finnish Data Protection Act.'
+  article: art. 4(14), art. 9(1), 9(2)(a), 9(4)
 - condition:
-    fi: XR-sovellus käsittelee mitä tahansa henkilötietoja, myös testikäyttäjien dataa.
-    en: The XR application processes any personal data, including test users' data.
+    fi: Katse- tai liikedataa käytetään muuhun kuin tunnistamiseen, esim. foveated rendering -tekniikkaan, käyttöliittymän ohjaukseen tai käyttäjän kiinnostuksen, käyttäytymisen tai terveydentilan analysointiin.
+    en: Gaze or motion data is used for something other than identification, e.g. foveated rendering, interface control, or analysing the user's interests, behaviour or health.
   obligation:
-    fi: 'Sisäänrakennettu ja oletusarvoinen tietosuoja: kerätään vain tarpeellinen sensoridata ja käsitellään se laitteella, kun mahdollista.'
-    en: 'Data protection by design and by default: collect only the sensor data needed and process it on the device where possible.'
-  article: art. 25
+    fi: 'Jos dataa ei käytetä tunnistamiseen, se ei ole art. 9:n biometristä tietoa, mutta se on silti henkilötietoa, kun käyttäjä on tunnistettavissa. Jos datasta päätellään terveydentilaa (esim. VR-kuntoutus tai liikehäiriöt), se on terveystietoa ja kuuluu art. 9:n piiriin. Jos datasta arvioidaan automaattisesti mieltymyksiä, käyttäytymistä tai liikkeitä, kyse on profiloinnista. Botti ei voi ratkaista rajanvetoa; suosittele datan käsittelyä vain laitteella ja tallentamatta.'
+    en: 'If the data is not used for identification, it is not Art. 9 biometric data, but it is still personal data when the user is identifiable. If health is inferred from the data (e.g. VR rehabilitation or movement disorders), it is health data and falls under Art. 9. If preferences, behaviour or movements are automatically evaluated, it is profiling. The bot cannot decide the borderline; recommend processing the data on the device only and without storing it.'
+  article: art. 4(4), art. 4(15), art. 9(1)
+- condition:
+    fi: 'Käsittely etenkin uutta teknologiaa käytettäessä todennäköisesti aiheuttaa korkean riskin, esim. laajamittainen erityisten henkilötietoryhmien (biometria, terveys) käsittely, automaattiseen profilointiin perustuvat merkittävät päätökset tai yleisölle avoimen alueen järjestelmällinen laajamittainen valvonta (esim. AR-lasien kameroilla tai digikaksosen kameroilla).'
+    en: 'Processing, especially using new technology, is likely to result in a high risk, e.g. large-scale processing of special categories (biometric, health), significant decisions based on automated profiling, or systematic large-scale monitoring of a publicly accessible area (e.g. with AR glasses cameras or digital twin cameras).'
+  obligation:
+    fi: 'Tee tietosuojaa koskeva vaikutustenarviointi (DPIA) ennen käsittelyä. Siihen kuuluvat vähintään kuvaus käsittelystä ja tarkoituksista, tarpeellisuuden ja oikeasuhteisuuden arvio, riskien arvio ja toimenpiteet riskien hallitsemiseksi. Pyydä neuvoa tietosuojavastaavalta, jos sellainen on, ja tarvittaessa rekisteröityjen näkemyksiä. Tarkastele arviota uudelleen, kun riski muuttuu. Tietosuojavaltuutettu julkaisee luettelon käsittelyistä, joissa arviointi vaaditaan.'
+    en: 'Carry out a data protection impact assessment (DPIA) before processing. It must contain at least a description of the processing and its purposes, an assessment of necessity and proportionality, a risk assessment and measures to address the risks. Seek the advice of the data protection officer, if any, and where appropriate the views of data subjects. Review the assessment when the risk changes. The Data Protection Ombudsman publishes a list of processing requiring an assessment.'
+  article: art. 35(1), 35(3), 35(4), 35(7), 35(11)
 keywords:
 - henkilötiedot
 - personal data
@@ -55,5 +62,7 @@ keywords:
 - sensoridata
 - suostumus
 - DPIA
-last_verified: ''
-todo: Lisää tietosuojavaltuutetun toimiston ohjeet erityisistä henkilötietoryhmistä ja vaikutustenarvioinnista (tarkat sivulinkit).
+- profilointi
+- terveystiedot
+last_verified: '2026-11-24'
+todo: Art. 4, 9, 25 ja 35 tarkistettu EUR-Lexin suomenkielisestä tekstistä (Anna, 24.11.2026). Tarkistamatta Suomen tietosuojalain (1050/2018) mahdolliset lisäehdot biometrisille ja terveystiedoille (art. 9(4)) sekä tietosuojavaltuutetun DPIA-luettelo (art. 35(4)). Lisää tietosuojavaltuutetun toimiston ohjeet erityisistä henkilötietoryhmistä ja vaikutustenarvioinnista (tarkat sivulinkit).
