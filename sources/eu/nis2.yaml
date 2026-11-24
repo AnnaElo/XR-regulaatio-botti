@@ -4,14 +4,14 @@ name:
   fi: NIS2-direktiivi
   en: NIS2 Directive
 reference:
-  fi: Direktiivi (EU) 2022/2555
-  en: Directive (EU) 2022/2555
+  fi: Direktiivi (EU) 2022/2555; Suomessa kyberturvallisuuslaki
+  en: Directive (EU) 2022/2555; in Finland the Cybersecurity Act
 status:
   fi: Suomessa kyberturvallisuuslaki 8.4.2025 alkaen
   en: In Finland, Cybersecurity Act since 8 Apr 2025
 summary:
-  fi: Kyberriskien hallinta ja merkittävien poikkeamien ilmoittaminen. Hyvä käytäntö, vaikka laki ei koskisi.
-  en: Cyber risk management and reporting of significant incidents. Good practice even where the law does not apply.
+  fi: 'Kyberriskien hallinta ja merkittävien poikkeamien ilmoittaminen. Koskee pääsääntöisesti liitteissä I ja II lueteltujen toimialojen vähintään keskisuuria toimijoita, eräitä toimijoita koosta riippumatta. Useimmat XR-kehittäjät eivät itse kuulu soveltamisalaan, mutta NIS2-asiakkaat (esim. sairaalat) voivat vaatia toimitusketjultaan kyberturvallisuutta. Hyvä käytäntö, vaikka laki ei koskisi.'
+  en: 'Cyber risk management and reporting of significant incidents. Mainly covers at least medium-sized entities in the sectors listed in Annexes I and II, and some entities regardless of size. Most XR developers are not covered themselves, but NIS2 customers (e.g. hospitals) may require cybersecurity from their supply chain. Good practice even where the law does not apply.'
 jurisdiction: EU
 primary_sources:
 - title: EUR-Lex, direktiivi (EU) 2022/2555
@@ -22,12 +22,57 @@ finland:
     en: Traficom coordinates, supervision by sector
   national_guidance: []
 related_standards: [iso-iec-27001]
+related_documents: [cra, dsa, healthcare-xr, mdr]
 applies_when:
 - condition:
-    fi: Organisaatio kuuluu direktiivin toimialoihin ja kokorajoihin, esim. verkkoyhteisöalusta.
-    en: The organisation falls within the directive's sectors and size thresholds, e.g. an online community platform.
-  obligation: null
-  article: null
-keywords: []
-last_verified: ''
-todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).
+    fi: Arvioidaan, kuuluuko organisaatio NIS2:n soveltamisalaan.
+    en: Assessing whether an organisation falls within the scope of NIS2.
+  obligation:
+    fi: 'Direktiiviä sovelletaan liitteissä I ja II tarkoitettua toimijatyyppiä oleviin julkisiin ja yksityisiin toimijoihin, jotka ovat vähintään keskisuuria yrityksiä suosituksen 2003/361/EY mukaan (vähintään 50 henkilöä tai liikevaihto tai taseen loppusumma yli 10 milj. euroa) ja jotka tarjoavat palvelujaan tai harjoittavat toimintaansa unionissa. Kysy toimiala ja yrityksen koko. Botti ei voi ratkaista, kuuluuko organisaatio soveltamisalaan; Suomessa asiaa voi kysyä toimialan valvontaviranomaiselta.'
+    en: 'The directive applies to public and private entities of a type referred to in Annex I or II that are at least medium-sized enterprises under Recommendation 2003/361/EC (at least 50 staff, or turnover or balance sheet total above EUR 10 million) and provide their services or carry out their activities in the Union. Ask about the sector and company size. The bot cannot decide whether the organisation is covered; in Finland, ask the sector''s supervisory authority.'
+  article: art. 2(1)
+- condition:
+    fi: 'Toimija on koosta riippumatta tietyssä asemassa: yleisten sähköisten viestintäverkkojen tai -palvelujen tarjoaja, luottamuspalvelun tarjoaja, aluetunnusrekisteri tai DNS-palvelun tarjoaja, jäsenvaltion ainoa yhteiskunnan kannalta kriittisen palvelun tarjoaja, toimija, jonka palvelun häiriöllä olisi merkittävä vaikutus yleiseen turvallisuuteen tai kansanterveyteen, tai keskus- tai aluetason julkishallinnon toimija.'
+    en: 'The entity is in a specific position regardless of size: provider of public electronic communications networks or services, trust service provider, TLD name registry or DNS service provider, sole provider in a Member State of a service essential for society, an entity whose service disruption would significantly affect public safety or public health, or a central or regional public administration entity.'
+  obligation:
+    fi: NIS2 koskee toimijaa yrityksen koosta riippumatta. Jäsenvaltio voi lisäksi ulottaa direktiivin paikallishallintoon sekä koulutus- ja tutkimuslaitoksiin. Suomessa julkishallinnon toimialalla (liitteen I kohta 10) täytäntöönpano on julkisen hallinnon tiedonhallintalaissa (906/2019), ei kyberturvallisuuslaissa.
+    en: NIS2 applies to the entity regardless of size. Member States may also extend it to local public administration and to education and research institutions. In Finland, for the public administration sector (Annex I, point 10) it is implemented in the Act on Information Management in Public Administration (906/2019), not in the Cybersecurity Act.
+  article: art. 2(2), art. 2(5); kyberturvallisuuslaki 1 §
+- condition:
+    fi: Kunta tai kunnan organisaatio tarjoaa tai hankkii XR-palvelun (esim. kaupungin digikaksonen, kirjaston tai koulun XR-ympäristö, kunnan vesi- tai energialaitoksen koulutussovellus).
+    en: A municipality or municipal organisation provides or procures an XR service (e.g. a city digital twin, a library or school XR environment, a training app for a municipal water or energy utility).
+  obligation:
+    fi: Suomessa kyberturvallisuuslakia sovelletaan kuntaan vain liitteessä I tai II tarkoitetun toiminnan osalta (esim. vesihuolto, energia, terveydenhuolto). Muuhun kunnan tiedonhallintaan sovelletaan tiedonhallintalakia (906/2019). Jos XR-palvelu liittyy liitteen toimintaan, kunnan riskienhallinta ja toimitusketjun vaatimukset koskevat myös sitä.
+    en: In Finland the Cybersecurity Act applies to a municipality only as regards activities referred to in Annex I or II (e.g. water supply, energy, health care). Other municipal information management falls under Act 906/2019. If the XR service relates to an Annex activity, the municipality's risk management and supply chain requirements cover it too.
+  article: kyberturvallisuuslaki 4 § 6 mom.
+- condition:
+    fi: 'Arvioidaan Suomen kyberturvallisuuslain rajauksia: toimijan liitteen I tai II toiminta on vain satunnaista ja vähäistä, toimija on finanssialan DORA-toimija tai toiminta palvelee maanpuolustusta, kansallista turvallisuutta tai rikostorjuntaa.'
+    en: 'Assessing the exclusions of the Finnish Cybersecurity Act: the entity''s Annex I or II activity is only occasional and minor, the entity is a financial sector DORA entity, or the activity serves national defence, national security or law enforcement.'
+  obligation:
+    fi: 'Lakia ei sovelleta toimijaan, jonka liitteen I tai II toiminta on satunnaista ja vähäistä, eikä DORA-asetuksen (EU) 2022/2554 piiriin kuuluvaan finanssialan toimijaan. Lain 2 lukua ei sovelleta maanpuolustukseen, kansalliseen turvallisuuteen, yleiseen järjestykseen ja turvallisuuteen tai rikostorjuntaan, eikä lakia lainkaan toimijaan, joka tarjoaa vain tällaisia palveluja, paitsi jos se on luottamuspalvelun tarjoaja. Puolustuskäyttöön tehty XR-koulutus voi siis jäädä ulkopuolelle, mutta botti ei voi ratkaista asiaa.'
+    en: 'The Act does not apply to an entity whose Annex I or II activity is occasional and minor, nor to a financial entity covered by the DORA Regulation (EU) 2022/2554. Chapter 2 does not apply to national defence, national security, public order and security or law enforcement, and the Act does not apply at all to an entity providing only such services, unless it is a trust service provider. XR training made for defence may thus fall outside, but the bot cannot decide the matter.'
+  article: kyberturvallisuuslaki 4 §
+- condition:
+    fi: 'Vähintään keskisuuri XR-toimija on liitteen I erittäin kriittisellä toimialalla: esim. terveydenhuollon palveluntarjoaja, pilvipalvelujen tai datakeskuspalvelujen tarjoaja, sisällönjakeluverkko, luottamuspalvelu tai yritysten välinen ICT-palvelujen hallinta (hallinnoidut palvelut ja hallinnoidut tietoturvapalvelut).'
+    en: 'An at least medium-sized XR operator is in a sector of high criticality under Annex I: e.g. a healthcare provider, a cloud computing or data centre service provider, a content delivery network, a trust service, or business-to-business ICT service management (managed service and managed security service providers).'
+  obligation:
+    fi: 'Toimija kuuluu NIS2:n piiriin. Sen on hallittava kyberturvallisuusriskejä (riskienhallintatoimenpiteet, myös toimitusketjun turvallisuus) ja ilmoitettava merkittävistä poikkeamista viranomaiselle. Suomessa velvoitteet ovat kyberturvallisuuslaissa ja valvonta on toimialakohtaista; Traficom koordinoi.'
+    en: 'The entity is covered by NIS2. It must manage cybersecurity risks (risk-management measures, including supply chain security) and report significant incidents to the authority. In Finland the obligations are in the Cybersecurity Act and supervision is by sector; Traficom coordinates.'
+  article: art. 2(1), liite I
+- condition:
+    fi: 'Vähintään keskisuuri XR-toimija on liitteen II muulla kriittisellä toimialalla: esim. lääkinnällisten laitteiden valmistus, tietokoneiden sekä elektronisten ja optisten tuotteiden valmistus (esim. XR-lasien valmistaja), digitaalisten palvelujen tarjoaja (verkossa toimiva markkinapaikka, hakukone tai verkkoyhteisöalusta eli alusta, jolla loppukäyttäjät voivat olla yhteydessä toisiinsa, jakaa sisältöä ja viestiä, esim. metaversumin sosiaalinen alusta) tai tutkimusorganisaatio.'
+    en: 'An at least medium-sized XR operator is in another critical sector under Annex II: e.g. manufacture of medical devices, manufacture of computers and electronic and optical products (e.g. an XR headset maker), a digital provider (online marketplace, online search engine or social networking services platform, e.g. a metaverse social platform) or a research organisation.'
+  obligation:
+    fi: 'Toimija kuuluu NIS2:n piiriin (yleensä "tärkeänä" toimijana, jonka valvonta on jälkikäteistä). Velvoitteet ovat samat: kyberturvallisuusriskien hallinta ja merkittävien poikkeamien ilmoittaminen. Huom. tuotteen kyberturvallisuuteen sovelletaan lisäksi CRA:ta (ks. cra).'
+    en: 'The entity is covered by NIS2 (usually as an "important" entity, supervised ex post). The obligations are the same: cybersecurity risk management and reporting significant incidents. Note that the CRA also applies to product cybersecurity (see cra).'
+  article: art. 2(1), liite II
+- condition:
+    fi: Pieni XR-kehittäjä tai -studio toimittaa ratkaisun NIS2-toimijalle, esim. sairaalalle, energiayhtiölle tai kunnalle.
+    en: A small XR developer or studio supplies a solution to a NIS2 entity, e.g. a hospital, an energy company or a municipality.
+  obligation:
+    fi: 'NIS2 ei todennäköisesti koske kehittäjää suoraan, jos se ei ole liitteiden toimialalla ja kokorajoissa. Asiakkaan on kuitenkin huolehdittava toimitusketjunsa turvallisuudesta, joten sopimuksissa voidaan vaatia esim. tietoturvakäytäntöjä, haavoittuvuuksien hallintaa ja poikkeamista ilmoittamista. Hyvä käytäntö: ISO/IEC 27001 -tyyppinen hallintamalli.'
+    en: 'NIS2 probably does not apply to the developer directly if it is not in a listed sector and size class. The customer must however ensure the security of its supply chain, so contracts may require e.g. security practices, vulnerability management and incident notification. Good practice: an ISO/IEC 27001 type management system.'
+  article: art. 2(1)
+keywords: [kyberturvallisuus, kyberturvallisuuslaki, toimitusketju, poikkeamailmoitus, cybersecurity, supply chain, incident reporting]
+last_verified: '2026-11-24'
+todo: Art. 2 ja liitteet I–II tarkistettu EUR-Lexin suomenkielisestä tekstistä (Anna, 24.11.2026). Tarkistamatta art. 21 (riskienhallintatoimenpiteet), art. 23 (ilmoitusvelvoitteet ja määräajat), olennaisten ja tärkeiden toimijoiden jako (art. 3), Kyberturvallisuuslain 1, 2 ja 4 § tarkistettu Finlexistä (Anna, 24.11.2026). Tarkistamatta lain kokorajat ja liitteet, valvovat viranomaiset (26 §), lain numero ja Finlex-linkki sekä se, koskeeko laki oppilaitoksia.
