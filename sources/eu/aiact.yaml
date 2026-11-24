@@ -29,9 +29,9 @@ applies_when:
     fi: XR-sovelluksessa on tekoälyhahmo, chatbot tai virtuaaliavustaja, jonka kanssa käyttäjä on vuorovaikutuksessa.
     en: The XR application has an AI character, chatbot or virtual assistant that the user interacts with.
   obligation:
-    fi: Käyttäjälle kerrotaan, että hän on vuorovaikutuksessa tekoälyn kanssa.
-    en: Users are told that they are interacting with an AI system.
-  article: art. 50(1)
+    fi: Tarjoajan on suunniteltava järjestelmä niin, että käyttäjälle kerrotaan hänen olevan vuorovaikutuksessa tekoälyn kanssa, ellei se ole ilmeistä valistuneelle ja tarkkaavaiselle käyttäjälle. Tieto annetaan selkeästi ja esteettömästi viimeistään ensimmäisen vuorovaikutuksen yhteydessä.
+    en: The provider must design the system so that users are told they are interacting with AI, unless this is obvious to a reasonably well-informed and observant user. The information is given clearly and accessibly at the latest at the first interaction.
+  article: art. 50(1), 50(5)
 - condition:
     fi: Sovellus tuottaa synteettistä kuvaa, ääntä, videota tai 3D-sisältöä, esim. generoituja avatareja tai deepfake-sisältöä.
     en: The application generates synthetic images, audio, video or 3D content, e.g. generated avatars or deepfakes.
@@ -40,26 +40,26 @@ applies_when:
     en: Generated content is marked as artificial in a machine-readable way and deepfakes are disclosed. The transition period for systems already on the market ends on 2 Dec 2026.
   article: art. 50(2), 50(4)
 - condition:
-    fi: Sovellus päättelee tunteita esim. katseesta, ilmeistä, äänestä tai liikkeistä.
-    en: The application infers emotions, e.g. from gaze, facial expressions, voice or movement.
+    fi: Sovellus päättelee käyttäjän tunteita tai aikomuksia biometrisistä tiedoista, esim. katseesta, ilmeistä, äänestä tai liikkeistä.
+    en: The app infers the user's emotions or intentions from biometric data, e.g. gaze, facial expressions, voice or movement.
   obligation:
-    fi: Kielletty työpaikoilla ja oppilaitoksissa (poikkeuksena lääketieteelliset ja turvallisuussyyt). Muissa yhteyksissä käyttäjille ilmoitetaan tunteentunnistuksesta.
-    en: Prohibited in workplaces and educational institutions (except for medical or safety reasons). Elsewhere users are informed of emotion recognition.
-  article: art. 5(1)(f), art. 50(3)
+    fi: 'Kyse on tunteentunnistusjärjestelmästä. Tunteiden päätteleminen työpaikalla ja oppilaitoksissa on kielletty 2.2.2025 alkaen, paitsi lääketieteellisiin tai turvallisuuteen liittyviin tarkoituksiin (esim. VR-terapia tai kuljettajan väsymyksen tunnistus). Kielto koskee sekä markkinoille saattamista että käyttöä, joten myös työpaikan VR-koulutus tai koulun XR-oppimisympäristö kuuluu siihen. Muissa yhteyksissä käyttöönottajan on ilmoitettava järjestelmästä sille altistuville selkeästi viimeistään ensimmäisen vuorovaikutuksen yhteydessä ja käsiteltävä henkilötiedot GDPR:n mukaisesti (ks. gdpr). Määritelmä edellyttää biometrisiä tietoja, joten pelkkään tekstiin perustuva tunteiden päättely ei ole tunteentunnistusjärjestelmä.'
+    en: 'This is an emotion recognition system. Inferring emotions in the workplace and in educational institutions is prohibited from 2 Feb 2025, except for medical or safety reasons (e.g. VR therapy or driver fatigue detection). The ban covers both placing on the market and use, so workplace VR training or a school XR learning environment is also covered. Elsewhere the deployer must inform people exposed to the system clearly at the latest at the first interaction, and process personal data under the GDPR (see gdpr). The definition requires biometric data, so emotion inference from text alone is not an emotion recognition system.'
+  article: art. 3(39), art. 5(1)(f), art. 50(3), 50(5), art. 113(a)
 - condition:
     fi: Tekoälyä käytetään koulutuksessa tai työelämässä arviointiin tai päätöksiin, esim. VR-koulutuksen suoritusarviointi tai rekrytointi.
     en: AI is used for assessment or decisions in education or employment, e.g. scoring VR training or recruitment.
   obligation:
-    fi: 'Voi olla liitteen III suuririskinen järjestelmä: riskienhallinta, tekninen dokumentaatio, ihmisvalvonta. Sovelletaan 2.12.2027 alkaen.'
-    en: 'May be an Annex III high-risk system: risk management, technical documentation, human oversight. Applies from 2 Dec 2027.'
-  article: art. 6, liite III kohdat 3 ja 4
+    fi: 'Liitteen III järjestelmät ovat suuririskisiä: riskienhallinta, tekninen dokumentaatio ja ihmisvalvonta. Poikkeus: järjestelmä ei ole suuririskinen, jos se ei aiheuta merkittävää vahingon riskiä eikä vaikuta olennaisesti päätöksen tulokseen, esim. se tekee vain suppean menettelyllisen tehtävän, parantaa ihmisen jo tekemän työn tulosta, havaitsee poikkeamia korvaamatta ihmisen arviota tai tekee valmistelevan tehtävän. Profilointia tekevä järjestelmä on aina suuririskinen. Jos tarjoaja vetoaa poikkeukseen, se dokumentoi arvion ennen markkinoille saattamista ja rekisteröi järjestelmän EU:n tietokantaan. Sovelletaan 2.12.2027 alkaen muutosasetuksen mukaan; alkuperäisessä tekstissä päivä oli 2.8.2026.'
+    en: 'Annex III systems are high-risk: risk management, technical documentation and human oversight. Exception: a system is not high-risk if it poses no significant risk of harm and does not materially influence the outcome of decision-making, e.g. it only performs a narrow procedural task, improves the result of a previously completed human activity, detects deviations without replacing human assessment, or performs a preparatory task. A system that profiles natural persons is always high-risk. A provider relying on the exception documents its assessment before placing on the market and registers the system in the EU database. Applies from 2 Dec 2027 under the amending regulation; the original text had 2 Aug 2026.'
+  article: art. 6(2), 6(3), 6(4), liite III kohdat 3 ja 4
 - condition:
     fi: Tekoäly on osa tuotetta, jota koskee liitteen I tuotelainsäädäntö, esim. lääkinnällinen XR-laite tai lelu.
     en: AI is part of a product covered by Annex I product legislation, e.g. a medical XR device or a toy.
   obligation:
-    fi: Suuririskisen järjestelmän vaatimukset sovelletaan 2.8.2028 alkaen.
-    en: High-risk requirements apply from 2 Aug 2028.
-  article: art. 6(1), liite I
+    fi: Järjestelmä on suuririskinen, jos se on tuotteen turvakomponentti tai itse tuote ja tuotteelle tehdään kolmannen osapuolen vaatimustenmukaisuuden arviointi (esim. MDR:n luokan IIa tai korkeampi laite). Vaatimuksia sovelletaan 2.8.2028 alkaen muutosasetuksen mukaan; alkuperäisessä tekstissä päivä oli 2.8.2027.
+    en: The system is high-risk if it is a safety component of a product or the product itself and the product undergoes third-party conformity assessment (e.g. an MDR class IIa or higher device). Requirements apply from 2 Aug 2028 under the amending regulation; the original text had 2 Aug 2027.
+  article: art. 6(1), liite I, art. 113(c)
 keywords:
 - tekoäly
 - AI
@@ -71,5 +71,5 @@ keywords:
 - biometriikka
 - koulutus
 - suuririskinen
-last_verified: ''
-todo: Lisää Traficomin tekoälyasetusta koskevat ohjesivut (finland.national_guidance). Määräpäivät Annan sivun mukaisia (digitaalinen omnibus); tarkista EUR-Lexistä ennen julkaisua.
+last_verified: '2026-11-24'
+todo: Art. 3(39), 5, 6, 50 ja 113 tarkistettu alkuperäisen asetuksen suomenkielisestä tekstistä (Anna, 24.11.2026). Alkuperäisen 113 artiklan mukaan yleinen soveltaminen 2.8.2026 ja art. 6(1) 2.8.2027. Tarkistamatta muutosasetuksen 2026/1744 uudet päivät (liite III 2.12.2027, liite I 2.8.2028, art. 50(2) siirtymäaika 2.12.2026), liitteen III kohdat 3 ja 4 sekä liite I. Lisää Traficomin tekoälyasetusta koskevat ohjesivut (finland.national_guidance).
