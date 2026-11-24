@@ -1,0 +1,49 @@
+id: open-data
+type: eu-legislation
+name:
+  fi: Avoimen datan direktiivi ja arvokkaat tietoaineistot (HVD); INSPIRE
+  en: Open Data Directive and high-value datasets (HVD); INSPIRE
+reference:
+  fi: Direktiivi (EU) 2019/1024; täytäntöönpanoasetus arvokkaista tietoaineistoista; INSPIRE-direktiivi 2007/2/EY; Suomessa laki paikkatietoinfrastruktuurista 421/2009
+  en: Directive (EU) 2019/1024; implementing regulation on high-value datasets; INSPIRE Directive 2007/2/EC; in Finland Act on Spatial Data Infrastructure 421/2009
+status:
+  fi: Voimassa
+  en: In force
+summary:
+  fi: Arvokkaiden tietoaineistojen kuusi luokkaa ovat paikkatieto, maan havainnointi ja ympäristö, meteorologia, tilastot, yritykset ja liikkuvuus. Ne on asetettava saataville maksutta, koneluettavassa muodossa, rajapintojen kautta ja tarvittaessa massalatauksena.
+  en: 'The six categories of high-value datasets are: geospatial, earth observation and environment, meteorological, statistics, companies and mobility. They must be available free of charge, in machine-readable formats, via APIs and, where relevant, as bulk download.'
+jurisdiction: EU
+use_cases: []
+content_sources: []
+primary_sources:
+- title: Euroopan komissio, Open data
+  url: https://digital-strategy.ec.europa.eu/en/policies/open-data
+- title: Euroopan komissio, Commission defines high-value datasets (20.1.2023)
+  url: https://digital-strategy.ec.europa.eu/en/news/commission-defines-high-value-datasets-be-made-available-re-use
+- title: Finlex, laki paikkatietoinfrastruktuurista 421/2009
+  url: https://www.finlex.fi/fi/lainsaadanto/2009/421
+finland:
+  authority:
+    fi: Tarkistamaton (paikkatietoinfrastruktuurin kansallinen koordinointi)
+    en: Unverified (national coordination of spatial data infrastructure)
+  national_guidance: []
+related_standards: [ogcfeat, ogctiles, cog, metsatietostandardi]
+related_documents: [nature-digital-twin, open-data-sources, digipalvelulaki]
+applies_when:
+- condition:
+    fi: Julkinen toimija (esim. kunta, valtion laitos, korkeakoulu) julkaisee digikaksosen paikkatieto-, ympäristö- tai havaintoaineistoja.
+    en: A public body (e.g. municipality, state agency, university) publishes spatial, environmental or observation data from a digital twin.
+  obligation:
+    fi: Arvokkaat tietoaineistot on julkaistava maksutta, koneluettavina, rajapintojen kautta ja tarvittaessa massalatauksena. Suunnittele rajapinnat (OGC API) ja lisenssi alusta asti.
+    en: High-value datasets must be published free of charge, machine-readable, via APIs and where relevant as bulk download. Design the APIs (OGC API) and the licence from the start.
+  article: ''
+- condition:
+    fi: Yritys tai hanke hyödyntää julkisen sektorin avoimia paikkatietoja.
+    en: A company or project uses open public-sector spatial data.
+  obligation:
+    fi: Taustatieto, ei velvoita käyttäjää. Selittää, miksi esim. Maanmittauslaitoksen ja Metsäkeskuksen aineistot ovat saatavilla rajapinnoista maksutta. Noudata kunkin aineiston lisenssiä.
+    en: Background, no obligation on the user. Explains why e.g. National Land Survey and Forest Centre data is available free via APIs. Follow each dataset's licence.
+  article: ''
+keywords: [avoin data, HVD, INSPIRE, paikkatieto, open data, high-value datasets]
+last_verified: ''
+todo: Komission sivuilta tarkistettu HVD-luokat ja saatavuusvaatimukset. Tarkistamatta täytäntöönpanoasetuksen numero (todennäköisesti (EU) 2023/138) ja soveltamispäivä, lisenssivaatimus, INSPIRE-velvoitteet ja -teemat (INSPIRE-sivut eivät avautuneet), Suomen viranomainen sekä lain 421/2009 sisältö.

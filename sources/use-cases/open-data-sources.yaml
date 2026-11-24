@@ -16,12 +16,16 @@ primary_sources:
   url: https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/datasets-and-interfaces/product-descriptions
 - title: Maanmittauslaitos, tiedostopalvelu
   url: https://asiointi.maanmittauslaitos.fi/karttapaikka/tiedostopalvelu
+- title: Suomen metsäkeskus, Avoin metsä- ja luontotieto
+  url: https://www.metsakeskus.fi/fi/avoin-metsa-ja-luontotieto
+- title: Suomen metsäkeskus, Metsävarakuviot, tietotuotekuvaus
+  url: https://www.metsakeskus.fi/sites/default/files/document/tietotuotekuvaus-metsavarakuviot.pdf
 finland:
   authority:
-    fi: Maanmittauslaitos (aineiston tarjoaja)
-    en: National Land Survey of Finland (data provider)
+    fi: Maanmittauslaitos ja Suomen metsäkeskus (aineistojen tarjoajat)
+    en: National Land Survey of Finland and Finnish Forest Centre (data providers)
   national_guidance: []
-related_documents: [copyright-fi, pointcloud, cog, citygml, 3dtiles, ogcfeat, culture-xr]
+related_documents: [copyright-fi, pointcloud, cog, citygml, 3dtiles, ogcfeat, culture-xr, metsatietostandardi, nature-digital-twin]
 applies_when:
 - condition:
     fi: XR-kokemus rakentaa suomalaisia maisemia, kaupunkeja tai paikkoja (esim. lapsuudenmaisemat, kotiseutu, matkailukohteet) avoimista paikkatietoaineistoista.
@@ -37,6 +41,13 @@ applies_when:
     fi: Tarkista jokaisen kuvan käyttöoikeus aineiston tarjoajan ilmoittamasta lisenssistä (esim. CC-lisenssi tai "käyttöoikeus tarkistettava"). Ks. copyright-fi.
     en: Check each image's usage rights from the licence stated by the provider (e.g. a CC licence or "rights to be checked"). See copyright-fi.
   article: ''
+- condition:
+    fi: Käytetään suomalaista metsävaratietoa, esim. metsän digikaksonen tai luontokohde.
+    en: Finnish forest resource data is used, e.g. a forest digital twin or a nature site.
+  obligation:
+    fi: 'Metsäkeskuksen avoin metsä- ja luontotieto on maksutonta ja CC BY 4.0 -lisensoitua: mainitse lähde (esim. "Sisältää Suomen metsäkeskuksen ... tietoa") ja merkitse muutokset. Metsävarakuviot (polygonit, keskikoko n. 1,4 ha, mukana myös metsälain erityisen tärkeät elinympäristöt) päivittyvät kahdesti viikossa, EPSG:3067, GeoPackage tai XML. Avoin data ei sisällä metsänomistajien henkilö- tai yhteystietoja, kiinteistörajoja eikä kiinteistötunnuksia. Ks. metsatietostandardi.'
+    en: 'The Finnish Forest Centre''s open forest and nature data is free and licensed CC BY 4.0: credit the source and mark changes. Forest stands (polygons, average about 1.4 ha, including habitats of special importance under the Forest Act) are updated twice a week, EPSG:3067, GeoPackage or XML. The open data contains no forest owners'' personal or contact data, property boundaries or property IDs. See metsatietostandardi.'
+  article: ''
 keywords:
 - avoin data
 - open data
@@ -47,5 +58,7 @@ keywords:
 - arkistokuva
 - lisenssi
 - CC BY
-last_verified: '2026-11-14'
+- Metsäkeskus
+- metsävaratieto
+last_verified: '2026-11-24'
 todo: ''

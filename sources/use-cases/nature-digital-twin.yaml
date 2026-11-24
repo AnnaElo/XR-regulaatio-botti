@@ -1,0 +1,47 @@
+id: nature-digital-twin
+type: use-case-guidance
+name:
+  fi: Metsän, luonnon ja ympäristön digikaksonen
+  en: Digital twin of a forest, nature or environment
+summary:
+  fi: Luonnon digikaksonen yhdistää avointa metsä- ja paikkatietoa, omaa drooni- tai keilausaineistoa ja usein anturidataa. Suunnittelussa ratkaisevat datalähteet ja niiden lisenssit, yhteinen koordinaattijärjestelmä, raskaan 3D-aineiston jakelu selaimeen ja se, yhdistetäänkö dataan metsänomistajien tietoja.
+  en: A nature digital twin combines open forest and spatial data, own drone or scanning data and often sensor data. Key design factors are data sources and their licences, a shared coordinate system, delivering heavy 3D data to the browser, and whether forest owners' data is combined.
+jurisdiction: FI
+use_cases: [industry, education]
+content_sources: [drone, laser-scanning]
+primary_sources:
+- title: Suomen metsäkeskus, Data processing in the Finnish Forest Centre
+  url: https://www.metsakeskus.fi/en/node/961
+- title: Suomen metsäkeskus, Avoin metsä- ja luontotieto
+  url: https://www.metsakeskus.fi/fi/avoin-metsa-ja-luontotieto
+finland:
+  authority:
+    fi: Suomen metsäkeskus (metsätieto), Maanmittauslaitos (paikkatieto), Tietosuojavaltuutetun toimisto (henkilötiedot)
+    en: Finnish Forest Centre (forest data), National Land Survey (spatial data), Data Protection Ombudsman (personal data)
+  national_guidance: []
+related_documents: [open-data-sources, metsatietostandardi, reality-capture, uas, gdpr, open-data, digipalvelulaki, dataact, eudr, forest-monitoring, pointcloud, 3dtiles, cog, ogctiles, ogcfeat, sensorthings, webgpu, webxr, wcag]
+applies_when:
+- condition:
+    fi: Rakennetaan metsän, luontoalueen, vesistön tai muun luonnonympäristön digikaksonen tai 3D-näkymä.
+    en: A digital twin or 3D view of a forest, nature area, water body or other natural environment is being built.
+  obligation:
+    fi: 'Kysy datalähteet (avoin data, oma drooni- tai keilausaineisto, anturit), julkaisija ja käyttäjät. Suositeltu ketju: pistepilvet LAS/LAZ ja COPC, selainjakelu 3D Tiles, rasterit COG ja OGC API – Tiles, kohteet OGC API – Features ja metsätietostandardi, anturit SensorThings API, kaikki EPSG:3067 (ETRS-TM35FIN) ja N2000.'
+    en: 'Ask about data sources (open data, own drone or scanning data, sensors), the publisher and users. Recommended chain: point clouds LAS/LAZ and COPC, browser delivery 3D Tiles, rasters COG and OGC API – Tiles, features OGC API – Features and the forest information standard, sensors SensorThings API, all in EPSG:3067 (ETRS-TM35FIN) and N2000.'
+  article: ''
+- condition:
+    fi: Metsävaratietoon yhdistetään metsänomistajien tietoja (nimet, yhteystiedot, kiinteistöt).
+    en: Forest owners' data (names, contact details, properties) is combined with forest resource data.
+  obligation:
+    fi: Metsäkeskuksen mukaan sen tietojärjestelmän yksityishenkilöitä koskevat tiedot muodostavat henkilörekisterin, eikä avoin data sisällä niitä. Jos yhdistät avoimen datan omistajatietoihin, käsittelet henkilötietoja ja GDPR:n velvoitteet koskevat sinua. Kiinteistörajat ja -tunnukset eivät kuulu avoimeen dataan.
+    en: According to the Forest Centre, data on private persons in its system forms a personal data register, and the open data excludes it. If you combine open data with owner data, you process personal data and GDPR obligations apply to you. Property boundaries and IDs are not part of the open data.
+  article: ''
+- condition:
+    fi: Digikaksosta käytetään puukaupan tai hakkuiden dokumentointiin, esim. hakkuualueen paikkatieto.
+    en: The digital twin is used to document timber sales or harvesting, e.g. geolocation of a harvest area.
+  obligation:
+    fi: Ks. eudr. Velvoite koskee puuta EU:n markkinoille saattavaa toimijaa, ei itse digikaksosta.
+    en: See eudr. The obligation falls on the operator placing timber on the EU market, not on the digital twin itself.
+  article: ''
+keywords: [metsä, digikaksonen, luonto, ympäristö, forest, digital twin, nature]
+last_verified: '2026-11-24'
+todo: ''

@@ -1,0 +1,43 @@
+id: metsatietostandardi
+type: standard
+category: domain-data
+name:
+  fi: Metsätietostandardit
+  en: Finnish forest information standards
+publisher: Suomen metsäkeskus ja metsäalan valmisteluryhmä
+availability: open
+version: XML-skeemat; avoimen rajapinnan GeoJSON standardiversio 1.0
+status:
+  fi: Käytössä; kehitetään metsäalan toimijoiden valmisteluryhmässä
+  en: In use; developed by a working group of forest-sector operators
+summary:
+  fi: Metsäalan yhteiset XML-skeemat metsävaratiedon siirtoon. Metsäkeskuksen avoin REST-rajapinta palauttaa kuviotiedot metsätietostandardin mukaisena GeoJSONina (versio 1.0) sekä GeoPackage-, zip- ja CSV-muodossa. Standardeja kehitetään voittoa tavoittelematta yhdessä metsäsovellusten kehittäjien kanssa.
+  en: Shared XML schemas of the Finnish forest sector for exchanging forest resource data. The Finnish Forest Centre's open REST API returns stand data as GeoJSON per the standard (version 1.0) and as GeoPackage, zip or CSV. The standards are developed on a non-profit basis together with forest application developers.
+jurisdiction: FI
+use_cases: [industry, education]
+content_sources: [laser-scanning, drone]
+primary_sources:
+- title: Suomen metsäkeskus, Forest information standards
+  url: https://www.metsakeskus.fi/en/open-forest-and-nature-information/forest-information-standards
+- title: Suomen metsäkeskus, Metsätietostandardin REST-rajapinnan käyttöönotto (10.8.2026)
+  url: https://www.metsakeskus.fi/sites/default/files/document/metsatietostandardin-rest-rajapinnan-kayttoonotto-2-0-0.pdf
+related_regulation:
+- id: gdpr
+  relation:
+    fi: Avoin kuviotieto ei sisällä metsänomistajien henkilötietoja; jos niitä yhdistetään, GDPR koskee käsittelyä.
+    en: Open stand data contains no forest owners' personal data; if such data is combined, GDPR applies.
+- id: open-data
+  relation:
+    fi: Metsäkeskuksen avoin rajapinta on esimerkki julkisen sektorin avoimesta paikkatiedosta.
+    en: The Forest Centre's open API is an example of open public-sector spatial data.
+applies_when:
+- condition:
+    fi: Suomalaisen metsän digikaksonen, metsäsuunnittelusovellus tai XR-näkymä käyttää metsävaratietoa (kuviot, puusto, toimenpiteet).
+    en: A digital twin of a Finnish forest, a forest planning app or an XR view uses forest resource data (stands, tree stock, operations).
+  obligation:
+    fi: 'Hae ja siirrä kuviotiedot metsätietostandardin mukaisina (XML-skeemat tai rajapinnan GeoJSON 1.0, EPSG:3067). Antaa: yhteensopivuus suomalaisten metsäjärjestelmien ja Metsäkeskuksen avoimen rajapinnan kanssa.'
+    en: 'Fetch and exchange stand data per the forest information standard (XML schemas or the API''s GeoJSON 1.0, EPSG:3067). Gives: compatibility with Finnish forest systems and the Forest Centre''s open API.'
+  article: ''
+keywords: [metsätieto, metsävaratieto, kuvio, metsä, forest data, forest stand, Metsäkeskus]
+last_verified: '2026-11-24'
+todo: Lisenssiä XML-skeemoille ei mainita standardisivulla. Rajapintadokumentin tiedostonimessä on 2.0.0, mutta tekstissä vain standardiversio 1.0.

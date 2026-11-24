@@ -40,6 +40,7 @@ Botti kysyy enintään kolme asiaa kerrallaan eikä kysy uudelleen sitä, minkä
 | Selaimessa toimiva XR | | `webxr`, `design` |
 | 3D-sisällön siirto ja jakelu | | `gltf`, `openusd` |
 | Paikkatieto, kaupunkimallit, digitaaliset kaksoset | | `ogcfeat`, `ogctiles`, `3dtiles`, `citygml`, `geopose` |
+| Metsän, luonnon tai ympäristön digikaksonen | `use-cases/nature-digital-twin`, `use-cases/open-data-sources`, `open-data`; puukaupan dokumentointi `eudr` | `metsatietostandardi`, `pointcloud`, `3dtiles`, `cog`, `ogctiles`, `ogcfeat`, `sensorthings` |
 | AR-lasit tai puhelin kuvaa, skannaa tai kuuntelee ympäristöä (myös reaaliaikainen käännös) | `use-cases/ar-capture`, `gdpr`, `aiact` | `webxr`, `openxr` |
 | Kirjautuminen ja katseenseuranta | `use-cases/vr-login-eyetracking`, `gdpr`, `aiact` | `oidc`, `openxr` |
 | Droonikuvaus, laserkeilaus, fotogrammetria | `use-cases/reality-capture`, `uas`, `gdpr` | `pointcloud`, `cog`, `3dtiles`; maksullinen `astm-e57` |
