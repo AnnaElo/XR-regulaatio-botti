@@ -10,8 +10,8 @@ status:
   fi: Raportointi 11.9.2026, kokonaan 11.12.2027
   en: Reporting 11 Sep 2026, fully 11 Dec 2027
 summary:
-  fi: Kyberturvavaatimukset tuotteen koko elinkaaren ajan. Aktiivisesti hyödynnetyistä haavoittuvuuksista on ilmoitettava.
-  en: Cybersecurity requirements across the whole product life cycle. Actively exploited vulnerabilities must be reported.
+  fi: Kyberturvavaatimukset digitaalisia elementtejä sisältäville tuotteille (ohjelmistot ja laitteet sekä niiden etäkäsittelyratkaisut) koko elinkaaren ajan. Raportointivelvoite (art. 14) on sovellettu 11.9.2026 alkaen, muu asetus 11.12.2027 alkaen.
+  en: Cybersecurity requirements across the life cycle for products with digital elements (software and hardware and their remote data processing). The reporting obligation (Art. 14) applies from 11 Sep 2026, the rest from 11 Dec 2027.
 jurisdiction: EU
 primary_sources:
 - title: EUR-Lex, asetus (EU) 2024/2847
@@ -28,17 +28,33 @@ finland:
 related_standards: [openxr]
 applies_when:
 - condition:
-    fi: EU:ssa saatetaan markkinoille digitaalisia tuotteita kaupallisessa toiminnassa, esim. XR-laitteita tai myytäviä tai muuten rahallistettuja XR-ohjelmistoja.
-    en: Digital products are placed on the EU market in the course of a commercial activity, e.g. XR devices or XR software that is sold or otherwise monetised.
-  obligation: null
-  article: null
-- condition:
-    fi: Ohjelmisto on ilmaista tai avointa lähdekoodia eikä tekijä rahallista sitä (esim. museon tai hankkeen ilmainen verkkopeli, avoimen lähdekoodin kirjasto).
-    en: The software is free or open source and not monetised by its maker (e.g. a free web game of a museum or project, an open source library).
+    fi: 'EU:ssa asetetaan saataville kaupallisen toiminnan yhteydessä, maksua vastaan tai maksutta, digitaalisia elementtejä sisältävä tuote: esim. XR-laite, XR-sovellus tai sen pilvitaustajärjestelmä, jota ilman tuote ei pysty suorittamaan jotakin toimintoaan.'
+    en: 'A product with digital elements is made available on the EU market in the course of a commercial activity, for payment or free of charge: e.g. an XR device, an XR app, or its cloud backend without which the product cannot perform one of its functions.'
   obligation:
-    fi: 'Komission mukaan CRA koskee vain avointa lähdekoodia, joka asetetaan saataville kaupallisen toiminnan yhteydessä; tekijänsä rahallistamaton avoin lähdekoodi ei ole kaupallista toimintaa. Arvioi rahoitusmalli tapauskohtaisesti ja kerro, ettei botti voi ratkaista asiaa.'
-    en: 'According to the Commission, the CRA only covers open source software made available in the course of a commercial activity; open source not monetised by its maker is not a commercial activity. Assess the funding model case by case and say that the bot cannot decide the matter.'
-  article: ''
-keywords: []
-last_verified: ''
-todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).
+    fi: 'Valmistajan on 11.12.2027 alkaen: suunniteltava tuote liitteen I olennaisten kyberturvavaatimusten mukaan; tehtävä ja dokumentoitava kyberturvallisuusriskien arviointi teknisiin asiakirjoihin; noudatettava huolellisuutta kolmansien osapuolten ja avoimen lähdekoodin komponenteissa; käsiteltävä haavoittuvuudet tukiajan, yleensä vähintään 5 vuotta; pidettävä tietoturvapäivitykset saatavilla vähintään 10 vuotta; tehtävä vaatimustenmukaisuuden arviointi, EU-vaatimustenmukaisuusvakuutus ja CE-merkintä; nimettävä keskitetty yhteyspiste haavoittuvuusilmoituksille; ja ilmoitettava tukiajan päättymispäivä ostohetkellä.'
+    en: 'From 11 Dec 2027 the manufacturer must: design the product per the essential cybersecurity requirements of Annex I; carry out and document a cybersecurity risk assessment in the technical documentation; exercise due diligence on third-party and open source components; handle vulnerabilities during the support period, normally at least 5 years; keep security updates available for at least 10 years; carry out conformity assessment, an EU declaration of conformity and CE marking; designate a single point of contact for vulnerability reports; and state the end date of the support period at purchase.'
+  article: art. 3(1), 3(2), 3(22), art. 13, art. 71(2)
+- condition:
+    fi: Valmistajan digitaalisia elementtejä sisältävä tuote on EU:n markkinoilla, ja siinä havaitaan aktiivisesti hyödynnetty haavoittuvuus tai vakava tietoturvapoikkeama.
+    en: A manufacturer's product with digital elements is on the EU market, and an actively exploited vulnerability or a severe security incident is found.
+  obligation:
+    fi: 'Sovellettu jo 11.9.2026 alkaen: ilmoita keskitetyn raportointialustan kautta koordinaattoriksi nimetylle CSIRT-yksikölle ja ENISAlle. Ennakkovaroitus 24 tunnissa ja ilmoitus 72 tunnissa. Loppuraportti haavoittuvuudesta 14 päivän kuluessa korjauksen saatavuudesta ja poikkeamasta kuukauden kuluessa. Tiedota myös käyttäjille.'
+    en: 'Applies already from 11 Sep 2026: notify the coordinating CSIRT and ENISA via the single reporting platform. Early warning within 24 hours and notification within 72 hours. Final report on a vulnerability within 14 days of a fix being available, and on an incident within one month. Inform users too.'
+  article: art. 14, art. 71(2)
+- condition:
+    fi: Ohjelmisto on vapaata ja avointa lähdekoodia (esim. kirjasto, työkalu tai hankkeen avoin koodi).
+    en: The software is free and open source (e.g. a library, a tool or a project's open code).
+  obligation:
+    fi: 'CRA koskee avointa lähdekoodia vain, jos se asetetaan saataville kaupallisen toiminnan yhteydessä. Avoimen lähdekoodin tarjoaminen ei ole kaupallista, jos valmistaja ei saa siitä tuloa. Pelkkä valmistajien rahallinen tuki, osallistuminen kehitykseen tai säännölliset julkaisut eivät tee siitä kaupallista. Voittoa tavoittelemattomien järjestöjen kehitystyö ei ole kaupallista, jos tulot käytetään järjestön tavoitteisiin. Kaupalliseen käyttöön tarkoitetun avoimen koodin pitkäjänteisiin tukijoihin ("avoimen lähdekoodin ohjelmistovastaavat", esim. säätiöt) sovelletaan kevyempää järjestelmää. Kerro, ettei botti voi ratkaista asiaa.'
+    en: 'The CRA covers open source only if it is made available in the course of a commercial activity. Providing open source is not commercial if the manufacturer earns no income from it. Financial support from manufacturers, contributions to development or regular releases alone do not make it commercial. Development by non-profit organisations is not commercial if income is used for their non-profit objectives. Long-term supporters of open source intended for commercial use ("open-source software stewards", e.g. foundations) have a lighter regime. Say that the bot cannot decide the matter.'
+  article: art. 3(14), 3(48), johdanto-osan kappaleet 18–19
+- condition:
+    fi: Tuote on maksuton, mutta ei avointa lähdekoodia (esim. museon, yrityksen tai hankkeen ilmainen sovellus tai verkkopeli).
+    en: The product is free of charge but not open source (e.g. a free app or web game of a museum, company or project).
+  obligation:
+    fi: 'Maksuttomuus ei yksin rajaa tuotetta ulkopuolelle, sillä saataville asettaminen voi tapahtua myös maksutta. Ratkaisevaa on, tapahtuuko se kaupallisen toiminnan yhteydessä. Kysy rahoitusmalli ja kerro, ettei botti voi ratkaista asiaa.'
+    en: 'Being free of charge does not by itself exclude the product, since making available may also be free of charge. What matters is whether it happens in the course of a commercial activity. Ask about the funding model and say that the bot cannot decide the matter.'
+  article: art. 3(22)
+keywords: [kyberturvallisuus, haavoittuvuus, CE-merkintä, tukiaika, avoin lähdekoodi, cybersecurity, vulnerability, CE marking, open source]
+last_verified: '2026-11-24'
+todo: Art. 3, 13, 14, 71 ja johdanto-osan kappaleet 18–19 tarkistettu EUR-Lexin suomenkielisestä tekstistä (Anna, 24.11.2026). Tarkistamatta art. 2 (soveltamisala ja poikkeukset), sovelletaanko art. 14:ää myös ennen 11.12.2027 markkinoille saatettuihin tuotteisiin (siirtymäsäännös), liitteen I vaatimukset ja Suomen markkinavalvontaviranomainen.
