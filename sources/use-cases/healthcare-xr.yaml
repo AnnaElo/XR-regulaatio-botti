@@ -21,7 +21,7 @@ finland:
     fi: Fimea (lääkinnälliset laitteet), tietosuojavaltuutetun toimisto (potilastiedot)
     en: Fimea (medical devices), Office of the Data Protection Ombudsman (patient data)
   national_guidance: []
-related_documents: [mdr, ehds, gdpr, aiact, dicom, fhir, medical-device-standards, ieee-3079, iso-iec-5927, digipalvelulaki]
+related_documents: [mdr, ehds, gdpr, aiact, cra, dicom, fhir, medical-device-standards, ieee-3079, iso-iec-5927, digipalvelulaki]
 applies_when:
 - condition:
     fi: XR on tarkoitettu potilaan hoitoon, kuntoutukseen, diagnoosiin tai hoidon suunnitteluun.
