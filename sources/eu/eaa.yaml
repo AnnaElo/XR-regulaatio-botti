@@ -4,8 +4,8 @@ name:
   fi: Esteettömyysdirektiivi (EAA)
   en: European Accessibility Act (EAA)
 reference:
-  fi: Direktiivi (EU) 2019/882
-  en: Directive (EU) 2019/882
+  fi: Direktiivi (EU) 2019/882; Suomessa tuotteet laissa 102/2023 ja palvelut digipalvelulain 306/2019 3 a luvussa
+  en: Directive (EU) 2019/882; in Finland products in Act 102/2023 and services in Chapter 3 a of the Act on the Provision of Digital Services 306/2019
 status:
   fi: Sovellettu 28.6.2025 alkaen
   en: Applied since 28 Jun 2025
@@ -16,6 +16,8 @@ jurisdiction: EU
 primary_sources:
 - title: EUR-Lex, direktiivi (EU) 2019/882
   url: https://eur-lex.europa.eu/eli/dir/2019/882/oj
+- title: Finlex, laki 102/2023 (tuotteiden esteettömyysvaatimukset)
+  url: https://www.finlex.fi/fi/lainsaadanto/2023/102
 finland:
   authority:
     fi: Traficom
@@ -28,14 +30,14 @@ applies_when:
     fi: 'XR- tai 3D-toiminto on osa kuluttajille tarjottavaa verkkokauppaa (esim. AR-sovitus, 3D-tuotenäkymä tai virtuaalimyymälä), pankkipalvelua, sähkökirjaa, henkilöliikenteen verkkosivua tai sovellusta tai palvelua, joka tarjoaa pääsyn audiovisuaalisiin mediapalveluihin.'
     en: 'An XR or 3D feature is part of a consumer e-commerce service (e.g. AR try-on, 3D product view or virtual store), a banking service, an e-book, a passenger transport website or app, or a service giving access to audiovisual media services.'
   obligation:
-    fi: Palvelun on täytettävä liitteen I esteettömyysvaatimukset (III ja IV jakso). Käytännössä tavoitteena on EN 301 549 ja WCAG AA, ja XR-osuudessa XAUR. Palveluja tarjoavat mikroyritykset on vapautettu palveluvaatimuksista; kysy yrityksen koko.
+    fi: Palvelun on täytettävä liitteen I esteettömyysvaatimukset (III ja IV jakso); Suomessa vaatimukset ovat digipalvelulain 3 a luvussa. Käytännössä tavoitteena on EN 301 549 ja WCAG AA, ja XR-osuudessa XAUR. Palveluja tarjoavat mikroyritykset on vapautettu palveluvaatimuksista; kysy yrityksen koko.
     en: The service must meet the accessibility requirements of Annex I (Sections III and IV). In practice the target is EN 301 549 and WCAG AA, and XAUR for the XR part. Microenterprises providing services are exempt from the service requirements; ask about company size.
   article: art. 2(2), art. 4(3), art. 4(5)
 - condition:
     fi: Valmistetaan tai tuodaan markkinoille kuluttajille tarkoitettu laite, kuten yleiskäyttöinen tietokonelaitteisto tai sen käyttöjärjestelmä, tai päätelaite audiovisuaalisten mediapalvelujen tai sähköisen viestinnän käyttöön.
     en: A consumer device is manufactured or placed on the market, such as general-purpose computer hardware or its operating system, or terminal equipment for audiovisual media services or electronic communications.
   obligation:
-    fi: Tuotteen on täytettävä liitteen I I ja II jakson vaatimukset. Mikroyritysvapautus koskee vain palveluja, ei tuotteita. Se, kuuluuko XR-laite tai lasien käyttöjärjestelmä luokkaan "yleiskäyttöinen tietokonelaitteisto", on tulkintakysymys, jota botti ei voi ratkaista.
+    fi: Tuotteen on täytettävä liitteen I I ja II jakson vaatimukset; Suomessa laki 102/2023, jonka soveltamisala (2 §) vastaa direktiivin tuoteluetteloa. Mikroyritysvapautus koskee vain palveluja, ei tuotteita. Se, kuuluuko XR-laite tai lasien käyttöjärjestelmä luokkaan "yleiskäyttöinen tietokonelaitteisto", on tulkintakysymys, jota botti ei voi ratkaista.
     en: The product must meet the requirements of Annex I, Sections I and II. The microenterprise exemption covers only services, not products. Whether an XR headset or its operating system counts as "general purpose computer hardware" is a question of interpretation the bot cannot decide.
   article: art. 2(1), art. 4(2)
 - condition:
@@ -54,4 +56,4 @@ applies_when:
   article: art. 2(4)
 keywords: [esteettömyys, saavutettavuus, verkkokauppa, AR-sovitus, accessibility, e-commerce]
 last_verified: '2026-11-24'
-todo: Art. 2 ja 4 tarkistettu EUR-Lexin suomenkielisestä tekstistä (Anna, 24.11.2026). Tarkistamatta art. 14 (kohtuuton rasite ja perusluonteinen muutos), liitteen I vaatimukset sekä Suomen täytäntöönpanolaki ja valvontaviranomaiset.
+todo: Art. 2 ja 4 tarkistettu EUR-Lexin suomenkielisestä tekstistä (Anna, 24.11.2026). Lain 102/2023 2 § tarkistettu Finlexistä (Anna, 24.11.2026). Tarkistamatta art. 14 (kohtuuton rasite ja perusluonteinen muutos), liitteen I vaatimukset, digipalvelulain 3 a luku sekä tuotteiden ja palvelujen valvontaviranomaiset Suomessa.
