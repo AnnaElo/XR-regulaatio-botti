@@ -1,0 +1,41 @@
+id: eudr
+type: eu-legislation
+name:
+  fi: Metsäkatoasetus (EUDR)
+  en: EU Deforestation Regulation (EUDR)
+reference:
+  fi: Asetus (EU) 2023/1115, muutettu 2025
+  en: Regulation (EU) 2023/1115, amended 2025
+status:
+  fi: Suuret toimijat ja kauppiaat 30.12.2026 alkaen, pienet toimijat 30.6.2027 alkaen
+  en: Large operators and traders from 30 Dec 2026, small operators from 30 Jun 2027
+summary:
+  fi: Säätelee metsäkatoa aiheuttavien tuotteiden, kuten puun, tuontia EU:hun ja vientiä EU:sta; tuotteiden ja toimitusketjujen on oltava metsäkadottomia. Vain ensimmäinen tuotteen markkinoille saattava yritys antaa due diligence -lausunnon; mikro- ja pienet alkutuottajat antavat kertaluonteisen yksinkertaistetun ilmoituksen.
+  en: Regulates the entry into and export from the EU of products linked to deforestation, such as wood; products and supply chains must be deforestation-free. Only the first business placing a product on the market submits a due diligence statement; micro and small primary operators submit a one-off simplified declaration.
+jurisdiction: EU
+use_cases: [industry]
+content_sources: []
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2023/1115
+  url: https://eur-lex.europa.eu/eli/reg/2023/1115/oj
+- title: Euroopan parlamentti, lehdistötiedote 17.12.2025
+  url: https://www.europarl.europa.eu/news/en/press-room/20251211IPR32168
+- title: Euroopan unionin neuvosto, Forest protection
+  url: https://www.consilium.europa.eu/en/policies/forest-protection/
+finland:
+  authority:
+    fi: Tarkistamaton
+    en: Unverified
+  national_guidance: []
+related_documents: [nature-digital-twin, forest-monitoring]
+applies_when:
+- condition:
+    fi: Digikaksosta tai sen dataa käytetään puun EU:n markkinoille saattamisen tai viennin dokumentointiin, esim. hakkuualueen paikkatietoon.
+    en: The digital twin or its data is used to document placing timber on the EU market or exporting it, e.g. geolocation of the harvest area.
+  obligation:
+    fi: Velvoite koskee puuta markkinoille saattavaa toimijaa, ei digikaksosta itseään. Digikaksonen voi tukea toimijan selvitysvelvollisuutta. Pelkkä metsän visualisointi tai opetuskäyttö ei kuulu asetuksen piiriin.
+    en: The obligation falls on the operator placing timber on the market, not on the digital twin itself. The twin may support the operator's due diligence. Mere visualisation or educational use is out of scope.
+  article: ''
+keywords: [metsäkato, EUDR, puukauppa, hakkuu, deforestation, timber]
+last_verified: '2026-11-24'
+todo: Muutosasetuksen julkaisua EU:n virallisessa lehdessä ei vahvistettu. Suomen valvova viranomainen tarkistamatta.

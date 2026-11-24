@@ -1,0 +1,19 @@
+id: forest-monitoring
+type: standard-in-development
+name:
+  fi: Ehdotettu metsien seuranta-asetus (Forest Monitoring Law)
+  en: Proposed Forest Monitoring Law
+status:
+  fi: Kesken. Neuvosto hyväksyi neuvottelukantansa 24.6.2025; parlamentin ja neuvoston on sovittava lopullisesta tekstistä.
+  en: Pending. The Council agreed its negotiating position on 24 Jun 2025; Parliament and Council must agree the final text.
+summary:
+  fi: Ehdotus EU:n yhteisestä metsien seurantakehyksestä. Jos se hyväksytään, se voi vaikuttaa siihen, mitä metsätietoa viranomaiset keräävät ja julkaisevat.
+  en: A proposal for a common EU forest monitoring framework. If adopted, it may affect what forest data authorities collect and publish.
+jurisdiction: EU
+primary_sources:
+- title: Euroopan unionin neuvosto, Forest protection
+  url: https://www.consilium.europa.eu/en/policies/forest-protection/
+related_documents: [eudr, nature-digital-twin, open-data]
+keywords: [metsien seuranta, forest monitoring]
+last_verified: '2026-11-24'
+todo: Komission ehdotuksen numero (COM(2023) 728) ja trilogin tila kesäkuun 2026 jälkeen tarkistamatta.

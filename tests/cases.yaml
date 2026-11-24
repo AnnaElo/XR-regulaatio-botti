@@ -164,3 +164,15 @@
     - "Mainitsee CPC:n virtuaalivaluuttaperiaatteet"
     - "Mainitsee arpajaislain vain ehdollisena (loot box)"
     - "Ei väitä KHR_audio_emitteriä ratifioiduksi"
+
+- id: metsan-digikaksonen
+  language: fi
+  question: "Hei, olen rakentamassa metsän digikaksosta, joka rakennettaisiin web-pohjaiselle käyttöliittymälle. Mitä minun tulisi huomioida suunnitteluvaiheessa?"
+  must_cite: [nature-digital-twin, open-data-sources]
+  must_not_cite: [mica, mdr]
+  recommend_standards: [metsatietostandardi, pointcloud, 3dtiles, cog]
+  expect:
+    - "Kysyy datalähteet, julkaisijan ja henkilötiedot ennen sääntelysuosituksia"
+    - "Mainitsee Metsäkeskuksen avoimen datan CC BY 4.0 -lisenssin ja EPSG:3067:n"
+    - "Kertoo, ettei avoin data sisällä metsänomistajien henkilötietoja"
+    - "Ei väitä metsäkatoasetuksen koskevan digikaksosta itseään"
