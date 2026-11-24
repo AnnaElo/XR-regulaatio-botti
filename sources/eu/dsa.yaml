@@ -10,8 +10,8 @@ status:
   fi: Sovellettu kokonaan 17.2.2024 alkaen
   en: Fully applied since 17 Feb 2024
 summary:
-  fi: Velvoitteet porrastuvat palvelun koon mukaan. Keskeisiä ovat laittoman sisällön ilmoitusmenettely ja valvonnan avoimuus.
-  en: Obligations scale with the size of the service. Key elements are notice-and-action for illegal content and transparency of moderation.
+  fi: 'Koskee välityspalveluja. Velvoitteet porrastuvat: kaikilta säilytyspalveluilta (käyttäjän sisältöä tämän pyynnöstä tallentavat palvelut) vaaditaan ilmoitus- ja toimintamenettely ja perustelut sisällön rajoituksista. Verkkoalustoilta (tallentavat ja levittävät sisältöä yleisölle) vaaditaan lisäksi mm. alaikäisten suojelu, mutta mikro- ja pienyritykset on vapautettu verkkoalustojen lisävelvoitteista.'
+  en: 'Applies to intermediary services. Obligations are tiered: all hosting services (storing user content at the user''s request) need notice-and-action and statements of reasons for restrictions. Online platforms (storing and disseminating content to the public) additionally have obligations such as protecting minors, but micro and small enterprises are exempt from the additional platform obligations.'
 jurisdiction: EU
 primary_sources:
 - title: EUR-Lex, asetus (EU) 2022/2065
@@ -21,12 +21,36 @@ finland:
     fi: Traficom (digitaalisten palvelujen koordinaattori)
     en: Traficom (Digital Services Coordinator)
   national_guidance: []
+related_documents: [virtual-world-economy, consumer-digital-content, gdpr]
 applies_when:
 - condition:
-    fi: Palvelu tallentaa tai jakaa käyttäjien sisältöä, esim. metaversumialusta.
-    en: The service stores or shares user content, e.g. a metaverse platform.
-  obligation: null
-  article: null
-keywords: []
-last_verified: ''
-todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).
+    fi: 'Palvelu tallentaa käyttäjien toimittamaa sisältöä heidän pyynnöstään (säilytyspalvelu), esim. käyttäjien lataamat 3D-mallit, avatarit, skinit, kommentit tai maailmat.'
+    en: 'The service stores content provided by users at their request (hosting service), e.g. user-uploaded 3D models, avatars, skins, comments or worlds.'
+  obligation:
+    fi: 'Ota käyttöön helppokäyttöinen, sähköisesti käytettävä ilmoitusmenettely laittomalle sisällölle. Ilmoituksessa on voitava antaa perustelut, sisällön tarkka sijainti (esim. URL), ilmoittajan nimi ja sähköposti sekä vakuutus vilpittömästä mielestä. Lähetä vahvistus ilmoituksen vastaanottamisesta, kerro päätöksestä ja muutoksenhakukeinoista, ja käsittele ilmoitukset oikea-aikaisesti, huolellisesti ja objektiivisesti. Kerro, jos käytät automatisoituja välineitä. Koskee kaikenkokoisia säilytyspalveluja.'
+    en: 'Provide an easy-to-use notice mechanism for illegal content that works electronically. Notices must allow reasons, the exact location (e.g. URL), the notifier''s name and email and a good-faith statement. Confirm receipt, inform of the decision and redress options, and handle notices in a timely, diligent and objective manner. Disclose any automated means. Applies to hosting services of all sizes.'
+  article: art. 3(g)(iii), art. 16
+- condition:
+    fi: Palvelu poistaa tai piilottaa käyttäjien sisältöä, alentaa sen näkyvyyttä, keskeyttää rahasuorituksia tai sulkee käyttäjätilejä laittoman sisällön tai käyttöehtojen rikkomisen vuoksi.
+    en: The service removes, hides or demotes user content, suspends monetary payments or closes accounts because of illegal content or terms-of-service violations.
+  obligation:
+    fi: 'Anna käyttäjälle selkeät perustelut: mikä rajoitus, millä perusteella (laki tai käyttöehto), tehtiinkö päätös ilmoituksen vai oman tutkinnan perusteella, käytettiinkö automatisointia ja mitkä oikeussuojakeinot ovat käytettävissä. Ei koske harhauttavaa suuren volyymin kaupallista sisältöä.'
+    en: 'Give the user a clear statement of reasons: what restriction, on what basis (law or terms), whether it followed a notice or own investigation, whether automation was used, and what redress is available. Does not apply to deceptive high-volume commercial content.'
+  article: art. 17
+- condition:
+    fi: 'Palvelu tallentaa ja levittää käyttäjien sisältöä yleisölle (verkkoalusta), esim. jaetut virtuaalimaailmat, sisältökauppa tai julkiset galleriat. Ei koske toisen palvelun vähäistä liitännäistoimintoa.'
+    en: 'The service stores and disseminates user content to the public (online platform), e.g. shared virtual worlds, a content marketplace or public galleries. Does not cover a minor ancillary feature of another service.'
+  obligation:
+    fi: 'Verkkoalustojen lisävelvoitteet koskevat palvelua. Mikro- ja pienyritykset (suositus 2003/361/EY) on vapautettu niistä 24 artiklan 3 kohtaa lukuun ottamatta, ja vapautus jatkuu 12 kuukautta aseman menettämisen jälkeen, ellei alusta ole erittäin suuri. Kysy yrityksen koko.'
+    en: 'The additional obligations for online platforms apply. Micro and small enterprises (Recommendation 2003/361/EC) are exempt except for Article 24(3), and the exemption continues for 12 months after losing that status unless the platform is very large. Ask about company size.'
+  article: art. 3(i), art. 19
+- condition:
+    fi: Verkkoalusta on alaikäisten käytettävissä, eikä tarjoaja ole mikro- tai pienyritys.
+    en: The online platform is accessible to minors, and the provider is not a micro or small enterprise.
+  obligation:
+    fi: 'Toteuta asianmukaiset ja oikeasuhteiset toimet alaikäisten korkeatasoisen yksityisyyden ja turvallisuuden varmistamiseksi. Älä näytä profilointiin perustuvia mainoksia, kun tiedät kohtuullisella varmuudella käyttäjän olevan alaikäinen. Velvoite ei edellytä lisähenkilötietojen keräämistä iän selvittämiseksi.'
+    en: 'Put in place appropriate and proportionate measures to ensure a high level of privacy, safety and security of minors. Do not show profiling-based ads when reasonably aware the user is a minor. The obligation does not require processing additional personal data to assess age.'
+  article: art. 28
+keywords: [käyttäjien sisältö, säilytyspalvelu, verkkoalusta, ilmoitusmenettely, moderointi, alaikäiset, user content, hosting, online platform, notice and action]
+last_verified: '2026-11-24'
+todo: Art. 3, 16, 17, 19 ja 28 tarkistettu EUR-Lexin suomenkielisestä tekstistä (Anna, 24.11.2026). Tarkistamatta, mitkä artiklat 19 artiklan "jakso" kattaa (oletettavasti 19–28) sekä art. 20 (sisäinen valitusmenettely), art. 24(3) ja art. 25 (harhaanjohtavat käyttöliittymät).
